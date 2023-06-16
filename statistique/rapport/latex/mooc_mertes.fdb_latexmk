@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1686865371 "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" "mooc_mertes.pdf" "mooc_mertes" 1686865372 0
+["pdflatex"] 1686900866 "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" "mooc_mertes.pdf" "mooc_mertes" 1686900867 0
   "/etc/texmf/web2c/texmf.cnf" 1683212685 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" 1686865371 19681 2dcd34a0a5c2599465497b9901a193b6 ""
+  "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" 1686900866 19679 bd29c511debb49444c803268c2c7e487 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm" 1136768653 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -107,9 +107,9 @@
   "graph/mosaic_contingence.png" 1686657095 6503 78a035adb0a8d247a4e13e6675a71467 ""
   "graph/residus_chi2.png" 1686657095 7603 fc8b2bfb14626cc20e07614503becfec ""
   "graph/scatter_regression.png" 1686657095 13092 060f0ed66d3a28b5614bc2eaefd1b513 ""
-  "mooc_mertes.aux" 1686865372 4768 7e91d12c2e994d8ec892a3906a2d0ef0 "pdflatex"
-  "mooc_mertes.tex" 1686865371 19681 2dcd34a0a5c2599465497b9901a193b6 ""
-  "mooc_mertes.toc" 1686865372 982 380fd952557dad2929c89ef48247e372 "pdflatex"
+  "mooc_mertes.aux" 1686900867 4768 7e91d12c2e994d8ec892a3906a2d0ef0 "pdflatex"
+  "mooc_mertes.tex" 1686900866 19679 bd29c511debb49444c803268c2c7e487 ""
+  "mooc_mertes.toc" 1686900867 982 380fd952557dad2929c89ef48247e372 "pdflatex"
   (generated)
   "mooc_mertes.aux"
   "mooc_mertes.log"
