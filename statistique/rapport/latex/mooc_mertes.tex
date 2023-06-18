@@ -292,8 +292,8 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 		\hline
-		\textbf{Intercept}&	0.5652&	0.014&	39.183&	0\\
-		\textbf{video}&	0.1575&	0.001&	162.896&	0\\
+		\textbf{Intercept}&	0.5652&	0.014&	39.183&	0***\\
+		\textbf{video}&	0.1575&	0.001&	162.896&	0***\\
 		\hline
 \end{tabular}
 \caption{\textbf{Modèle de régression-vidéo vs quiz.}}
@@ -318,8 +318,8 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 					\multicolumn{1}{c|}{\textbf{F}}&
 					\multicolumn{1}{c|}{\textbf{PR(>F)}}\\
 			\hline
-				\textbf{C(Genre)}&	1&	1554.89&	1554.9&	11.43&	0\\
-				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.08&	0\\
+				\textbf{C(Genre)}&	1&	1554.89&	1554.9&	11.43&	0***\\
+				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.08&	0***\\
 				\textbf{Residual}&	8861.0&	1204643&	135.95&		&		\\
 			\hline
 		\end{tabular}
@@ -351,10 +351,10 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 			\hline
-			\textbf{Intercept}&			7.0011&		0.432&	16.211&	0\\	
+			\textbf{Intercept}&			7.0011&		0.432&	16.211&	0***\\	
 			\textbf{C(Genre)[T.Homme]}&	-0.0959&	0.267&	-0.360&	0.719\\
-			\textbf{C(New\_HDI)[T.I]}&	4.6774&		0.586&	7.979&	0\\
-			\textbf{C(New\_HDI)[T.TH]}&	8.6728&		0.395&	21.937&	0\\
+			\textbf{C(New\_HDI)[T.I]}&	4.6774&		0.586&	7.979&	0***\\
+			\textbf{C(New\_HDI)[T.TH]}&	8.6728&		0.395&	21.937&	0***\\
 			\hline
 		\end{tabular}
 		\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
@@ -374,11 +374,11 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 			\hline
-				\textbf{Intercept}&			7.3310&			0.968&	7.573&	0\\
+				\textbf{Intercept}&			7.3310&			0.968&	7.573&	0***\\
 				\textbf{C(Genre)[T.Homme]}&	-0.4810&		1.046&	-0.460&	0.646\\	
-				\textbf{C(New\_HDI)[T.I]}&	2.7733&			1.236&	2.244&	0.025\\	
-				\textbf{C(New\_HDI)[T.TH]}&	8.4673&			0.995&	8.506&	0\\	
-				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.I]}&	2.8032&	1.415&	1.982&	0.048\\
+				\textbf{C(New\_HDI)[T.I]}&	2.7733&			1.236&	2.244&	0.025*\\	
+				\textbf{C(New\_HDI)[T.TH]}&	8.4673&			0.995&	8.506&	0***\\	
+				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.I]}&	2.8032&	1.415&	1.982&	0.048*\\
 				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.TH]}&	0.1933&	1.085&	0.178&	0.859\\
 			\hline
 		\end{tabular}
@@ -399,9 +399,9 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{F}}&
 			\multicolumn{1}{c|}{\textbf{PR(>F)}}\\
 			\hline
-				\textbf{C(Genre)}&	1&	1554.89&	1554.89&	11.44&	0\\
-				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.22&	0\\
-				\textbf{C(Genre):C(New\_HDI)}&2&	954.15&	477.076535&	3.511225&0.03\\
+				\textbf{C(Genre)}&	1&	1554.89&	1554.89&	11.44&	0***\\
+				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.22&	0***\\
+				\textbf{C(Genre):C(New\_HDI)}&2&	954.15&	477.076535&	3.511225&0.03*\\
 				\textbf{Residual}&	8859&	1203688&	135.87&	&	\\
 			\hline
 		\end{tabular}
