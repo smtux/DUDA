@@ -361,7 +361,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	\end{table}	
 
 	\subsection{ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}	
-	Dans le Tableau 11, l'interaction entre le genre et les catégories de l'HDI ont été ajoutées. La différence sur le nombre de vidéos visionnée par les hommes  par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). Les femmes au contraire ont un effet significatif (p-value nulle) ainsi que l'HDI I et TH (p-value = 2.5\%) par rapport à l'index de référence B. Le nombre de videos visionnées dépend significativement des hommes de l'index I par rapport aux femmes de l'index B, contrairement aux hommes de l'HDI TH (p-value de 86 \%)  
+	Dans le Tableau 11, l'interaction entre le genre et les catégories de l'HDI ont été ajoutées. La différence sur le nombre de vidéos visionnée par les hommes  par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). Les femmes au contraire ont un effet significatif (p-value nulle) ainsi que l'HDI I et TH (p-value = 2.5\%) par rapport à l'index de référence B. Le nombre de videos visionnées dépend significativement des hommes de l'index I par rapport aux femmes de l'index B, contrairement aux hommes de l'HDI TH (p-value de 86 \%). 
 	
 	\begin{table}[H]
 		\centering
@@ -410,8 +410,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 
 
 \section{Régression logistic}
-Nous allons maintenant utiliser une régression logistic afin de mesurer statistiquement la dépendance de l'obtention de l'examen et/ou de la certication 
-entre le genre et l'HDI. 
+Nous allons maintenant utiliser une régression logistic afin de mesurer statistiquement la dépendance de l'obtention de l'examen et/ou de la certication entre le genre et l'HDI.
 
 
 \begin{table}[H]
@@ -424,16 +423,16 @@ entre le genre et l'HDI.
 		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
 		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
 		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
-		\hline			
+		\hline
 		odds-ratio& Intercept&			0&		0.44&	1.27\\
 		&			Gender[T.une femme]&1.87&		1.02&	0.81\\
 		&			New\_HDI[T.I]&		0&		1.05&	1.06\\
 		&			New\_HDI[T.TH]&		1.25&		1.56&	0.84\\
 		\hline
-		p-value&	Intercept	&		0&			0	&	0.16\\
+		p-value&	Intercept	&		0***&		0***	&0.16\\
 		&			Gender[T.une femme]&0.17&		0.83&	0.05\\
-		&			New\_HDI[T.I]&		1.0&		0.85&	0.81\\
-		&			New\_HDI[T.TH]&		0.77&		0	&	0.31\\
+		&			New\_HDI[T.I]&		1&		0.85&	0.81\\
+		&			New\_HDI[T.TH]&		0.77&		0***&	0.31\\
 		\hline
 		CI&			Intercept&			[-7.31, -4.51]&	[-1.11, -0.53]&	[-0.09, 0.57]\\
 		&			Gender[T.une femme]&[-0.27, 1.52]&	[-0.16, 0.2]&	[-0.42, 0.0]\\
