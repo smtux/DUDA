@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1687284061 "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" "mooc_mertes.pdf" "mooc_mertes" 1687284062 0
+["pdflatex"] 1687284490 "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" "mooc_mertes.pdf" "mooc_mertes" 1687284491 0
   "../../graph/distribution_video.png" 1687278994 19834 2a56a6ac89c79d2b8a620517c7de8b51 ""
   "../../graph/distribution_video3.png" 1687278995 12091 eade658486f9aede2d84cb9273e56333 ""
   "../../graph/distribution_video4.png" 1687278996 11600 9ccbf846afa6f420f62910861575732f ""
@@ -10,7 +10,7 @@
   "../../graph/residus_chi2.png" 1687278993 7603 fc8b2bfb14626cc20e07614503becfec ""
   "../../graph/scatter2_regression.png" 1687278996 15721 eb3a68014058410124fc41e3e4c927fa ""
   "/etc/texmf/web2c/texmf.cnf" 1683212685 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" 1687283882 22100 42fc676cc9383ebaa9ec327a43438443 ""
+  "/home/mertes/DUDA/statistique/rapport/latex/mooc_mertes.tex" 1687284489 22098 fe98c23ad6e964f87de570e8e943dad7 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm" 1136768653 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -109,9 +109,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1676468108 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1683213014 128067 403859e4d35fdff4c458758f0e5ea400 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1686737434 6532218 e2d30683bf4828182d7d27c8e669c77b ""
-  "mooc_mertes.aux" 1687284062 5531 f8c856631652077aaff0564cdaf984ed "pdflatex"
-  "mooc_mertes.tex" 1687283882 22100 42fc676cc9383ebaa9ec327a43438443 ""
-  "mooc_mertes.toc" 1687284062 982 380fd952557dad2929c89ef48247e372 "pdflatex"
+  "mooc_mertes.aux" 1687284491 5531 daec7121c704cfce4ffc420ff448f3a3 "pdflatex"
+  "mooc_mertes.tex" 1687284489 22098 fe98c23ad6e964f87de570e8e943dad7 ""
+  "mooc_mertes.toc" 1687284491 982 380fd952557dad2929c89ef48247e372 "pdflatex"
   (generated)
   "mooc_mertes.aux"
   "mooc_mertes.log"
