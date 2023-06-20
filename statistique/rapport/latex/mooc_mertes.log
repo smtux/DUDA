@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  20 JUN 2023 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  20 JUN 2023 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -444,20 +444,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--338
 
  []
 
-[9] [10] [11] (./mooc_mertes.aux) ) 
+[9] [10]
+<../../graph/forestplot_v2.png, id=62, 608.2725pt x 497.86pt>
+File: ../../graph/forestplot_v2.png Graphic file (type png)
+<use ../../graph/forestplot_v2.png>
+Package pdftex.def Info: ../../graph/forestplot_v2.png  used on input line 482.
+(pdftex.def)             Requested size: 386.95897pt x 316.72253pt.
+<../../graph/forestplot_v3.png, id=63, 612.2875pt x 497.86pt>
+File: ../../graph/forestplot_v3.png Graphic file (type png)
+<use ../../graph/forestplot_v3.png>
+Package pdftex.def Info: ../../graph/forestplot_v3.png  used on input line 488.
+(pdftex.def)             Requested size: 483.69687pt x 393.29749pt.
+ [11 <../../graph/forestplot_v2.png>] [12 <../../graph/forestplot_v3.png>] (./mooc_mertes.aux) ) 
 Here is how much of TeX's memory you used:
- 8566 strings out of 477981
- 143415 string characters out of 5838659
+ 8580 strings out of 477981
+ 143859 string characters out of 5838659
  1867330 words of memory out of 5000000
- 28562 multiletter control sequences out of 15000+600000
+ 28574 multiletter control sequences out of 15000+600000
  566523 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  87i,10n,90p,657b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on mooc_mertes.pdf (12 pages, 193115 bytes).
+Output written on mooc_mertes.pdf (13 pages, 226193 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
