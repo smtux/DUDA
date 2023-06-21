@@ -410,71 +410,58 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 
 
 \section{Régression logistic}
-Nous allons maintenant utiliser une régression logistic afin de mesurer statistiquement la dépendance de l'obtention de l'examen et/ou de la certication entre le genre et l'HDI.
+Nous allons maintenant utiliser une régression logistic pour calculer les odds-rations afin de déterminer entre les hommes et femmes ainsi qu'entre les
+différents niveaux d'HDI, qui ont davantage de chances de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
+Les résultats de cette régression sont retranscrits dans les tableaux 13 et 14.
+Ainsi, Les femmes auraient plus de chances (odd-ratio = 1.865) que les hommes de terminer le MOOC dans sa première version mais cela n'est pas statistiquement 
+significatif (p-value > 17 \%).
 
 
 \begin{table}[H]
 	\centering
 	\fontsize{12}{20}\selectfont
-	\begin{tabular}{|l|l|r|r|r|}
+	\begin{tabular}{|l|l|l|l|}
 		\hline
-		\multicolumn{4}{|c|}{\textbf{ODDS-RADIO}}\\
+		\multicolumn{4}{|c|}{\textbf{ODDS-RADIO - CI (Intervalle de Confiance à 95\%)}}\\
 		\hline
-		\multicolumn{1}{|c|}{\textbf{coef}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
+		\multicolumn{1}{|c|}{\textbf{MOOC}}&
+		\multicolumn{1}{c|}{\textbf{V1}}&
+		\multicolumn{1}{c|}{\textbf{V2}}&
+		\multicolumn{1}{c|}{\textbf{V3}}\\
 		\hline
-		Gender[T.femme]&	1.865&	1.021&	0.813\\
-		Réf (homme/HDI B)&	0.003&	0.439&	1.268\\
-		New\_HDI[T.I]&		0.0&	1.046&	1.062\\
-		New\_HDI[T.TH]&		1.251&	1.558&	0.835\\
+		\textbf{Coef}&
+		\multicolumn{3}{c|}{Réf (homme - HDI B)}\\
+		\hline
+		Gender[T.femme]&	1.865 [0.763, 4.56]&	1.021 [0.851, 1.224]&	0.813 [0.66, 1.003]\\
+		HDI[T.I]&		0.0 [0.0, inf]&	1.046 [0.66, 1.658]&	1.062 [0.647, 1.741]\\
+		HDI[T.TH]&		1.251 [0.284, 5.503]&	1.558*** [1.149, 2.113]&	0.835 [0.589, 1.184]\\
 		\hline
 	\end{tabular}
-	\caption{\textbf{Examen - odds-ratio.}}
+	\caption{\textbf{Examen/certification}}
 \end{table}
 
 
 \begin{table}[H]
 	\centering
 	\fontsize{12}{20}\selectfont
-	\begin{tabular}{|l|l|r|r|r|}
+	\begin{tabular}{|l|l|r|r|}
 		\hline
 		\multicolumn{4}{|c|}{\textbf{P-value}}\\
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Coef}}&
+		\multicolumn{1}{|c|}{\textbf{}}&
 		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
 		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
 		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
+		\hline
+		\textbf{Coef}&
+		\multicolumn{3}{c|}{Réf (homme - HDI B)}\\
 		\hline
 		Gender[T.femme]&	0.172&	0.826&	0.053\\
-		Réf (homme/HDI B)&	0***&	0***&	0.157\\
-		New\_HDI[T.I]&		0.999&	0.849&	0.813\\
-		New\_HDI[T.TH]&		0.767&	0.004**&	0.311\\
+		HDI[T.I]&		0.999&	0.849&	0.813\\
+		HDI[T.TH]&		0.767&	0.004***&	0.311\\
 		\hline
 	\end{tabular}
-	\caption{\textbf{Examen - p-value.}}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\fontsize{12}{20}\selectfont
-	\begin{tabular}{|l|l|r|r|r|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{CI}}\\
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Coef}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
-		\hline
-		Gender[T.femme]&	[0.763, 4.56]&	[0.851, 1.224]&	[0.66, 1.003]\\
-		Réf (homme/HDI B)&	[0.001, 0.011]&	[0.329, 0.587]&	[0.913, 1.762]\\
-		New\_HDI[T.I]&		[0.0, inf]&		[0.66, 1.658]&	[0.647, 1.741]\\
-		New\_HDI[T.TH]&		[0.284, 5.503]&	[1.149, 2.113]&	[0.589, 1.184]\\
-		\hline
-	\end{tabular}
-		\caption{\textbf{Examen - intervalle de confiance (CI).}}	
+	\caption{\textbf{Examen/certification.}}
 \end{table}
 
 \begin{figure}[H]
