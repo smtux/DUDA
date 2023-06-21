@@ -413,8 +413,8 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 Nous allons maintenant utiliser une régression logistic pour calculer les odds-rations afin de déterminer entre les hommes et femmes ainsi qu'entre les
 différents niveaux d'HDI, qui ont davantage de chances de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
 Les résultats de cette régression sont retranscrits dans les tableaux 13 et 14.
-Ainsi, Les femmes auraient plus de chances (odd-ratio = 1.865) que les hommes de terminer le MOOC dans sa première version mais cela n'est pas statistiquement 
-significatif (p-value > 17 \%).
+Ainsi, les individus de l'index HDI I ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) de passer l'examen ou la certification 
+que ceux des autres index.
 
 
 \begin{table}[H]
@@ -424,17 +424,17 @@ significatif (p-value > 17 \%).
 		\hline
 		\multicolumn{4}{|c|}{\textbf{ODDS-RADIO - CI (Intervalle de Confiance à 95\%)}}\\
 		\hline
-		\multicolumn{1}{|c|}{\textbf{MOOC}}&
-		\multicolumn{1}{c|}{\textbf{V1}}&
-		\multicolumn{1}{c|}{\textbf{V2}}&
-		\multicolumn{1}{c|}{\textbf{V3}}\\
+		\multicolumn{1}{|c|}{\textbf{}}&
+		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
+		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
+		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
 		\hline
 		\textbf{Coef}&
 		\multicolumn{3}{c|}{Réf (homme - HDI B)}\\
 		\hline
-		Gender[T.femme]&	1.865 [0.763, 4.56]&	1.021 [0.851, 1.224]&	0.813 [0.66, 1.003]\\
-		HDI[T.I]&		0.0 [0.0, inf]&	1.046 [0.66, 1.658]&	1.062 [0.647, 1.741]\\
-		HDI[T.TH]&		1.251 [0.284, 5.503]&	1.558*** [1.149, 2.113]&	0.835 [0.589, 1.184]\\
+		Gender[T.femme]&621.667 [69.397, 6844.388]&  2.326 [1.451, 3.721]& 0.641 [0.374, 1.099]\\
+		HDI[T.I]&		0 [0, inf]&	2.383 [1.125, 5.04]& 0.837 [0.367, 1.907]\\ 
+		HDI[T.TH]&		417 [25.872, 8259.698]&	3.549*** [1.959, 6.424]&  0.658 [0.334, 1.297]\\
 		\hline
 	\end{tabular}
 	\caption{\textbf{Examen/certification}}
