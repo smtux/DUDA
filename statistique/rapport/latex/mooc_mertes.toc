@@ -8,3 +8,4 @@
 \contentsline {subsection}{\numberline {4.3}ANOVA sans intéraction sur le nombre de vidéos selon le genre et l'HDI}{9}{}%
 \contentsline {subsection}{\numberline {4.4}ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}{10}{}%
 \contentsline {section}{\numberline {5.}Régression logistic}{10}{}%
+\contentsline {section}{\numberline {6.}Changement de modèle selon le type distribution des données: Loi de Poisson}{13}{}%

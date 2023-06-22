@@ -192,12 +192,12 @@ Après l'index HDI, intéressons-nous aux nombres de vidéos vues par rapport au
 		\caption{\textbf{Moyenne des vidéos vues par genre.}}
 	\end{figure}
 
-L'hypothèse de départ (H0) est qu'il n'y a aucune différence sur le nombre de vidéos vues entre les hommes et les femmes. La figure 4, montre la distribution du nombre de vidéo pour les hommes et les femmes. Nous pouvons constater que la distribution des données ne ressemble pas à une distribution normale.
+L'hypothèse de départ (H0) est qu'il n'y a aucune différence sur le nombre de vidéos vues entre les hommes et les femmes. La figure 4, montre la distribution du nombre de vidéos vues par genre. Nous pouvons constater que la distribution des données ne ressemble pas à une distribution normale.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{../../graph/distribution_video.png}
-		\caption{\textbf{Distribution du nombre de vidéos par genre.}}
+		\caption{\textbf{Distribution du nombre de vidéos visionnées par genre.}}
 	\end{figure}
 
 La Figure 5, compare les quantiles de la distribution des vidéos des 2 modalités homme et femme afin de déterminer graphiquement si la distribution est normale. Nous observons également que la distribution observée ne suit pas la distribution théorique normale. Cela confirmerait l'hypothèse que la distribution observée n'est pas gaussienne.
@@ -262,7 +262,7 @@ La Figure 7, représente le scatter plot des valeurs observées et le modèle de
 	\caption{\textbf{valeurs observées (bleu) et modèle de régression linéaire (rouge).}}
 \end{figure}
 
-Le Tableau 7 indique les résultats du modèle de régression à la variable dépendante quiz et à la variable explicative quiz. Le $R^2$ à 0.64, indiquerait que les valeurs prédites représenteraient 64\% des valeurs observées. 
+Le Tableau 7 indique les résultats du modèle de régression linéaire de la variable dépendante quiz et de la variable explicative video. Le $R^2$ à 0.64, indiquerait que les valeurs prédites représenteraient 64\% des valeurs observées. 
 Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiquement un lien sur le nombre de vidéos vues et le nombre de quiz effectués. Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués que de nombre de vidéos visionnées.
 
 \begin{table}[H]
@@ -410,11 +410,11 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 
 
 \section{Régression logistic}
-Nous allons maintenant utiliser une régression logistic pour calculer les odds-rations afin de déterminer entre les hommes et femmes ainsi qu'entre les
-différents niveaux d'HDI, qui ont davantage de chances de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
+Nous allons maintenant utiliser une régression logistic pour calculer les odds-rations afin de déterminer qui, entre les hommes et femmes ainsi qu'entre les
+différents niveaux d'HDI, a davantage de chances de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
 Les résultats de cette régression sont retranscrits dans les tableaux 13 et 14.
-Ainsi, les individus de l'index HDI I ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) de passer l'examen ou la certification 
-que ceux des autres index.
+Ainsi, les individus de l'index HDI TH ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) de passer l'examen ou la certification 
+que ceux des autres index anec un indice de confiance à 95 \% (CI = [1.959, 6.424])
 
 
 \begin{table}[H]
@@ -475,5 +475,13 @@ que ceux des autres index.
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_v3.png}
 	\caption{\textbf{Forestplot ODDS-RATIOS /Examen MOOC V3.}}
 \end{figure}
+
+\section{Changement de modèle selon le type distribution des données: Loi de Poisson}
+Nous avons observé plus haut, sur la Figure 4, la forme de la distribution du nombre de vidéos visionnées par apprenant 
+selon leur genre.
+La figure 5 confirmerait que la distribution n'est pas normale. Il serait innapproprié d'appliquer une régression linéaire.
+Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
+genre pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être.
+
 
 \end{document}
