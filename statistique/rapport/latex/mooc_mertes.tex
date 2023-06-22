@@ -479,7 +479,10 @@ que ceux des autres index anec un indice de confiance à 95 \% (CI = [1.959, 6.4
 \section{Changement de modèle selon le type de distribution: Loi de Poisson}
 Nous avons observé plus haut, sur la Figure 4, la forme de la distribution du nombre de vidéos visionnées par apprenant 
 selon leur genre.
-La figure 5 confirmerait que la distribution n'est pas normale. Il serait innapproprié d'appliquer une régression linéaire.
+La figure 5 confirmerait que la distribution n'est pas normale. En effet, en observant l'homosedasticité des erreurs par 
+rapport au modèle théorique, nous nous appercevons que la dispertion (variance) des valeurs observées (en bleu)
+n'est pas uniforme autour des valeurs prédites (en rouge). 
+Il serait innapproprié d'appliquer une régression linéaire.
 Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
 genre pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être.
 
