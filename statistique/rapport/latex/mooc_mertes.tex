@@ -421,10 +421,12 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 
 \section{Régression logistique}
 Nous allons maintenant utiliser une régression logistique pour calculer les odds-rations afin de déterminer qui, entre les hommes et femmes ainsi qu'entre les
-différents niveaux d'HDI, a davantage de chances de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
+différents niveaux d'HDI, a davantage de chance de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
 Les résultats de cette régression sont retranscrits dans les tableaux 13 et 14.
-Ainsi, les individus de l'index HDI TH ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) de passer l'examen ou la certification 
-que ceux des autres index anec un indice de confiance à 95 \% (CI = [1.959, 6.424])
+Ainsi, les individus de l'index HDI TH ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) 
+de passer l'examen ou la certification que ceux des autres index avec un indice de confiance à 95 \% (CI = [1.959, 6.424]).
+Cependant, nous remarquons sur les figures 9 à 10, que les intervalles de confiances sur toutes les catégories sont assez importants pour confirmer
+que le modèle binomiale est assez imprécis.
 
 
 \begin{table}[H]
@@ -476,13 +478,19 @@ que ceux des autres index anec un indice de confiance à 95 \% (CI = [1.959, 6.4
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_v2.png}
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_binomiale.png}
+	\caption{\textbf{Forestplot ODDS-RATIOS /Examen MOOC V1.}}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_binomiale.png}
 	\caption{\textbf{Forestplot ODDS-RATIOS /Examen MOOC V2.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_v3.png}
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_binomiale.png}
 	\caption{\textbf{Forestplot ODDS-RATIOS /Examen MOOC V3.}}
 \end{figure}
 
@@ -490,11 +498,13 @@ que ceux des autres index anec un indice de confiance à 95 \% (CI = [1.959, 6.4
 Nous avons observé plus haut, sur la Figure 4, la forme de la distribution du nombre de vidéos visionnées par apprenant 
 selon leur genre.
 La figure 5 confirmerait que la distribution n'est pas normale. En effet, en observant l'homosedasticité des erreurs par 
-rapport au modèle théorique, nous nous appercevons que la dispertion (variance) des valeurs observées (en bleu)
+rapport au modèle théorique, nous nous appercevons que la dispersion (variance) des valeurs observées (en bleu)
 n'est pas uniforme autour des valeurs prédites (en rouge). 
-Il serait donc inapproprié d'appliquer un modèle de régression linéaire.
+Il serait donc inapproprié d'appliquer un modèle de régression linéaire comme la binomiale qui nécessite une distribution normale.
 Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
-genre pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être.
+genre pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être, comme celle que l'on
+observe sur la Figure 4.
+Les résultats de cette régression s'observe sur les figures ci-dessous.
 
 
 \end{document}
