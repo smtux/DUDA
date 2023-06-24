@@ -302,6 +302,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	\subsection{ANOVA sans intéraction sur le nombre de vidéos selon le genre et l'HDI}
 	
 	Dans le Tableau 9, le degrés de liberté (df) pour le genre est de 1 car la variable contient 2 modalités (homme et femme).
+	En effet, une modalité de la variable est utilisée comme référence dans le modèle.
 	\[ df = n[mod] - 1 \]
 	Avec n représentant le nombre de modalités (mod) des variables, Genre et New\_HDI.
 	La variable Genre comporte 2 modalités (homme et femme) donc le df est de 1. La variable New\_HDI comporte 3 modalités (TH, I, B), donc le df est de 2.
@@ -326,19 +327,22 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 		\caption{\textbf{Table d'ANOVA sans interaction - vidéo vs genre et HDI.}}
 	\end{table}
 
-	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et New\_HDI avec la variable de réponse video. L'équation linéaire résultante du modèle de régression est de la forme : 
+	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et New\_HDI 
+	avec la variable de réponse video. L'équation linéaire résultante du modèle de régression est de la forme : 
 	\[ Y=\beta0 + \beta1X1 + \beta2X2 + \beta3X3 \]
 	
 	Avec :\\
 	$Y =$ nombre de vidéos visionnées\\
 	$\beta0 = 7.0011$\\
-	$\beta1 = 0.0959 : X1 = Genre(homme)$\\
-	$\beta2 = 4.6774 : X2 = New\_HDI(I)$\\
-	$\beta3 = 8.6728 : X3 = New\_HDI(TH)$\\
+	$\beta1 = 0.0959, X1 = Genre(homme)$\\
+	$\beta2 = 4.6774, X2 = New\_HDI(I)$\\
+	$\beta3 = 8.6728, X3 = New\_HDI(TH)$\\
 	
 	Le groupe des femmes et l'index B de l'HDI sont utilisés comme référence (intercept) dans le modèle.
-	En effet, le coefficient $\beta0$ correspond au nombre moyen de vidéos visionnées par les femmes dans la catégorie B. Les catégories TH ($X3$) et I ($X2$), sont comparées à l'index B.
-	Ainsi, le nombre de vidéos visionnées est significativement indépendant des hommes ($X1$) par rapport aux femmes (p-value de 72 \%), contrairement aux HDI I et TH par rapport à l'index B
+	En effet, le coefficient $\beta0$ correspond au nombre moyen de vidéos visionnées par les femmes dans la catégorie B. 
+	Les catégories TH ($X3$) et I ($X2$), sont comparées à l'index B.
+	Ainsi, la différence sur le nombre moyen de vidéos vues est significativement indépendant (p-value de 72 \%) des hommes ($X1$) par rapport aux femmes 
+	des pays pauvres (HDI B), contrairement aux individus des pays moyennement et très développés (HDI I et TH) par rapport aux femmes des pays pauvres.
 	
 	\begin{table}[H]
 		\centering
@@ -361,7 +365,11 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	\end{table}	
 
 	\subsection{ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}	
-	Dans le Tableau 11, l'interaction entre le genre et les catégories de l'HDI ont été ajoutées. La différence sur le nombre de vidéos visionnée par les hommes  par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). Les femmes au contraire ont un effet significatif (p-value nulle) ainsi que l'HDI I et TH (p-value = 2.5\%) par rapport à l'index de référence B. Le nombre de videos visionnées dépend significativement des hommes de l'index I par rapport aux femmes de l'index B, contrairement aux hommes de l'HDI TH (p-value de 86 \%). 
+	Dans le Tableau 11, nous testons comment le fait d'être un homme vivant dans un pays moyennement ou très développé (HDI I ou TH) à un effet, par rapport 
+	aux femmes vivant dans les pays pauvres (HDI B), sur le nombre moyen de videos visionnées. 
+	La différence sur le nombre de vidéos vues par les hommes par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). 
+	Le nombre de videos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des pays très développés par rapport aux femmes des pays pauvres, 
+	contrairement au niveau developpement des pays (HDI) dont la différence sur le nombre est moins significativement important (p-value de 2.5 \%, t=2.4).
 	
 	\begin{table}[H]
 		\centering
@@ -385,7 +393,9 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (avec interaction).}}
 \end{table}
 	
-	D'après le Tableau 12, le nombre de videos visionnés dépend significativement du genre (p-value = 0) et de l'HDI (p-value = 0), ainsi que du genre par rapport à l'HDI (p-value = 3\%).
+	D'après le Tableau 12, nous observons que le niveau de développment d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de videos 
+	visionnées quelque soit le sexe. Nous remarquons également, que le nombre de vidéos vues varie statistiquement (p=3\%) faiblement (t=3.5) en fonction  
+	du niveau de développement du pays dans lequel les hommes et les femmes vivent. 
 	
 	\begin{table}[H]
 		\centering

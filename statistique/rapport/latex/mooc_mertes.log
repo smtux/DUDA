@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  22 JUN 2023 22:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  24 JUN 2023 10:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -440,7 +440,7 @@ File: ../../graph/scatter2_regression.png Graphic file (type png)
 Package pdftex.def Info: ../../graph/scatter2_regression.png  used on input line 261.
 (pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
  [8 <../../graph/scatter2_regression.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 332--338
+Underfull \hbox (badness 10000) in paragraph at lines 334--340
 
  []
 
@@ -448,25 +448,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--338
 <../../graph/forestplot_v2.png, id=62, 607.26875pt x 497.86pt>
 File: ../../graph/forestplot_v2.png Graphic file (type png)
 <use ../../graph/forestplot_v2.png>
-Package pdftex.def Info: ../../graph/forestplot_v2.png  used on input line 469.
+Package pdftex.def Info: ../../graph/forestplot_v2.png  used on input line 479.
 (pdftex.def)             Requested size: 483.69687pt x 396.55649pt.
  [11]
 <../../graph/forestplot_v3.png, id=66, 608.2725pt x 497.86pt>
 File: ../../graph/forestplot_v3.png Graphic file (type png)
 <use ../../graph/forestplot_v3.png>
-Package pdftex.def Info: ../../graph/forestplot_v3.png  used on input line 475.
+Package pdftex.def Info: ../../graph/forestplot_v3.png  used on input line 485.
 (pdftex.def)             Requested size: 483.69687pt x 395.91077pt.
  [12 <../../graph/forestplot_v2.png>] [13 <../../graph/forestplot_v3.png>] (./mooc_mertes.aux) ) 
 Here is how much of TeX's memory you used:
  8580 strings out of 477981
  143859 string characters out of 5838659
- 1865330 words of memory out of 5000000
+ 1867330 words of memory out of 5000000
  28574 multiletter control sequences out of 15000+600000
  566523 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 87i,10n,90p,657b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,10n,90p,614b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on mooc_mertes.pdf (14 pages, 229065 bytes).
+Output written on mooc_mertes.pdf (14 pages, 229649 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

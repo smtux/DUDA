@@ -7,5 +7,5 @@
 \contentsline {subsection}{\numberline {4.2}Tests statistiques entre le nombre de vidéos visionnées et le nombre de quiz réalisés.}{7}{}%
 \contentsline {subsection}{\numberline {4.3}ANOVA sans intéraction sur le nombre de vidéos selon le genre et l'HDI}{9}{}%
 \contentsline {subsection}{\numberline {4.4}ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}{10}{}%
-\contentsline {section}{\numberline {5.}Régression logistique}{10}{}%
+\contentsline {section}{\numberline {5.}Régression logistique}{11}{}%
 \contentsline {section}{\numberline {6.}Changement de modèle selon le type de distribution: Loi de Poisson}{13}{}%
