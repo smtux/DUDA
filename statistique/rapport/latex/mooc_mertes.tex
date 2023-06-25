@@ -420,7 +420,8 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 
 
 \section{Régression logistique}
-Nous allons maintenant utiliser une régression logistique pour calculer les odds-rations afin de déterminer qui, entre les hommes et femmes ainsi qu'entre les
+\subsection{Régression binomiale}
+Nous allons maintenant utiliser une régression binomiale pour calculer les odds-rations afin de déterminer qui, entre les hommes et femmes ainsi qu'entre les
 différents niveaux d'HDI, a davantage de chance de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
 Les résultats de cette régression sont retranscrits dans les tableaux 13 et 14.
 Ainsi, les individus de l'index HDI TH ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) 
@@ -479,22 +480,22 @@ que le modèle binomiale est assez imprécis.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_binomiale.png}
-	\caption{\textbf{Forestplot odds-ratios /Examen MOOC V1.}}
+	\captionof{table}{\textbf{Examen selon le genre et HDI - MOOC V1.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_binomiale.png}
-	\caption{\textbf{Forestplot odds-ratios /Examen MOOC V2.}}
+	\captionof{table}{\textbf{Examen selon le genre et HDI - MOOC V2.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_binomiale.png}
-	\caption{\textbf{Forestplot odds-ratios /Examen MOOC V3.}}
+	\captionof{table}{\textbf{Examen selon le genre et HDI - MOOC V3.}}
 \end{figure}
 
-\section{Changement de modèle selon le type de distribution: Loi de Poisson}
+\subsection{Régression de Poisson}
 Nous avons observé plus haut, sur la Figure 4, la forme de la distribution du nombre de vidéos visionnées par apprenant 
 selon leur genre.
 La figure 5 confirmerait que la distribution n'est pas normale. En effet, en observant l'homosedasticité des erreurs par 
@@ -503,8 +504,60 @@ n'est pas uniforme autour des valeurs prédites (en rouge).
 Il serait donc inapproprié d'appliquer un modèle de régression linéaire comme la binomiale qui nécessite une distribution normale.
 Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
 genre pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être, comme celle que l'on
-observe sur la Figure 4.
-Les résultats de cette régression s'observe sur les figures ci-dessous.
+observe sur la Figure 8. Nous observons sur cette figure les distribution du nombre de videos visionnées pour chaque version du MOOC.
+Les résultats de cette régression s'observe sur les Figures 9 à 11.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/distribution_poisson.png}
+	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V1.}}
+\end{figure}
+
+	\begin{center}
+		\begin{tabular}{lcccccc}
+		\hline
+		Variable & Coeff. & Std. Err. & z & P > |z| & [0.025 & 0.975] \\
+		\hline
+		\multicolumn{7}{c}{Version 1} \\
+		\hline
+		Intercept & 1.7510 & 0.016 & 108.332 & 0.000 & 1.719 & 1.783 \\
+		C(Gender)[T.une femme] & 0.0174 & 0.008 & 2.141 & 0.032 & 0.001 & 0.033 \\
+		C(New\_HDI)[T.I] & 0.5791 & 0.022 & 25.947 & 0.000 & 0.535 & 0.623 \\
+		C(New\_HDI)[T.TH] & 0.9467 & 0.017 & 56.696 & 0.000 & 0.914 & 0.979 \\
+		\hline
+		\multicolumn{7}{c}{Version 2} \\
+		\hline
+		Intercept & 1.9673 & 0.025 & 77.827 & 0.000 & 1.918 & 2.017 \\
+		C(Gender)[T.une femme] & 0.0381 & 0.012 & 3.171 & 0.002 & 0.015 & 0.062 \\
+		C(New\_HDI)[T.I] & 0.3552 & 0.037 & 9.716 & 0.000 & 0.284 & 0.427 \\
+		C(New\_HDI)[T.TH] & 0.7163 & 0.026 & 27.515 & 0.000 & 0.665 & 0.767 \\
+		\hline
+		\multicolumn{7}{c}{Version 3} \\
+		\hline
+		Intercept & 2.1441 & 0.029 & 75.004 & 0.000 & 2.088 & 2.200 \\
+		C(Gender)[T.une femme] & -0.0484 & 0.013 & -3.588 & 0.000 & -0.075 & -0.022 \\
+		C(New\_HDI)[T.I] & 0.4085 & 0.039 & 10.518 & 0.000 & 0.332 & 0.485 \\
+		C(New\_HDI)[T.TH] & 0.6808 & 0.029 & 23.080 & 0.000 & 0.623 & 0.739 \\
+		\hline
+		\end{tabular}
+		\captionof{table}{\textbf{Coefficients estimés de la régression logistique}}
+		\end{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_poisson.png}
+	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V1.}}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_poisson.png}
+	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V2.}}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_poisson.png}
+	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V3.}}
+\end{figure}
 
 \end{document}
