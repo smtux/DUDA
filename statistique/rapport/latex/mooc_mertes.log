@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  25 JUN 2023 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  26 JUN 2023 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,76 +428,75 @@ File: ../../graph/distribution_video3.png Graphic file (type png)
 Package pdftex.def Info: ../../graph/distribution_video3.png  used on input line 208.
 (pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
  [6 <../../graph/distribution_video.png> <../../graph/distribution_video3.png>]
-<../../graph/distribution_video4.png, id=46, 433.62pt x 289.08pt>
-File: ../../graph/distribution_video4.png Graphic file (type png)
-<use ../../graph/distribution_video4.png>
-Package pdftex.def Info: ../../graph/distribution_video4.png  used on input line 238.
-(pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
- [7 <../../graph/distribution_video4.png>]
-<../../graph/scatter2_regression.png, id=51, 433.62pt x 289.08pt>
+<../../graph/scatter2_regression.png, id=46, 433.62pt x 289.08pt>
 File: ../../graph/scatter2_regression.png Graphic file (type png)
 <use ../../graph/scatter2_regression.png>
-Package pdftex.def Info: ../../graph/scatter2_regression.png  used on input line 261.
+Package pdftex.def Info: ../../graph/scatter2_regression.png  used on input line 255.
 (pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
- [8 <../../graph/scatter2_regression.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 334--340
+ [7] [8 <../../graph/scatter2_regression.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 328--334
 
  []
 
 [9] [10]
-<../../graph/forestplot_V0_binomiale.png, id=62, 617.30624pt x 279.0425pt>
+<../../graph/forestplot_V0_binomiale.png, id=60, 617.30624pt x 279.0425pt>
 File: ../../graph/forestplot_V0_binomiale.png Graphic file (type png)
 <use ../../graph/forestplot_V0_binomiale.png>
-Package pdftex.def Info: ../../graph/forestplot_V0_binomiale.png  used on input line 482.
+Package pdftex.def Info: ../../graph/forestplot_V0_binomiale.png  used on input line 476.
 (pdftex.def)             Requested size: 483.69687pt x 218.65286pt.
- [11]
-<../../graph/forestplot_V1_binomiale.png, id=66, 592.2125pt x 279.0425pt>
+<../../graph/forestplot_V1_binomiale.png, id=61, 592.2125pt x 279.0425pt>
 File: ../../graph/forestplot_V1_binomiale.png Graphic file (type png)
 <use ../../graph/forestplot_V1_binomiale.png>
-Package pdftex.def Info: ../../graph/forestplot_V1_binomiale.png  used on input line 488.
+Package pdftex.def Info: ../../graph/forestplot_V1_binomiale.png  used on input line 482.
 (pdftex.def)             Requested size: 483.69687pt x 227.91791pt.
-<../../graph/forestplot_V2_binomiale.png, id=67, 599.23875pt x 279.0425pt>
+ [11 <../../graph/forestplot_V0_binomiale.png>]
+<../../graph/forestplot_V2_binomiale.png, id=66, 599.23875pt x 279.0425pt>
 File: ../../graph/forestplot_V2_binomiale.png Graphic file (type png)
 <use ../../graph/forestplot_V2_binomiale.png>
-Package pdftex.def Info: ../../graph/forestplot_V2_binomiale.png  used on input line 494.
+Package pdftex.def Info: ../../graph/forestplot_V2_binomiale.png  used on input line 488.
 (pdftex.def)             Requested size: 483.69687pt x 225.24399pt.
- [12 <../../graph/forestplot_V0_binomiale.png> <../../graph/forestplot_V1_binomiale.png>]
-<../../graph/distribution_poisson.png, id=74, 722.7pt x 433.62pt>
+<../../graph/distribution_poisson.png, id=67, 722.7pt x 433.62pt>
 File: ../../graph/distribution_poisson.png Graphic file (type png)
 <use ../../graph/distribution_poisson.png>
-Package pdftex.def Info: ../../graph/distribution_poisson.png  used on input line 512.
+Package pdftex.def Info: ../../graph/distribution_poisson.png  used on input line 505.
 (pdftex.def)             Requested size: 483.69687pt x 290.21953pt.
- [13 <../../graph/forestplot_V2_binomiale.png>]
-<../../graph/forestplot_V0_poisson.png, id=79, 606.265pt x 262.9825pt>
+ [12 <../../graph/forestplot_V1_binomiale.png> <../../graph/forestplot_V2_binomiale.png>]
+<../../graph/distribution_video4.png, id=74, 433.62pt x 289.08pt>
+File: ../../graph/distribution_video4.png Graphic file (type png)
+<use ../../graph/distribution_video4.png>
+Package pdftex.def Info: ../../graph/distribution_video4.png  used on input line 511.
+(pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
+ [13 <../../graph/distribution_poisson.png> <../../graph/distribution_video4.png>]
+<../../graph/forestplot_V0_poisson.png, id=80, 606.265pt x 262.9825pt>
 File: ../../graph/forestplot_V0_poisson.png Graphic file (type png)
 <use ../../graph/forestplot_V0_poisson.png>
 Package pdftex.def Info: ../../graph/forestplot_V0_poisson.png  used on input line 547.
 (pdftex.def)             Requested size: 483.69687pt x 209.81645pt.
- [14 <../../graph/distribution_poisson.png>]
-<../../graph/forestplot_V1_poisson.png, id=84, 606.265pt x 262.9825pt>
+<../../graph/forestplot_V1_poisson.png, id=81, 606.265pt x 262.9825pt>
 File: ../../graph/forestplot_V1_poisson.png Graphic file (type png)
 <use ../../graph/forestplot_V1_poisson.png>
 Package pdftex.def Info: ../../graph/forestplot_V1_poisson.png  used on input line 553.
 (pdftex.def)             Requested size: 483.69687pt x 209.81645pt.
-<../../graph/forestplot_V2_poisson.png, id=85, 594.22pt x 262.9825pt>
+ [14 <../../graph/forestplot_V0_poisson.png>]
+<../../graph/forestplot_V2_poisson.png, id=86, 594.22pt x 262.9825pt>
 File: ../../graph/forestplot_V2_poisson.png Graphic file (type png)
 <use ../../graph/forestplot_V2_poisson.png>
 Package pdftex.def Info: ../../graph/forestplot_V2_poisson.png  used on input line 559.
 (pdftex.def)             Requested size: 483.69687pt x 214.07803pt.
- [15 <../../graph/forestplot_V0_poisson.png> <../../graph/forestplot_V1_poisson.png>] [16 <../../graph/forestplot_V2_poisson.png>] (./mooc_mertes.aux) ) 
+ [15 <../../graph/forestplot_V1_poisson.png> <../../graph/forestplot_V2_poisson.png>] (./mooc_mertes.aux) ) 
 Here is how much of TeX's memory you used:
  8615 strings out of 477981
  145396 string characters out of 5838659
- 1867330 words of memory out of 5000000
+ 1866330 words of memory out of 5000000
  28604 multiletter control sequences out of 15000+600000
  566523 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  87i,10n,90p,614b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on mooc_mertes.pdf (17 pages, 263091 bytes).
+Output written on mooc_mertes.pdf (16 pages, 262143 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

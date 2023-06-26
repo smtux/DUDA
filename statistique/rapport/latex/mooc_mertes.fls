@@ -653,11 +653,6 @@ INPUT ../../graph/distribution_video3.png
 INPUT ../../graph/distribution_video3.png
 INPUT ../../graph/distribution_video3.png
 INPUT ../../graph/distribution_video3.png
-INPUT ../../graph/distribution_video4.png
-INPUT ../../graph/distribution_video4.png
-INPUT ../../graph/distribution_video4.png
-INPUT ../../graph/distribution_video4.png
-INPUT ../../graph/distribution_video4.png
 INPUT ../../graph/scatter2_regression.png
 INPUT ../../graph/scatter2_regression.png
 INPUT ../../graph/scatter2_regression.png
@@ -685,6 +680,11 @@ INPUT ../../graph/distribution_poisson.png
 INPUT ../../graph/distribution_poisson.png
 INPUT ../../graph/distribution_poisson.png
 INPUT ../../graph/distribution_poisson.png
+INPUT ../../graph/distribution_video4.png
+INPUT ../../graph/distribution_video4.png
+INPUT ../../graph/distribution_video4.png
+INPUT ../../graph/distribution_video4.png
+INPUT ../../graph/distribution_video4.png
 INPUT ../../graph/forestplot_V0_poisson.png
 INPUT ../../graph/forestplot_V0_poisson.png
 INPUT ../../graph/forestplot_V0_poisson.png

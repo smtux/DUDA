@@ -206,7 +206,7 @@ La Figure 5, compare les quantiles de la distribution des vidéos des 2 modalit�
   	\begin{figure}[H]
   		\centering
   		\includegraphics[width=0.8\textwidth]{../../graph/distribution_video3.png}
-  		\caption{\textbf{Normalité de la distribution du nombre de vidéos selon le genre.}}
+  		\caption{\textbf{Normalité de la distribution du nombre de vidéo.}}
   	\end{figure}
   
 La taille des échantillons étant conséquente nous pouvons appliquer le test de   Kolmogrov-Smirnov (KS) pour vérifier la normalité des données. L'hypothèse de départ (H0) est que la distribution est gaussienne.
@@ -230,16 +230,10 @@ Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Le
 \end{table}
 
 \subsection{Tests statistiques entre le nombre de vidéos visionnées et le nombre de quiz réalisés.}
-Afin de déterminer quel test de corrélation il faut appliquer, il est nécessaire de savoir si les données suivent une distribution normale ou non. La Figure 6, montre que la distribution observée ne suit pas la distribution théorique normale en rouge.
-En l'absence de normalité de distribution, on utilisera un test de Spearman afin de tester la corrélation entre le nombre de vidéos visionnées et le nombre de quiz. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{../../graph/distribution_video4.png}
-	\caption{\textbf{Normalité de la distribution du nombre de vidéos selon le nombre de quiz.}}
-\end{figure}
-
-Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait une forte corrélation (0.8) entre le nombre de vidéos vues et le nombre de quiz réalisés par un étudiant. La corrélation observée est statistiquement significative (p-value=0).
+Afin de déterminer quel test de corrélation il faut appliquer, il est nécessaire de savoir si les données suivent une distribution normale ou non. 
+En l'absence de normalité de distribution du nombre de vidéos, on utilisera un test de Spearman afin de tester la corrélation entre le nombre de vidéos visionnées et le nombre de quiz. 
+Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait une forte corrélation (0.8) entre le nombre de vidéos vues et le nombre de quiz réalisés par un étudiant. 
+La corrélation observée est statistiquement significative (p-value=0).
 \begin{table}[H]
 	\centering
 	\fontsize{12}{20}\selectfont
@@ -254,7 +248,7 @@ Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait 
 	\caption{\textbf{Test de corrélation.}}
 \end{table}
 
-La Figure 7, représente le scatter plot des valeurs observées et le modèle de régression linéaire par la droite tracée en rouge entre le nombre de quiz effectués et le nombre de vidéos visionnées. Cependant, le modèle linéaire théorique extrapolerait un nombre de quiz bien supérieur à 10 au delà de 60 vidéos visionnées alors que la tendance des valeurs observées suggère un plafonnement du nombre de quiz à 10. La fonction linéaire ne serait pas le modèle le plus adapté en comparaison aux données réelles.
+La Figure 6, représente le scatter plot des valeurs observées et le modèle de régression linéaire par la droite tracée en rouge entre le nombre de quiz effectués et le nombre de vidéos visionnées. Cependant, le modèle linéaire théorique extrapolerait un nombre de quiz bien supérieur à 10 au delà de 60 vidéos visionnées alors que la tendance des valeurs observées suggère un plafonnement du nombre de quiz à 10. La fonction linéaire ne serait pas le modèle le plus adapté en comparaison aux données réelles.
 
 \begin{figure}[H]
 	\centering
@@ -480,25 +474,24 @@ que le modèle binomiale est assez imprécis.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_binomiale.png}
-	\captionof{table}{\textbf{Examen selon le genre et HDI - MOOC V1.}}
+	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V1.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_binomiale.png}
-	\captionof{table}{\textbf{Examen selon le genre et HDI - MOOC V2.}}
+	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V2.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_binomiale.png}
-	\captionof{table}{\textbf{Examen selon le genre et HDI - MOOC V3.}}
+	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V3.}}
 \end{figure}
 
 \subsection{Régression de Poisson}
-Nous avons observé plus haut, sur la Figure 4, la forme de la distribution du nombre de vidéos visionnées par apprenant 
-selon leur genre.
-La figure 5 confirmerait que la distribution n'est pas normale. En effet, en observant l'homosedasticité des erreurs par 
+La Figure 10, donne la forme de la distribution du nombre de vidéos visionnées pour l'ensemble des 3 versions du MOOC.
+La figure 11 confirmerait que la distribution n'est pas normale. En effet, en observant l'homosedasticité des erreurs par 
 rapport au modèle théorique, nous nous appercevons que la dispersion (variance) des valeurs observées (en bleu)
 n'est pas uniforme autour des valeurs prédites (en rouge). 
 Il serait donc inapproprié d'appliquer un modèle de régression linéaire comme la binomiale qui nécessite une distribution normale.
@@ -510,8 +503,15 @@ Les résultats de cette régression s'observe sur les Figures 9 à 11.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/distribution_poisson.png}
-	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V1.}}
+	\caption{\textbf{Distribution du nombre de videos.}}
 \end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{../../graph/distribution_video4.png}
+	\caption{\textbf{Distribution du nombre de videos.}}
+\end{figure}
+
 
 	\begin{center}
 		\begin{tabular}{lcccccc}
@@ -545,19 +545,19 @@ Les résultats de cette régression s'observe sur les Figures 9 à 11.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_poisson.png}
-	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V1.}}
+	\caption{\textbf{ odds-ratios du nombre de vidéos selon le genre et HDI - MOOC V1.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_poisson.png}
-	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V2.}}
+	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V2.}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_poisson.png}
-	\caption{\textbf{Nombre de videos selon le genre et HDI - MOOC V3.}}
+	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V3.}}
 \end{figure}
 
 \end{document}
