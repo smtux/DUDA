@@ -123,10 +123,16 @@ Le Tableau 2 montre la proportion de chacun des types d'apprenant par itération
 
 \section{Test d'indépendance du $\chi2$ entre le genre et l'HDI}
 
-La Figure 1 représente les résidus du test d'indépendance fondé sur le chi2 entre le genre et l'HDI, afin de déterminer si il y un lien entre l'Human Development Index et le genre (homme ou femme).
-Les cellules rouges indiquent que le modèle prédit (calculé) a sous-évalué la valeur observée puisque le résidu est positif. Et réciproquement, la couleur bleu indique un résidu négatif, indiquant que le modèle prédiction a sur-évalué la valeur observée. 
+La Figure 1 représente les résidus du test d'indépendance fondé sur le chi2 entre le genre et l'HDI, afin de déterminer si il y un lien entre l'Human 
+Development Index et le genre (homme ou femme).
+Les cellules rouges indiquent que le modèle prédit (calculé) a sous-évalué la valeur observée puisque le résidu est positif. Et réciproquement, 
+la couleur bleu indique un résidu négatif, indiquant que le modèle prédiction a sur-évalué la valeur observée. 
 
-Le Tableau 3 indique le tableau de contingence des fréquences observées entre les variables catégorielles genre et HDI. Chacune comprenant respectivement 2 et 3 modalités. C'est à partir des valeurs de ce tableau que nous pouvons appliquer le test du $\chi^2$ et en déduire si les variables sont statistiquement indépendantes ou non.
+Nous remarquons que les personnes venant des pays très développés (TH) sont surrepresentées et les hommes seraient 2 fois plus nombreux dans cette étude. 
+
+Le Tableau 3 indique le tableau de contingence des fréquences observées entre les variables catégorielles genre et HDI. 
+Chacune comprenant respectivement 2 et 3 modalités. C'est à partir des valeurs de ce tableau que nous pouvons appliquer le test du $\chi^2$ et en déduire 
+si les variables sont statistiquement indépendantes ou non en appliquant le formule du V de Cramer.
 
 \begin{table}[H]
 	\centering
@@ -142,27 +148,29 @@ Le Tableau 3 indique le tableau de contingence des fréquences observées entre 
  			Homme&	883&	432&	4711\\
 		\hline
 	\end{tabular}
-\caption{\textbf{Tableau de contingence du genre et de l'HDI.}}
+\captionof{table}{\textbf{Tableau de contingence du genre et de l'HDI.}}
 \end{table}
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{../../graph/mosaic_contingence.png}
-		\caption{\textbf{Mosaic des résidus du test du $\chi2$}}
+		\captionof{figure}{\textbf{Mosaic des résidus du test du $\chi2$}}
 	\end{figure}
 
-La Figure 2, représente les résidus du modèle observé par rapport au modèle de prédiction. Nous observons que les écarts des résidus sont assez éloignés de la droite droite horizontale faisant référence à des écarts nuls entre les valeurs observées et calculées. Nous pouvons observer que le modèle de prédiction est assez éloigné du modèle observé.
+La Figure 2, représente les résidus du modèle observé par rapport au modèle de prédiction. Nous observons que les écarts des résidus sont assez éloignés 
+de la droite droite horizontale faisant référence à des écarts nuls entre les valeurs observées et calculées. Nous pouvons observer que le modèle de 
+prédiction est assez éloigné des observations.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{../../graph/residus_chi2.png}
-		\caption{\textbf{Résidus du test du $\chi2$}}
+		\captionof{figure}{\textbf{Résidus du test du $\chi2$}}
 	\end{figure}
 
 
 La formule de Cramer ci-dessous, mesure la force de l'association entre deux variables catégorielles.
 \[ V = \sqrt{\frac{\chi^2}{n \cdot (\min(r, c) - 1)}} \]
-V représente le coefficient de Cramer,  r est le nombre de modalités de la première variable et c est le nombre de modalités de la deuxième variable.
+V représente le coefficient de Cramer,  r est le nombre de modalités de la première variable et c'est le nombre de modalités de la deuxième variable.
 Nous allons appliquer cette formule aux variables précédentes indiquant le genre et HDI.
 L'index HDI a 3 modalités (c) et le genre a 2 modalités (r), la valeur V est de 0,14.
 Le tableau 4, résume les valeurs statistiques du test du $\chi^2$ et du V de Cramer.
@@ -173,18 +181,21 @@ Le tableau 4, résume les valeurs statistiques du test du $\chi^2$ et du V de Cr
 	\begin{tabular}{|l|r|}
 		\hline  
 		$\chi2$&	179.24\\
-		p-value&	0\\
+		p-value&	1.17\\
 		V-Cramer&	0.14\\
 		\hline
 	\end{tabular}
 	\caption{\textbf{Valeurs du $\chi2$ et du V de Cramer.}}
 \end{table}
 
-La p-value étant anormalement très proche de zéro et le V de Cramer étant faible, ces valeurs confirmeraient que le modèle de prédiction n'est pas fidèle au modèle observé. En conséquence, en déduire que la dépendance entre le genre et l'index HDI est statistiquement significative (p-value < 5 \%) et que celle-ci est très faible (V proche de 0), serait erronée. Nous pouvons donc envisager qu'il n'y a pas de lien entre le genre et l'index HDI. Cela confirmerait l'hypothèse d'indépendance de départ.
+L'hypothèse de départ sur l'indépendance du genre et de l'HDI serait confirmé puisque la dépendance de ces catégories est statistiquement non significatif 
+(p-value > 11 \%) et la valeur du V de Cramer est très faible (proche de 0). Nous pouvons donc envisager qu'il n'y a pas de lien entre le genre et l'index HDI.
 
 \section{Modèle linéaire, tests non paramétriques}
 \subsection{Tests statistiques entre le nombre de vidéos visionnées et le genre}
-Après l'index HDI, intéressons-nous aux nombres de vidéos vues par rapport au genre. Le figure 3 montre le nombre moyen de visionnage pour les femmes et les hommes. Son observation montrerait qu'en moyenne il y aurait une très faible différence entre les hommes et les femmes sur le nombre de vidéos vues. 
+
+Après l'index HDI, intéressons-nous aux nombres de vidéos vues par rapport au genre. Le figure 3 montre le nombre moyen de visionnage pour les femmes et 
+les hommes. Son observation montrerait qu'en moyenne il y aurait une très faible différence entre les hommes et les femmes sur le nombre de vidéos vues. 
 
 	\begin{figure}[H]
 		\centering
@@ -209,11 +220,16 @@ La Figure 5, compare les quantiles de la distribution des vidéos des 2 modalit�
   		\caption{\textbf{Normalité de la distribution du nombre de vidéo.}}
   	\end{figure}
   
-La taille des échantillons étant conséquente nous pouvons appliquer le test de   Kolmogrov-Smirnov (KS) pour vérifier la normalité des données. L'hypothèse de départ (H0) est que la distribution est gaussienne.
-Le résultat de ce test donnant une valeur de 0 de la p-value, la normalité n'est pas statistiquement significative et conclure qu'il est fortement probable que celle-ci ne l'est pas.   
-En conséquence des différents tests de normalité de la distribution des données du nombre de vidéos pour les 2 modalités homme et femme, il est indiqué de procéder à un test non paramétrique afin de déterminer si il y a une différence sur le nombre de vidéos visonnées entre hommes et femmes. 
+La taille des échantillons étant conséquente nous pouvons appliquer le test de Kolmogrov-Smirnov (KS) pour vérifier la normalité des données. 
+L'hypothèse de départ (H0) est que la distribution est gaussienne.
+Le résultat de ce test donnant une valeur de 0 de la p-value, la normalité n'est pas statistiquement significative et conclure qu'il est fortement probable 
+que celle-ci ne l'est pas.   
+En conséquence des différents tests de normalité de la distribution des données du nombre de vidéos pour les 2 modalités homme et femme, il est indiqué
+de procéder à un test non paramétrique afin de déterminer si il y a une différence sur le nombre de vidéos visonnées entre hommes et femmes. 
 
-Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Les résultats, montreraient que l'hypothèse d'absence de différence entre le nombre de vidéos vues et le genre n'est pas statistiquement significatif (p-value < 5\%). Il existerait donc une différence sur le nombre de vidéos vues entre les hommes et les femmes.
+Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Les résultats des statistiques de test U appliquées au genre, montreraient 
+qu'il y a une différence significative (p = 0\%) entre le nombre de vidéos vues entre les hommes et les femmes sur le nombre de vidéos visionnées. 
+Il semblerait que les femmes consommeraient bien davantage de vidéos en sachant que les hommes sont surreprésentés dans cette étude. 
 
 \begin{table}[H]
 	\centering
@@ -222,17 +238,20 @@ Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Le
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Test Mann-Whitney U}}\\ 
 		\hline 
-		statistic& 8200580.5\\
-		p-value& 0\\
+		statistic (homme)& 8200580.5\\
+		statistic (femme)& 8994696.5\\
+		p-value& 0\%\\
 		\hline
 	\end{tabular}
-\caption{\textbf{Test non paramétriques.}}
+\captionof{table}{\textbf{Test non paramétriques.}}
 \end{table}
 
 \subsection{Tests statistiques entre le nombre de vidéos visionnées et le nombre de quiz réalisés.}
-Afin de déterminer quel test de corrélation il faut appliquer, il est nécessaire de savoir si les données suivent une distribution normale ou non. 
-En l'absence de normalité de distribution du nombre de vidéos, on utilisera un test de Spearman afin de tester la corrélation entre le nombre de vidéos visionnées et le nombre de quiz. 
-Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait une forte corrélation (0.8) entre le nombre de vidéos vues et le nombre de quiz réalisés par un étudiant. 
+Afin de déterminer quel test de corrélation à appliquer, il est nécessaire de savoir si les données suivent une distribution normale ou non. 
+En l'absence de normalité de distribution du nombre de vidéos, on utilisera un test de Spearman afin de tester la corrélation entre le nombre de vidéos 
+visionnées et le nombre de quiz. 
+Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait une forte corrélation (0.8) entre le nombre de vidéos vues et le nombre 
+de quiz réalisés par un étudiant. 
 La corrélation observée est statistiquement significative (p-value=0).
 \begin{table}[H]
 	\centering
@@ -248,7 +267,10 @@ La corrélation observée est statistiquement significative (p-value=0).
 	\caption{\textbf{Test de corrélation.}}
 \end{table}
 
-La Figure 6, représente le scatter plot des valeurs observées et le modèle de régression linéaire par la droite tracée en rouge entre le nombre de quiz effectués et le nombre de vidéos visionnées. Cependant, le modèle linéaire théorique extrapolerait un nombre de quiz bien supérieur à 10 au delà de 60 vidéos visionnées alors que la tendance des valeurs observées suggère un plafonnement du nombre de quiz à 10. La fonction linéaire ne serait pas le modèle le plus adapté en comparaison aux données réelles.
+La Figure 6, représente le scatter plot des valeurs observées et le modèle de régression linéaire par la droite tracée en rouge entre le nombre de quiz
+effectués et le nombre de vidéos visionnées. Cependant, le modèle linéaire théorique extrapolerait un nombre de quiz bien supérieur à 10 au delà de 60 vidéos 
+visionnées alors que la tendance des valeurs observées suggère un plafonnement du nombre de quiz à 10. 
+La fonction linéaire ne serait pas le modèle le plus adapté comparé aux données réelles.
 
 \begin{figure}[H]
 	\centering
@@ -271,7 +293,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			Df Residuals:&	14555&	BIC:&	4.998e+04\\
 		\hline
 	\end{tabular}
-\caption{\textbf{Résultats de modèle de régression linéaire (video vs squiz).}}
+\caption{\textbf{Résultats du modèle de régression linéaire (video vs squiz).}}
 \end{table}
 	
 	
