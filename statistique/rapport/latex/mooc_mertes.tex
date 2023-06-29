@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 	\label{document}
@@ -278,8 +279,10 @@ La fonction linéaire ne serait pas le modèle le plus adapté comparé aux donn
 	\caption{\textbf{valeurs observées (bleu) et modèle de régression linéaire (rouge).}}
 \end{figure}
 
-Le Tableau 7 indique les résultats du modèle de régression linéaire de la variable dépendante quiz et de la variable explicative video. Le $R^2$ à 0.64, indiquerait que les valeurs prédites représenteraient 64\% des valeurs observées. 
-Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiquement un lien sur le nombre de vidéos vues et le nombre de quiz effectués. Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués que de nombre de vidéos visionnées.
+Le Tableau 7 indique les résultats du modèle de régression linéaire de la variable dépendante quiz et de la variable explicative video. Le $R^2$ à 0.64, 
+indiquerait que les valeurs prédites représenteraient 64\% des valeurs observées. 
+Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiquement un lien sur le nombre de vidéos vues et le nombre de quiz effectués. 
+Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués que de nombre de vidéos visionnées.
 
 \begin{table}[H]
 	\centering
@@ -382,8 +385,26 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 		\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
 	\end{table}	
 
+	Cependant, le tableau 11 indique un $R^2$ très faible de 5,7\%. Cela indique clairement que le modèle de régression linéaire utilisé n'est pas
+	du fidèle aux valeurs observées. 
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{@{}ll@{}}
+		\toprule
+		Dep. Variable & video \\
+		\midrule
+		Model         & OLS   \\
+		Method        & Least Squares \\
+		R-squared     & 0.057 \\
+		Adj. R-squared& 0.056 \\
+		F-statistic   & 177.2 \\
+		\bottomrule
+		\end{tabular}
+		\caption{OLS Regression Results}
+	\end{table}
+
 	\subsection{ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}	
-	Dans le Tableau 11, nous testons comment le fait d'être un homme vivant dans un pays moyennement ou très développé (HDI I ou TH) à un effet, par rapport 
+	Dans le Tableau 12, nous testons comment le fait d'être un homme vivant dans un pays moyennement ou très développé (HDI I ou TH) à un effet, par rapport 
 	aux femmes vivant dans les pays pauvres (HDI B), sur le nombre moyen de videos visionnées. 
 	La différence sur le nombre de vidéos vues par les hommes par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). 
 	Le nombre de videos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des pays très développés par rapport aux femmes des pays pauvres, 
@@ -411,7 +432,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (avec interaction).}}
 \end{table}
 	
-	D'après le Tableau 12, nous observons que le niveau de développment d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de videos 
+	D'après le Tableau 13, nous observons que le niveau de développment d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de videos 
 	visionnées quelque soit le sexe. Nous remarquons également, que le nombre de vidéos vues varie statistiquement (p=3\%) faiblement (t=3.5) en fonction  
 	du niveau de développement du pays dans lequel les hommes et les femmes vivent. 
 	
@@ -441,7 +462,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 \subsection{Régression binomiale}
 Nous allons maintenant utiliser une régression binomiale pour calculer les odds-rations afin de déterminer qui, entre les hommes et femmes ainsi qu'entre les
 différents niveaux d'HDI, a davantage de chance de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
-Les résultats de cette régression sont retranscrits dans les tableaux 13 et 14.
+Les résultats de cette régression sont retranscrits dans les tableaux 14 et 15.
 Ainsi, les individus de l'index HDI TH ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) 
 de passer l'examen ou la certification que ceux des autres index avec un indice de confiance à 95 \% (CI = [1.959, 6.424]).
 Cependant, nous remarquons sur les figures 9 à 10, que les intervalles de confiances sur toutes les catégories sont assez importants pour confirmer
@@ -450,49 +471,50 @@ que le modèle binomiale est assez imprécis.
 
 \begin{table}[H]
 	\centering
-	\fontsize{12}{20}\selectfont
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{odds-ratio - CI (Intervalle de Confiance à 95\%)}}\\
-		\hline
-		\multicolumn{1}{|c|}{\textbf{}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
-		\hline
-		\textbf{Coef}&
-		\multicolumn{3}{c|}{Réf (homme - HDI B)}\\
-		\hline
-		Gender[T.femme]&621.667 [69.397, 6844.388]&  2.326 [1.451, 3.721]& 0.641 [0.374, 1.099]\\
-		HDI[T.I]&		0 [0, inf]&	2.383 [1.125, 5.04]& 0.837 [0.367, 1.907]\\ 
-		HDI[T.TH]&		417 [25.872, 8259.698]&	3.549*** [1.959, 6.424]&  0.658 [0.334, 1.297]\\
-		\hline
+	\begin{tabular}{@{}lllll@{}}
+	\toprule
+	Description & [2.5\% & 97.5\%] & OR & p-value \\
+	\midrule
+	Réf homme & & & & \\
+	Gender[T.une femme] & 0.763 & 4.560 & 1.865 & 0.172 \\
+	Réf HDI B & & & & \\
+	New\_HDI[T.TH] & 0.284 & 5.503 & 1.251 & 0.767 \\
+	New\_HDI[T.I] & 0.000 & inf & 0.0 & 0.999 \\
+	\bottomrule
 	\end{tabular}
-	\caption{\textbf{Examen/certification}}
+	\caption{OR - CI MOOC V1}
 \end{table}
-
 
 \begin{table}[H]
 	\centering
-	\fontsize{12}{20}\selectfont
-	\begin{tabular}{|l|l|r|r|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{P-value}}\\
-		\hline
-		\multicolumn{1}{|c|}{\textbf{}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V1}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V2}}&
-		\multicolumn{1}{c|}{\textbf{MOOC V3}}\\
-		\hline
-		\textbf{Coef}&
-		\multicolumn{3}{c|}{Réf (homme - HDI B)}\\
-		\hline
-		Gender[T.femme]&	0.172&	0.826&	0.053\\
-		HDI[T.I]&		0.999&	0.849&	0.813\\
-		HDI[T.TH]&		0.767&	0.004***&	0.311\\
-		\hline
+	\begin{tabular}{@{}lllll@{}}
+	\toprule
+	Description & [2.5\% & 97.5\%] & OR & p-value \\
+	\midrule
+	Réf homme & & & & \\
+	Gender[T.une femme] & 0.851 & 1.224 & 1.021 & 0.826 \\
+	Réf HDI B & & & & \\
+	New\_HDI[T.TH] & 1.149 & 2.113 & 1.558 & 0.004** \\
+	New\_HDI[T.I] & 0.660 & 1.658 & 1.046 & 0.849 \\
+	\bottomrule
 	\end{tabular}
-	\caption{\textbf{Examen/certification.}}
+	\caption{OR - CI MOOC V2}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{@{}lllll@{}}
+	\toprule
+	Description & [2.5\% & 97.5\%] & OR & p-value \\
+	\midrule
+	Réf homme & & & & \\
+	Gender[T.une femme] & 0.660 & 1.003 & 0.813 & 0.053 \\
+	Réf HDI B & & & & \\
+	New\_HDI[T.TH] & 0.589 & 1.184 & 0.835 & 0.311 \\
+	New\_HDI[T.I] & 0.647 & 1.741 & 1.062 & 0.813 \\
+	\bottomrule
+	\end{tabular}
+	\caption{OR - CI MOOC V3}
 \end{table}
 
 \begin{figure}[H]
