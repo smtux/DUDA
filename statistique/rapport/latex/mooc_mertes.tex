@@ -308,20 +308,22 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 		\hline
-		\textbf{Intercept}&	0.5652&	0.014&	39.183&	0***\\
+		\textbf{Réf: Quiz}&	0.5652&	0.014&	39.183&	0***\\
 		\textbf{video}&	0.1575&	0.001&	162.896&	0***\\
 		\hline
 \end{tabular}
 \caption{\textbf{Modèle de régression-vidéo vs quiz.}}
 \end{table}
 
-	\subsection{ANOVA sans intéraction sur le nombre de vidéos selon le genre et l'HDI}
+	\subsection{ANOVA sans intéraction sur le nombre de vidéos vues selon le genre et l'HDI}
 	
-	Dans le Tableau 9, le degrés de liberté (df) pour le genre est de 1 car la variable contient 2 modalités (homme et femme).
+	D'après le Tableau 9, le degrés de liberté (df) pour le genre est de 1 car la variable contient 2 modalités (homme et femme).
 	En effet, une modalité de la variable est utilisée comme référence dans le modèle.
 	\[ df = n[mod] - 1 \]
 	Avec n représentant le nombre de modalités (mod) des variables, Genre et New\_HDI.
-	La variable Genre comporte 2 modalités (homme et femme) donc le df est de 1. La variable New\_HDI comporte 3 modalités (TH, I, B), donc le df est de 2.
+	La variable Genre comporte 2 modalités (homme et femme) donc le df est de 1. La variable HDI comporte 3 modalités (TH, I, B), 
+	donc le df est de 2. Selon le test F de l'ANOVA (F=260), l'indice de développement du pays (HDI) dans lequel les individus vivent aurait
+	davantage de lien sur le nombre moyen de vidéos vues que le fait d'être un homme ou une femme (F=11.43).
 	  
 	\begin{table}[H]
 		\centering
@@ -335,15 +337,15 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 					\multicolumn{1}{c|}{\textbf{F}}&
 					\multicolumn{1}{c|}{\textbf{PR(>F)}}\\
 			\hline
-				\textbf{C(Genre)}&	1&	1554.89&	1554.9&	11.43&	0***\\
-				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.08&	0***\\
+				\textbf{Genre}&	1&	1554.89&	1554.9&	11.43&	0***\\
+				\textbf{HDI}&	2&	70714.83&	35357.41&	260.08&	0***\\
 				\textbf{Residual}&	8861.0&	1204643&	135.95&		&		\\
 			\hline
 		\end{tabular}
 		\caption{\textbf{Table d'ANOVA sans interaction - vidéo vs genre et HDI.}}
 	\end{table}
 
-	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et New\_HDI 
+	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et HDI 
 	avec la variable de réponse video. L'équation linéaire résultante du modèle de régression est de la forme : 
 	\[ Y=\beta0 + \beta1X1 + \beta2X2 + \beta3X3 \]
 	
@@ -351,15 +353,15 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	$Y =$ nombre de vidéos visionnées\\
 	$\beta0 = 7.0011$\\
 	$\beta1 = 0.0959, X1 = Genre(homme)$\\
-	$\beta2 = 4.6774, X2 = New\_HDI(I)$\\
-	$\beta3 = 8.6728, X3 = New\_HDI(TH)$\\
+	$\beta2 = 4.6774, X2 = HDI(I)$\\
+	$\beta3 = 8.6728, X3 = HDI(TH)$\\
 	
 	Le groupe des femmes et l'index B de l'HDI sont utilisés comme référence (intercept) dans le modèle.
 	En effet, le coefficient $\beta0$ correspond au nombre moyen de vidéos visionnées par les femmes dans la catégorie B. 
 	Les catégories TH ($X3$) et I ($X2$), sont comparées à l'index B.
 	Ainsi, la différence sur le nombre moyen de vidéos vues est significativement indépendant (p-value de 72 \%) des hommes ($X1$) par rapport aux femmes 
-	des pays pauvres (HDI B), contrairement aux individus des pays moyennement et très développés (HDI I et TH) par rapport aux femmes des pays pauvres.
-	
+	des pays pauvres (HDI B), contrairement aux individus des pays moyennement ou très développés (HDI I et TH) par rapport aux femmes des pays pauvres.
+	En comparaison des pays pauvres (t=8\%), ce serait les pays très développés (TH) qui aurait le plus d'influence (t=22\%) sur le nombre moyen de vidéos vues. 
 	\begin{table}[H]
 		\centering
 		\fontsize{12}{20}\selectfont
@@ -371,10 +373,10 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 			\hline
-			\textbf{Intercept}&			7.0011&		0.432&	16.211&	0***\\	
-			\textbf{C(Genre)[T.Homme]}&	-0.0959&	0.267&	-0.360&	0.719\\
-			\textbf{C(New\_HDI)[T.I]}&	4.6774&		0.586&	7.979&	0***\\
-			\textbf{C(New\_HDI)[T.TH]}&	8.6728&		0.395&	21.937&	0***\\
+			\textbf{Réf: Genre Femme/HDI B}&			7.0011&		0.432&	16.211&	0***\\	
+			\textbf{Genre Homme}&	-0.0959&	0.267&	-0.360&	0.719\\
+			\textbf{HDI I}&	4.6774&		0.586&	7.979&	0***\\
+			\textbf{HDI TH}&	8.6728&		0.395&	21.937&	0***\\
 			\hline
 		\end{tabular}
 		\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
@@ -385,7 +387,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 	aux femmes vivant dans les pays pauvres (HDI B), sur le nombre moyen de videos visionnées. 
 	La différence sur le nombre de vidéos vues par les hommes par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). 
 	Le nombre de videos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des pays très développés par rapport aux femmes des pays pauvres, 
-	contrairement au niveau developpement des pays (HDI) dont la différence sur le nombre est moins significativement important (p-value de 2.5 \%, t=2.4).
+	contrairement au niveau developpement des pays (HDI) dont la différence sur le nombre est moins significativement important (p-value de 2.5 \%, t=2.24).
 	
 	\begin{table}[H]
 		\centering
@@ -398,12 +400,12 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 			\hline
-				\textbf{Intercept}&			7.3310&			0.968&	7.573&	0***\\
-				\textbf{C(Genre)[T.Homme]}&	-0.4810&		1.046&	-0.460&	0.646\\	
-				\textbf{C(New\_HDI)[T.I]}&	2.7733&			1.236&	2.244&	0.025*\\	
-				\textbf{C(New\_HDI)[T.TH]}&	8.4673&			0.995&	8.506&	0***\\	
-				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.I]}&	2.8032&	1.415&	1.982&	0.048*\\
-				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.TH]}&	0.1933&	1.085&	0.178&	0.859\\
+				\textbf{Réf: Genre Femme/HDI B}&			7.3310&			0.968&	7.573&	0***\\
+				\textbf{Genre Homme}&	-0.4810&		1.046&	-0.460&	0.646\\	
+				\textbf{HDI I}&	2.7733&			1.236&	2.244&	0.025*\\	
+				\textbf{HDI TH}&	8.4673&			0.995&	8.506&	0***\\	
+				\textbf{Genre Homme:HDI I}&	2.8032&	1.415&	1.982&	0.048*\\
+				\textbf{Genre Homme:HDI TH}&	0.1933&	1.085&	0.178&	0.859\\
 			\hline
 		\end{tabular}
 	\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (avec interaction).}}
@@ -425,9 +427,9 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{F}}&
 			\multicolumn{1}{c|}{\textbf{PR(>F)}}\\
 			\hline
-				\textbf{C(Genre)}&	1&	1554.89&	1554.89&	11.44&	0***\\
-				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.22&	0***\\
-				\textbf{C(Genre):C(New\_HDI)}&2&	954.15&	477.076535&	3.511225&0.03*\\
+				\textbf{Genre}&	1&	1554.89&	1554.89&	11.44&	0***\\
+				\textbf{HDI}&	2&	70714.83&	35357.41&	260.22&	0***\\
+				\textbf{Genre:HDI}&2&	954.15&	477.076535&	3.511225&0.03*\\
 				\textbf{Residual}&	8859&	1203688&	135.87&	&	\\
 			\hline
 		\end{tabular}

@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {4.}Modèle linéaire, tests non paramétriques}{5}{}%
 \contentsline {subsection}{\numberline {4.1}Tests statistiques entre le nombre de vidéos visionnées et le genre}{5}{}%
 \contentsline {subsection}{\numberline {4.2}Tests statistiques entre le nombre de vidéos visionnées et le nombre de quiz réalisés.}{7}{}%
-\contentsline {subsection}{\numberline {4.3}ANOVA sans intéraction sur le nombre de vidéos selon le genre et l'HDI}{8}{}%
+\contentsline {subsection}{\numberline {4.3}ANOVA sans intéraction sur le nombre de vidéos vues selon le genre et l'HDI}{8}{}%
 \contentsline {subsection}{\numberline {4.4}ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}{9}{}%
 \contentsline {section}{\numberline {5.}Régression logistique}{10}{}%
 \contentsline {subsection}{\numberline {5.1}Régression binomiale}{10}{}%
