@@ -458,30 +458,9 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 
 \section{Régression logistique}
 \subsection{Régression binomiale}
-Nous allons maintenant utiliser une régression binomiale pour calculer les odds-rations afin de déterminer qui, entre les hommes et les femmes ainsi que des
-différents niveaux d'HDI, a davantage de chance de passer l'examen ou la certification dans les 3 versions du MOOC.
-Les résultats de cette régression sont retranscrits dans les tableaux 14 et 15.
-Ainsi, les individus de l'index HDI TH auraient statistiquement et de manière significative (p-value < 0.5 \%), davantage de chances (odd-ratio = 1.56) 
-de passer l'examen ou la certification que ceux des autres index avec un indice de confiance à 95 \% (CI = [1.959, 6.424]).
-Cependant, nous remarquons sur les figures 9 à 10, que les intervalles de confiances sur toutes les catégories sont assez importants pour confirmer
-que le modèle binomiale est assez imprécis.
-
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{@{}lllll@{}}
-	\toprule
-	Description & OR & CI [2.5\% & 97.5\%] & p-value \\
-	\midrule
-	Réf Gender homme & & & & \\
-	Gender femme & 1.865 & 0.763 & 4.560 & 0.172 \\
-	Réf HDI B & & & & \\
-	HDI TH & 1.251 & 0.284 & 5.503 & 0.767 \\
-	HDI I & 0.0 & 0.000 & inf & 0.999 \\
-	\bottomrule
-	\end{tabular}
-	\caption{OR - CI MOOC V1}
-	\end{table}
+Nous allons maintenant utiliser une régression binomiale afin de déterminer qui, entre les hommes et les femmes ainsi que des
+différents niveaux d'HDI, a davantage de chance de réussite à l'examen ou la certification dans la version 2 du MOOC.
+Le Tableau 14 retranscrit les résultats de cette régression.
 
 	\begin{table}[H]
 		\centering
@@ -499,27 +478,9 @@ que le modèle binomiale est assez imprécis.
 		\caption{OR - CI MOOC V2}
 		\end{table}
 
-		\begin{table}[H]
-			\centering
-			\begin{tabular}{@{}lllll@{}}
-			\toprule
-			Description & OR & CI [2.5\% & 97.5\%] & p-value \\
-			\midrule
-			Réf Gender homme & & & & \\
-			Gender femme & 0.813 & 0.660 & 1.003 & 0.053 \\
-			Réf HDI B & & & & \\
-			HDI TH & 0.835 & 0.589 & 1.184 & 0.311 \\
-			HDI I & 1.062 & 0.647 & 1.741 & 0.813 \\
-			\bottomrule
-			\end{tabular}
-			\caption{OR - CI MOOC V3}
-			\end{table}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_binomiale.png}
-	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V1.}}
-\end{figure}
+La Figure 7 nous indique que se sont les apprenants des pays très développés qui regardent significativement (p=0.4\%) davantage de vidéos (OR=1.6) que les apprenants des pays pauvres.  Et nous sommes confiants à 95\% que l'OR ce situe dans l'intervalle [0.851, 1.224].   
+Il y aurait pratiquement aucune différence entre les hommes et les femmes sur le nombre de vidéos visionnées mais ce résultat n'est pas significatif.
 
 \begin{figure}[H]
 	\centering
@@ -527,11 +488,7 @@ que le modèle binomiale est assez imprécis.
 	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V2.}}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_binomiale.png}
-	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V3.}}
-\end{figure}
+
 
 \subsection{Régression de Poisson}
 La Figure 10, donne la forme de la distribution du nombre de vidéos visionnées pour l'ensemble des 3 versions du MOOC.
@@ -557,51 +514,12 @@ Les résultats de cette régression s'observe sur les Figures 9 à 11.
 \end{figure}
 
 
-	\begin{center}
-		\begin{tabular}{lcccccc}
-		\hline
-		Variable & Coeff. & Std. Err. & z & P > |z| & [0.025 & 0.975] \\
-		\hline
-		\multicolumn{7}{c}{Version 1} \\
-		\hline
-		Intercept & 1.7510 & 0.016 & 108.332 & 0.000 & 1.719 & 1.783 \\
-		C(Gender)[T.une femme] & 0.0174 & 0.008 & 2.141 & 0.032 & 0.001 & 0.033 \\
-		C(New\_HDI)[T.I] & 0.5791 & 0.022 & 25.947 & 0.000 & 0.535 & 0.623 \\
-		C(New\_HDI)[T.TH] & 0.9467 & 0.017 & 56.696 & 0.000 & 0.914 & 0.979 \\
-		\hline
-		\multicolumn{7}{c}{Version 2} \\
-		\hline
-		Intercept & 1.9673 & 0.025 & 77.827 & 0.000 & 1.918 & 2.017 \\
-		C(Gender)[T.une femme] & 0.0381 & 0.012 & 3.171 & 0.002 & 0.015 & 0.062 \\
-		C(New\_HDI)[T.I] & 0.3552 & 0.037 & 9.716 & 0.000 & 0.284 & 0.427 \\
-		C(New\_HDI)[T.TH] & 0.7163 & 0.026 & 27.515 & 0.000 & 0.665 & 0.767 \\
-		\hline
-		\multicolumn{7}{c}{Version 3} \\
-		\hline
-		Intercept & 2.1441 & 0.029 & 75.004 & 0.000 & 2.088 & 2.200 \\
-		C(Gender)[T.une femme] & -0.0484 & 0.013 & -3.588 & 0.000 & -0.075 & -0.022 \\
-		C(New\_HDI)[T.I] & 0.4085 & 0.039 & 10.518 & 0.000 & 0.332 & 0.485 \\
-		C(New\_HDI)[T.TH] & 0.6808 & 0.029 & 23.080 & 0.000 & 0.623 & 0.739 \\
-		\hline
-		\end{tabular}
-		\captionof{table}{\textbf{Coefficients estimés de la régression logistique}}
-		\end{center}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_V0_poisson.png}
-	\caption{\textbf{ odds-ratios du nombre de vidéos selon le genre et HDI - MOOC V1.}}
-\end{figure}
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_poisson.png}
 	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V2.}}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_poisson.png}
-	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V3.}}
-\end{figure}
+
 
 \end{document}
