@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  30 JUN 2023 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  30 JUN 2023 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,40 +506,45 @@ File: ../../graph/distribution_poisson.png Graphic file (type png)
 Package pdftex.def Info: ../../graph/distribution_poisson.png  used on input li
 ne 506.
 (pdftex.def)             Requested size: 483.69687pt x 290.21953pt.
-<../../graph/distribution_video4.png, id=66, 433.62pt x 289.08pt>
-File: ../../graph/distribution_video4.png Graphic file (type png)
-<use ../../graph/distribution_video4.png>
-Package pdftex.def Info: ../../graph/distribution_video4.png  used on input lin
-e 512.
-(pdftex.def)             Requested size: 386.95897pt x 257.98615pt.
-<../../graph/forestplot_V1_poisson.png, id=67, 606.265pt x 262.9825pt>
+<../../graph/forestplot_V1_poisson.png, id=66, 606.265pt x 262.9825pt>
 File: ../../graph/forestplot_V1_poisson.png Graphic file (type png)
 <use ../../graph/forestplot_V1_poisson.png>
 Package pdftex.def Info: ../../graph/forestplot_V1_poisson.png  used on input l
-ine 519.
+ine 513.
 (pdftex.def)             Requested size: 483.69687pt x 209.81645pt.
- [12 <../../graph/distribution_poisson.png> <../../graph/distribution_video4.pn
-g>] [13 <../../graph/forestplot_V1_poisson.png>] (./mooc_mertes.aux) ) 
+<../../graph/graphs_poisson.png, id=67, 867.24pt x 867.24pt>
+File: ../../graph/graphs_poisson.png Graphic file (type png)
+<use ../../graph/graphs_poisson.png>
+Package pdftex.def Info: ../../graph/graphs_poisson.png  used on input line 519
+.
+(pdftex.def)             Requested size: 580.43475pt x 580.46555pt.
+
+Overfull \hbox (96.73788pt too wide) in paragraph at lines 519--520
+ [][] 
+ []
+
+[12 <../../graph/distribution_poisson.png> <../../graph/forestplot_V1_poisson.p
+ng>] [13 <../../graph/graphs_poisson.png>] (./mooc_mertes.aux) ) 
 Here is how much of TeX's memory you used:
  8132 strings out of 477981
- 134631 string characters out of 5838659
+ 134596 string characters out of 5838659
  1865330 words of memory out of 5000000
  28149 multiletter control sequences out of 15000+600000
  564313 words of font info for 85 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  87i,10n,90p,544b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/sha
-re/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on mooc_mertes.pdf (14 pages, 218385 bytes).
+{/usr/share/tex
+live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on mooc_mertes.pdf (14 pages, 249246 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

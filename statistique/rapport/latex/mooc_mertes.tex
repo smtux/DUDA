@@ -349,7 +349,7 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 	\end{table}
 
 	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et HDI 
-	avec la variable de réponse video. L'équation linéaire résultante du modèle de régression est de la forme : 
+	avec la variable de réponse vidéo. L'équation linéaire résultante du modèle de régression est de la forme : 
 	\[ Y=\beta0 + \beta1X1 + \beta2X2 + \beta3X3 \]
 	
 	Avec :\\
@@ -492,8 +492,8 @@ Il y aurait pratiquement aucune différence entre les hommes et les femmes sur l
 
 \subsection{Régression de Poisson}
 La Figure 10, donne la forme de la distribution du nombre de vidéos visionnées pour l'ensemble des 3 versions du MOOC.
-La figure 11 confirmerait que la distribution n'est pas normale. En effet, en observant l'homosedasticité des erreurs par 
-rapport au modèle théorique, nous nous appercevons que la dispersion (variance) des valeurs observées (en bleu)
+La figure 11 confirmerait que la distribution n'est pas normale. En effet, en observant homoscédasticité des erreurs par 
+rapport au modèle théorique, nous nous apercevons que la dispersion (variance) des valeurs observées (en bleu)
 n'est pas uniforme autour des valeurs prédites (en rouge). 
 Il serait donc inapproprié d'appliquer un modèle de régression linéaire comme la binomiale qui nécessite une distribution normale.
 Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
@@ -507,12 +507,6 @@ Les résultats de cette régression s'observe sur les Figures 9 à 11.
 	\caption{\textbf{Distribution du nombre de videos.}}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{../../graph/distribution_video4.png}
-	\caption{\textbf{Distribution du nombre de videos.}}
-\end{figure}
-
 
 \begin{figure}[H]
 	\centering
@@ -520,6 +514,10 @@ Les résultats de cette régression s'observe sur les Figures 9 à 11.
 	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V2.}}
 \end{figure}
 
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.2\textwidth]{../../graph/graphs_poisson.png}
+	\caption{\textbf{Homoscédasticité - normalité MOOC V2.}}
+\end{figure}
 
 \end{document}
