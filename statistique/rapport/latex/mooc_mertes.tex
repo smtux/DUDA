@@ -229,7 +229,7 @@ En conséquence des différents tests de normalité de la distribution des donn�
 de procéder à un test non paramétrique afin de déterminer si il y a une différence sur le nombre de vidéos visonnées entre hommes et femmes. 
 
 Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Les résultats des statistiques de test U appliquées au genre, montreraient 
-qu'il y a une différence significative (p = 0\%) entre le nombre de vidéos vues entre les hommes et les femmes sur le nombre de vidéos visionnées. 
+qu'il y a une différence significative (p = 0\%) entre le nombre de vidéos vues entre les hommes et les femmes. 
 Il semblerait que les femmes consommeraient bien davantage de vidéos en sachant que les hommes sont surreprésentés dans cette étude. 
 
 \begin{table}[H]
@@ -359,12 +359,11 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 	$\beta2 = 4.6774, X2 = HDI(I)$\\
 	$\beta3 = 8.6728, X3 = HDI(TH)$\\
 	
-	Le groupe des femmes et l'index B de l'HDI sont utilisés comme référence (intercept) dans le modèle.
+	Le groupe des femmes et l'index B de l'HDI sont utilisés comme référence dans le modèle.
 	En effet, le coefficient $\beta0$ correspond au nombre moyen de vidéos visionnées par les femmes dans la catégorie B. 
 	Les catégories TH ($X3$) et I ($X2$), sont comparées à l'index B.
-	Ainsi, la différence sur le nombre moyen de vidéos vues est significativement indépendant (p-value de 72 \%) des hommes ($X1$) par rapport aux femmes 
-	des pays pauvres (HDI B), contrairement aux individus des pays moyennement ou très développés (HDI I et TH) par rapport aux femmes des pays pauvres.
-	En comparaison des pays pauvres (t=8\%), ce serait les pays très développés (TH) qui aurait le plus d'influence (t=22\%) sur le nombre moyen de vidéos vues. 
+	Ainsi, la différence sur le nombre moyen de vidéos vues est indépendant (p-value de 72 \%) des hommes ($X1$) par rapport aux femmes, contrairement aux apprenants des pays moyennement ou très développés (HDI I et TH) par rapport aux pays pauvres.
+	En comparaison des apprenants des pays pauvres (t=8\%), ce serait les apprenants des pays très développés (TH) qui aurait significativement le plus d'influence (t=22\%) sur le nombre moyen de vidéos vues. 
 	\begin{table}[H]
 		\centering
 		\fontsize{12}{20}\selectfont
@@ -382,7 +381,7 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 			\textbf{HDI TH}&	8.6728&		0.395&	21.937&	0***\\
 			\hline
 		\end{tabular}
-		\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
+		\caption{{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
 	\end{table}	
 
 	Cependant, le tableau 11 indique un $R^2$ très faible de 5,7\%. Cela indique clairement que le modèle de régression linéaire utilisé n'est pas
@@ -400,15 +399,14 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 		F-statistic   & 177.2 \\
 		\bottomrule
 		\end{tabular}
-		\caption{OLS Regression Results}
+		\caption{Résultats de la régression OLS}
 	\end{table}
 
 	\subsection{ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}	
 	Dans le Tableau 12, nous testons comment le fait d'être un homme vivant dans un pays moyennement ou très développé (HDI I ou TH) à un effet, par rapport 
 	aux femmes vivant dans les pays pauvres (HDI B), sur le nombre moyen de videos visionnées. 
-	La différence sur le nombre de vidéos vues par les hommes par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). 
-	Le nombre de videos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des pays très développés par rapport aux femmes des pays pauvres, 
-	contrairement au niveau developpement des pays (HDI) dont la différence sur le nombre est moins significativement important (p-value de 2.5 \%, t=2.24).
+	Le nombre de vidéos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des apprenants des pays très développés par rapport aux apprenants des pays pauvres.  
+	Cependant, le niveau de développement des pays développés à significativement une influence (p=4.8\%) sur le nombre de videos vues par les hommes par rapport aux femmes.  
 	
 	\begin{table}[H]
 		\centering
@@ -432,7 +430,7 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 	\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (avec interaction).}}
 \end{table}
 	
-	D'après le Tableau 13, nous observons que le niveau de développment d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de videos 
+	D'après le Tableau 13, nous observons que le niveau de développement d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de vidéos 
 	visionnées quelque soit le sexe. Nous remarquons également, que le nombre de vidéos vues varie statistiquement (p=3\%) faiblement (t=3.5) en fonction  
 	du niveau de développement du pays dans lequel les hommes et les femmes vivent. 
 	
@@ -460,10 +458,10 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 
 \section{Régression logistique}
 \subsection{Régression binomiale}
-Nous allons maintenant utiliser une régression binomiale pour calculer les odds-rations afin de déterminer qui, entre les hommes et femmes ainsi qu'entre les
-différents niveaux d'HDI, a davantage de chance de passer l'examen et/ou l'obtention de la certification dans les 3 versions du MOOC.
+Nous allons maintenant utiliser une régression binomiale pour calculer les odds-rations afin de déterminer qui, entre les hommes et les femmes ainsi que des
+différents niveaux d'HDI, a davantage de chance de passer l'examen ou la certification dans les 3 versions du MOOC.
 Les résultats de cette régression sont retranscrits dans les tableaux 14 et 15.
-Ainsi, les individus de l'index HDI TH ont statistiquement et de manière très significative (p-value < 0.5 \%), 3.5 fois plus de chances (odd-ratio = 3.55) 
+Ainsi, les individus de l'index HDI TH auraient statistiquement et de manière significative (p-value < 0.5 \%), davantage de chances (odd-ratio = 1.56) 
 de passer l'examen ou la certification que ceux des autres index avec un indice de confiance à 95 \% (CI = [1.959, 6.424]).
 Cependant, nous remarquons sur les figures 9 à 10, que les intervalles de confiances sur toutes les catégories sont assez importants pour confirmer
 que le modèle binomiale est assez imprécis.
@@ -473,49 +471,49 @@ que le modèle binomiale est assez imprécis.
 	\centering
 	\begin{tabular}{@{}lllll@{}}
 	\toprule
-	Description & [2.5\% & 97.5\%] & OR & p-value \\
+	Description & OR & CI [2.5\% & 97.5\%] & p-value \\
 	\midrule
-	Réf homme & & & & \\
-	Gender[T.une femme] & 0.763 & 4.560 & 1.865 & 0.172 \\
+	Réf Gender homme & & & & \\
+	Gender femme & 1.865 & 0.763 & 4.560 & 0.172 \\
 	Réf HDI B & & & & \\
-	New\_HDI[T.TH] & 0.284 & 5.503 & 1.251 & 0.767 \\
-	New\_HDI[T.I] & 0.000 & inf & 0.0 & 0.999 \\
+	HDI TH & 1.251 & 0.284 & 5.503 & 0.767 \\
+	HDI I & 0.0 & 0.000 & inf & 0.999 \\
 	\bottomrule
 	\end{tabular}
 	\caption{OR - CI MOOC V1}
-\end{table}
+	\end{table}
 
-\begin{table}[H]
-	\centering
-	\begin{tabular}{@{}lllll@{}}
-	\toprule
-	Description & [2.5\% & 97.5\%] & OR & p-value \\
-	\midrule
-	Réf homme & & & & \\
-	Gender[T.une femme] & 0.851 & 1.224 & 1.021 & 0.826 \\
-	Réf HDI B & & & & \\
-	New\_HDI[T.TH] & 1.149 & 2.113 & 1.558 & 0.004** \\
-	New\_HDI[T.I] & 0.660 & 1.658 & 1.046 & 0.849 \\
-	\bottomrule
-	\end{tabular}
-	\caption{OR - CI MOOC V2}
-\end{table}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{@{}lllll@{}}
+		\toprule
+		Description & OR & CI [2.5\% & 97.5\%] & p-value \\
+		\midrule
+		Réf Gender homme & & & & \\
+		Gender femme & 1.021 & 0.851 & 1.224 & 0.826 \\
+		Réf HDI B & & & & \\
+		HDI TH & 1.558 & 1.149 & 2.113 & 0.004** \\
+		HDI I & 1.046 & 0.660 & 1.658 & 0.849 \\
+		\bottomrule
+		\end{tabular}
+		\caption{OR - CI MOOC V2}
+		\end{table}
 
-\begin{table}[H]
-	\centering
-	\begin{tabular}{@{}lllll@{}}
-	\toprule
-	Description & [2.5\% & 97.5\%] & OR & p-value \\
-	\midrule
-	Réf homme & & & & \\
-	Gender[T.une femme] & 0.660 & 1.003 & 0.813 & 0.053 \\
-	Réf HDI B & & & & \\
-	New\_HDI[T.TH] & 0.589 & 1.184 & 0.835 & 0.311 \\
-	New\_HDI[T.I] & 0.647 & 1.741 & 1.062 & 0.813 \\
-	\bottomrule
-	\end{tabular}
-	\caption{OR - CI MOOC V3}
-\end{table}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{@{}lllll@{}}
+			\toprule
+			Description & OR & CI [2.5\% & 97.5\%] & p-value \\
+			\midrule
+			Réf Gender homme & & & & \\
+			Gender femme & 0.813 & 0.660 & 1.003 & 0.053 \\
+			Réf HDI B & & & & \\
+			HDI TH & 0.835 & 0.589 & 1.184 & 0.311 \\
+			HDI I & 1.062 & 0.647 & 1.741 & 0.813 \\
+			\bottomrule
+			\end{tabular}
+			\caption{OR - CI MOOC V3}
+			\end{table}
 
 \begin{figure}[H]
 	\centering
