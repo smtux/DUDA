@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  30 JUN 2023 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  1 JUL 2023 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,61 +493,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--361
  []
 
 [9] [10]
-<../../graph/forestplot_V1_binomiale.png, id=60, 592.2125pt x 262.9825pt>
-File: ../../graph/forestplot_V1_binomiale.png Graphic file (type png)
-<use ../../graph/forestplot_V1_binomiale.png>
-Package pdftex.def Info: ../../graph/forestplot_V1_binomiale.png  used on input
- line 487.
+<../../graph/forestplot_V2_binomiale.png, id=60, 592.2125pt x 262.9825pt>
+File: ../../graph/forestplot_V2_binomiale.png Graphic file (type png)
+<use ../../graph/forestplot_V2_binomiale.png>
+Package pdftex.def Info: ../../graph/forestplot_V2_binomiale.png  used on input
+ line 486.
 (pdftex.def)             Requested size: 483.69687pt x 214.80034pt.
- [11 <../../graph/forestplot_V1_binomiale.png>]
+ [11 <../../graph/forestplot_V2_binomiale.png>]
 <../../graph/distribution_poisson.png, id=65, 722.7pt x 433.62pt>
 File: ../../graph/distribution_poisson.png Graphic file (type png)
 <use ../../graph/distribution_poisson.png>
 Package pdftex.def Info: ../../graph/distribution_poisson.png  used on input li
-ne 506.
+ne 504.
 (pdftex.def)             Requested size: 483.69687pt x 290.21953pt.
-<../../graph/forestplot_V1_poisson.png, id=66, 606.265pt x 262.9825pt>
-File: ../../graph/forestplot_V1_poisson.png Graphic file (type png)
-<use ../../graph/forestplot_V1_poisson.png>
-Package pdftex.def Info: ../../graph/forestplot_V1_poisson.png  used on input l
-ine 513.
+<../../graph/forestplot_V2_poisson.png, id=66, 606.265pt x 262.9825pt>
+File: ../../graph/forestplot_V2_poisson.png Graphic file (type png)
+<use ../../graph/forestplot_V2_poisson.png>
+Package pdftex.def Info: ../../graph/forestplot_V2_poisson.png  used on input l
+ine 512.
 (pdftex.def)             Requested size: 483.69687pt x 209.81645pt.
-<../../graph/graphs_poisson.png, id=67, 867.24pt x 867.24pt>
+ [12 <../../graph/distribution_poisson.png>]
+<../../graph/graphs_poisson.png, id=72, 867.24pt x 867.24pt>
 File: ../../graph/graphs_poisson.png Graphic file (type png)
 <use ../../graph/graphs_poisson.png>
-Package pdftex.def Info: ../../graph/graphs_poisson.png  used on input line 519
+Package pdftex.def Info: ../../graph/graphs_poisson.png  used on input line 524
 .
 (pdftex.def)             Requested size: 580.43475pt x 580.46555pt.
 
-Overfull \hbox (96.73788pt too wide) in paragraph at lines 519--520
+Overfull \hbox (96.73788pt too wide) in paragraph at lines 524--525
  [][] 
  []
 
-[12 <../../graph/distribution_poisson.png> <../../graph/forestplot_V1_poisson.p
-ng>] [13 <../../graph/graphs_poisson.png>] (./mooc_mertes.aux) ) 
+[13 <../../graph/forestplot_V2_poisson.png>] [14 <../../graph/graphs_poisson.pn
+g>] (./mooc_mertes.aux) ) 
 Here is how much of TeX's memory you used:
- 8132 strings out of 477981
- 134596 string characters out of 5838659
- 1865330 words of memory out of 5000000
- 28149 multiletter control sequences out of 15000+600000
- 564313 words of font info for 85 fonts, out of 8000000 for 9000
+ 8141 strings out of 477981
+ 134714 string characters out of 5838659
+ 1864330 words of memory out of 5000000
+ 28156 multiletter control sequences out of 15000+600000
+ 567035 words of font info for 87 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 87i,10n,90p,544b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/tex
-live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on mooc_mertes.pdf (14 pages, 249246 bytes).
+ 87i,10n,90p,782b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+>
+Output written on mooc_mertes.pdf (15 pages, 250731 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

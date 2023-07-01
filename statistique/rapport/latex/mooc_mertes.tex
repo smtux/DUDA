@@ -403,10 +403,9 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 	\end{table}
 
 	\subsection{ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}	
-	Dans le Tableau 12, nous testons comment le fait d'être un homme vivant dans un pays moyennement ou très développé (HDI I ou TH) à un effet, par rapport 
-	aux femmes vivant dans les pays pauvres (HDI B), sur le nombre moyen de videos visionnées. 
+	Dans le Tableau 12, nous testons comment les pays développés (I) ou très développeé (TH ) ont un effet sur le nombre de vidéos visionnées par les hommes par rapport aux femmes et aux pays pauvres (HDI B).   
 	Le nombre de vidéos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des apprenants des pays très développés par rapport aux apprenants des pays pauvres.  
-	Cependant, le niveau de développement des pays développés à significativement une influence (p=4.8\%) sur le nombre de vidéos vues par les hommes par rapport aux femmes.  
+	Cependant, le niveau de développement des pays très développés à significativement un effet (p=4.8\%) sur le nombre de vidéos vues par les hommes par rapport aux femmes.  
 	
 	\begin{table}[H]
 		\centering
@@ -432,7 +431,7 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 	
 	D'après le Tableau 13, nous observons que le niveau de développement d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de vidéos 
 	visionnées quelque soit le sexe. Nous remarquons également, que le nombre de vidéos vues varie statistiquement (p=3\%) faiblement (t=3.5) en fonction  
-	du niveau de développement du pays dans lequel les hommes et les femmes vivent. 
+	du niveau de développement du pays dans lequel les hommes et les femmes vivent. Mais le genre n'a significativement (p = 0) que très faiblement (F=11,44) un impact sur le nombre de vidéos visionnées.
 	
 	\begin{table}[H]
 		\centering
@@ -459,7 +458,7 @@ Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués
 \section{Régression logistique}
 \subsection{Régression binomiale}
 Nous allons maintenant utiliser une régression binomiale afin de déterminer qui, entre les hommes et les femmes ainsi que des
-différents niveaux d'HDI, a davantage de chance de réussite à l'examen ou la certification dans la version 2 du MOOC.
+différents niveaux d'HDI, a davantage de chance de réussite à l'examen ou à la certification dans la version 2 du MOOC.
 Le Tableau 14 retranscrit les résultats de cette régression.
 
 	\begin{table}[H]
@@ -479,40 +478,46 @@ Le Tableau 14 retranscrit les résultats de cette régression.
 		\end{table}
 
 
-La Figure 7 nous indique que se sont les apprenants des pays très développés qui regardent significativement (p=0.4\%) davantage de vidéos (OR=1.6) que les apprenants des pays pauvres.  Et nous sommes confiants à 95\% que l'OR ce situe dans l'intervalle [0.851, 1.224].   
-Il y aurait pratiquement aucune différence entre les hommes et les femmes sur le nombre de vidéos visionnées mais ce résultat n'est pas significatif.
+La Figure 7 nous indique que se sont les apprenants des pays très développés qui regardent significativement (p=0.4\%) davantage de vidéos (OR=1.6) que les apprenants des pays pauvres.  Et nous sommes confiants à 95\% que l'OR (odd-ratio) se situe dans l'intervalle [0.851, 1.224].   
+Il y aurait pratiquement aucune différence entre les hommes et les femmes sur le nombre de vidéos visionnées mais ce résultat n'est pas significatif (p > 82.6\%).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_binomiale.png}
-	\captionof{figure}{\textbf{Examen selon le genre et HDI - MOOC V2.}}
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_binomiale.png}
+	\captionof{figure}{\textbf{Odds-Ratios -  examen $~\sim$ genre et HDI - MOOC V2.}}
 \end{figure}
 
+Le risk ratio (RR) représente le risque relatif d'avoir un effet plus ou moins important d'un groupe par rapport à un autre sur un événement. Alors que l'odd-ratio (OR) mesure le rapport de chance d'avoir un effet sur un groupe par rapport à un autre sur un événement. Ces ratios convergent lorsque l'événement se produit rarement.
 
 
 \subsection{Régression de Poisson}
 La Figure 10, donne la forme de la distribution du nombre de vidéos visionnées pour l'ensemble des 3 versions du MOOC.
-La figure 11 confirmerait que la distribution n'est pas normale. En effet, en observant homoscédasticité des erreurs par 
+La figure 11 confirmerait que la distribution n'est pas normale. En effet, en observant l'homoscédasticité des erreurs par 
 rapport au modèle théorique, nous nous apercevons que la dispersion (variance) des valeurs observées (en bleu)
 n'est pas uniforme autour des valeurs prédites (en rouge). 
 Il serait donc inapproprié d'appliquer un modèle de régression linéaire comme la binomiale qui nécessite une distribution normale.
 Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
-genre pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être, comme celle que l'on
-observe sur la Figure 8. Nous observons sur cette figure les distribution du nombre de videos visionnées pour chaque version du MOOC.
-Les résultats de cette régression s'observe sur les Figures 9 à 11.
+genre et par HDI pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être, comme celle que l'on observe sur la Figure 8. Nous observons sur cette figure la distribution du nombre de vidéos visionnées pour la version 2 du MOOC.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../../graph/distribution_poisson.png}
-	\caption{\textbf{Distribution du nombre de videos.}}
+	\caption{\textbf{Distribution du nombre de videos - MOOC V2.}}
 \end{figure}
 
+En observant la Figure 9,  nous sommes confiants à 95\% (CI=[1.945, 2.154]) que les apprenants des pays très développés ont significativement (p=0) visionnés bien davantage de vidéos (OR > 2) que les pays pauvres. Elle confirmerait également qu'il n'y a pratiquement aucune différence (OR $\sim 1$) entre les hommes et les femmes sur le nombre de vidéos visionnées.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{../../graph/forestplot_V1_poisson.png}
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_poisson.png}
 	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V2.}}
 \end{figure}
+
+La Figure 10, représente 4 graphiques qui montrent la fiabilité du modèle (graphe 1), la normalité de la distribution du nombre de vidéos (graphe 2), la qualité d'ajustement du modèle (homoscédasticité, graphe 3),    
+ainsi que les observations qui auraient un impact sur les prédictions du modèle (graphe 4).
+Nous remarquons que la distribution ne tendrait pas vers une distribution normale du nombre de vidéos puisque les valeurs des quantiles observés sont éloignées des valeurs des quantiles du modèle théorique. Le graphe 1 confirmerait que le modèle ne serait pas fiable puisque les résidus des valeurs observées (en bleu) ne sont pas homogènes le long de l'axe horizontale des ordonnées nulles avec des écarts importants par rapport aux valeurs prédites. Le graphe 3, confirmerait la non homoscédasticité, par les grandes variations des résidus, observée sur le graphe 1 avec une mauvaise qualité d'ajustement du modèle. Il est donc impossible de faire des analyses fiables par rapport aux résultats données par la régression de Poisson.
+
+
 
 \begin{figure}[H]
 	\centering
