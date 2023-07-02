@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 	\label{document}
@@ -123,10 +124,16 @@ Le Tableau 2 montre la proportion de chacun des types d'apprenant par itération
 
 \section{Test d'indépendance du $\chi2$ entre le genre et l'HDI}
 
-La Figure 1 représente les résidus du test d'indépendance fondé sur le chi2 entre le genre et l'HDI, afin de déterminer si il y un lien entre l'Human Development Index et le genre (homme ou femme).
-Les cellules rouges indiquent que le modèle prédit (calculé) a sous-évalué la valeur observée puisque le résidu est positif. Et réciproquement, la couleur bleu indique un résidu négatif, indiquant que le modèle prédiction a sur-évalué la valeur observée. 
+La Figure 1 représente les résidus du test d'indépendance fondé sur le chi2 entre le genre et l'HDI, afin de déterminer si il y un lien entre l'Human 
+Development Index et le genre (homme ou femme).
+Les cellules rouges indiquent que le modèle prédit (calculé) a sous-évalué la valeur observée puisque le résidu est positif. Et réciproquement, 
+la couleur bleu indique un résidu négatif, indiquant que le modèle prédiction a sur-évalué la valeur observée. 
 
-Le Tableau 3 indique le tableau de contingence des fréquences observées entre les variables catégorielles genre et HDI. Chacune comprenant respectivement 2 et 3 modalités. C'est à partir des valeurs de ce tableau que nous pouvons appliquer le test du $\chi^2$ et en déduire si les variables sont statistiquement indépendantes ou non.
+Nous remarquons que les personnes venant des pays très développés (TH) sont surrepresentées et les hommes seraient 2 fois plus nombreux dans cette étude. 
+
+Le Tableau 3 indique le tableau de contingence des fréquences observées entre les variables catégorielles genre et HDI. 
+Chacune comprenant respectivement 2 et 3 modalités. C'est à partir des valeurs de ce tableau que nous pouvons appliquer le test du $\chi^2$ et en déduire 
+si les variables sont statistiquement indépendantes ou non en appliquant le formule du V de Cramer.
 
 \begin{table}[H]
 	\centering
@@ -142,27 +149,29 @@ Le Tableau 3 indique le tableau de contingence des fréquences observées entre 
  			Homme&	883&	432&	4711\\
 		\hline
 	\end{tabular}
-\caption{\textbf{Tableau de contingence du genre et de l'HDI.}}
+\captionof{table}{\textbf{Tableau de contingence du genre et de l'HDI.}}
 \end{table}
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{../../graph/mosaic_contingence.png}
-		\caption{\textbf{Mosaic des résidus du test du $\chi2$}}
+		\captionof{figure}{\textbf{Mosaic des résidus du test du $\chi2$}}
 	\end{figure}
 
-La Figure 2, représente les résidus du modèle observé par rapport au modèle de prédiction. Nous observons que les écarts des résidus sont assez éloignés de la droite droite horizontale faisant référence à des écarts nuls entre les valeurs observées et calculées. Nous pouvons observer que le modèle de prédiction est assez éloigné du modèle observé.
+La Figure 2, représente les résidus du modèle observé par rapport au modèle de prédiction. Nous observons que les écarts des résidus sont assez éloignés 
+de la droite droite horizontale faisant référence à des écarts nuls entre les valeurs observées et calculées. Nous pouvons observer que le modèle de 
+prédiction est assez éloigné des observations.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{../../graph/residus_chi2.png}
-		\caption{\textbf{Résidus du test du $\chi2$}}
+		\captionof{figure}{\textbf{Résidus du test du $\chi2$}}
 	\end{figure}
 
 
 La formule de Cramer ci-dessous, mesure la force de l'association entre deux variables catégorielles.
 \[ V = \sqrt{\frac{\chi^2}{n \cdot (\min(r, c) - 1)}} \]
-V représente le coefficient de Cramer,  r est le nombre de modalités de la première variable et c est le nombre de modalités de la deuxième variable.
+V représente le coefficient de Cramer,  r est le nombre de modalités de la première variable et c'est le nombre de modalités de la deuxième variable.
 Nous allons appliquer cette formule aux variables précédentes indiquant le genre et HDI.
 L'index HDI a 3 modalités (c) et le genre a 2 modalités (r), la valeur V est de 0,14.
 Le tableau 4, résume les valeurs statistiques du test du $\chi^2$ et du V de Cramer.
@@ -173,18 +182,21 @@ Le tableau 4, résume les valeurs statistiques du test du $\chi^2$ et du V de Cr
 	\begin{tabular}{|l|r|}
 		\hline  
 		$\chi2$&	179.24\\
-		p-value&	0\\
+		p-value&	1.17\\
 		V-Cramer&	0.14\\
 		\hline
 	\end{tabular}
 	\caption{\textbf{Valeurs du $\chi2$ et du V de Cramer.}}
 \end{table}
 
-La p-value étant anormalement très proche de zéro et le V de Cramer étant faible, ces valeurs confirmeraient que le modèle de prédiction n'est pas fidèle au modèle observé. En conséquence, en déduire que la dépendance entre le genre et l'index HDI est statistiquement significative (p-value < 5 \%) et que celle-ci est très faible (V proche de 0), serait erronée. Nous pouvons donc envisager qu'il n'y a pas de lien entre le genre et l'index HDI. Cela confirmerait l'hypothèse d'indépendance de départ.
+L'hypothèse de départ sur l'indépendance du genre et de l'HDI serait confirmé puisque la dépendance de ces catégories est statistiquement non significatif 
+(p-value > 11 \%) et la valeur du V de Cramer est très faible (proche de 0). Nous pouvons donc envisager qu'il n'y a pas de lien entre le genre et l'index HDI.
 
 \section{Modèle linéaire, tests non paramétriques}
 \subsection{Tests statistiques entre le nombre de vidéos visionnées et le genre}
-Après l'index HDI, intéressons-nous aux nombres de vidéos vues par rapport au genre. Le figure 3 montre le nombre moyen de visionnage pour les femmes et les hommes. Son observation montrerait qu'en moyenne il y aurait une très faible différence entre les hommes et les femmes sur le nombre de vidéos vues. 
+
+Après l'index HDI, intéressons-nous aux nombres de vidéos vues par rapport au genre. Le figure 3 montre le nombre moyen de visionnage pour les femmes et 
+les hommes. Son observation montrerait qu'en moyenne il y aurait une très faible différence entre les hommes et les femmes sur le nombre de vidéos vues. 
 
 	\begin{figure}[H]
 		\centering
@@ -192,12 +204,12 @@ Après l'index HDI, intéressons-nous aux nombres de vidéos vues par rapport au
 		\caption{\textbf{Moyenne des vidéos vues par genre.}}
 	\end{figure}
 
-L'hypothèse de départ (H0) est qu'il n'y a aucune différence sur le nombre de vidéos vues entre les hommes et les femmes. La figure 4, montre la distribution du nombre de vidéo pour les hommes et les femmes. Nous pouvons constater que la distribution des données ne ressemble pas à une distribution normale.
+L'hypothèse de départ (H0) est qu'il n'y a aucune différence sur le nombre de vidéos vues entre les hommes et les femmes. La figure 4, montre la distribution du nombre de vidéos vues par genre. Nous pouvons constater que la distribution des données ne ressemble pas à une distribution normale.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{../../graph/distribution_video.png}
-		\caption{\textbf{Distribution du nombre de vidéos par genre.}}
+		\caption{\textbf{Distribution du nombre de vidéos visionnées par genre.}}
 	\end{figure}
 
 La Figure 5, compare les quantiles de la distribution des vidéos des 2 modalités homme et femme afin de déterminer graphiquement si la distribution est normale. Nous observons également que la distribution observée ne suit pas la distribution théorique normale. Cela confirmerait l'hypothèse que la distribution observée n'est pas gaussienne.
@@ -206,14 +218,19 @@ La Figure 5, compare les quantiles de la distribution des vidéos des 2 modalit�
   	\begin{figure}[H]
   		\centering
   		\includegraphics[width=0.8\textwidth]{../../graph/distribution_video3.png}
-  		\caption{\textbf{Normalité de la distribution du nombre de vidéos selon le genre.}}
+  		\caption{\textbf{Normalité de la distribution du nombre de vidéo.}}
   	\end{figure}
   
-La taille des échantillons étant conséquente nous pouvons appliquer le test de   Kolmogrov-Smirnov (KS) pour vérifier la normalité des données. L'hypothèse de départ (H0) est que la distribution est gaussienne.
-Le résultat de ce test donnant une valeur de 0 de la p-value, la normalité n'est pas statistiquement significative et conclure qu'il est fortement probable que celle-ci ne l'est pas.   
-En conséquence des différents tests de normalité de la distribution des données du nombre de vidéos pour les 2 modalités homme et femme, il est indiqué de procéder à un test non paramétrique afin de déterminer si il y a une différence sur le nombre de vidéos visonnées entre hommes et femmes. 
+La taille des échantillons étant conséquente nous pouvons appliquer le test de Kolmogrov-Smirnov (KS) pour vérifier la normalité des données. 
+L'hypothèse de départ (H0) est que la distribution est gaussienne.
+Le résultat de ce test donnant une valeur de 0 de la p-value, la normalité n'est pas statistiquement significative et conclure qu'il est fortement probable 
+que celle-ci ne l'est pas.   
+En conséquence des différents tests de normalité de la distribution des données du nombre de vidéos pour les 2 modalités homme et femme, il est indiqué
+de procéder à un test non paramétrique afin de déterminer si il y a une différence sur le nombre de vidéos visonnées entre hommes et femmes. 
 
-Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Les résultats, montreraient que l'hypothèse d'absence de différence entre le nombre de vidéos vues et le genre n'est pas statistiquement significatif (p-value < 5\%). Il existerait donc une différence sur le nombre de vidéos vues entre les hommes et les femmes.
+Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Les résultats des statistiques de test U appliquées au genre, montreraient 
+qu'il y a une différence significative (p = 0\%) entre le nombre de vidéos vues entre les hommes et les femmes. 
+Il semblerait que les femmes consommeraient bien davantage de vidéos en sachant que les hommes sont surreprésentés dans cette étude. 
 
 \begin{table}[H]
 	\centering
@@ -222,24 +239,21 @@ Le Tableau 5 affiche les valeurs du test non paramétrique de Mann-Whitney U. Le
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Test Mann-Whitney U}}\\ 
 		\hline 
-		statistic& 8200580.5\\
-		p-value& 0\\
+		statistic (homme)& 8200580.5\\
+		statistic (femme)& 8994696.5\\
+		p-value& 0\%\\
 		\hline
 	\end{tabular}
-\caption{\textbf{Test non paramétriques.}}
+\captionof{table}{\textbf{Test non paramétriques.}}
 \end{table}
 
 \subsection{Tests statistiques entre le nombre de vidéos visionnées et le nombre de quiz réalisés.}
-Afin de déterminer quel test de corrélation il faut appliquer, il est nécessaire de savoir si les données suivent une distribution normale ou non. La Figure 6, montre que la distribution observée ne suit pas la distribution théorique normale en rouge.
-En l'absence de normalité de distribution, on utilisera un test de Spearman afin de tester la corrélation entre le nombre de vidéos visionnées et le nombre de quiz. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{../../graph/distribution_video4.png}
-	\caption{\textbf{Normalité de la distribution du nombre de vidéos selon le nombre de quiz.}}
-\end{figure}
-
-Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait une forte corrélation (0.8) entre le nombre de vidéos vues et le nombre de quiz réalisés par un étudiant. La corrélation observée est statistiquement significative (p-value=0).
+Afin de déterminer quel test de corrélation à appliquer, il est nécessaire de savoir si les données suivent une distribution normale ou non. 
+En l'absence de normalité de distribution du nombre de vidéos, on utilisera un test de Spearman afin de tester la corrélation entre le nombre de vidéos 
+visionnées et le nombre de quiz. 
+Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait une forte corrélation (0.8) entre le nombre de vidéos vues et le nombre 
+de quiz réalisés par un étudiant. 
+La corrélation observée est statistiquement significative (p-value=0).
 \begin{table}[H]
 	\centering
 	\fontsize{12}{20}\selectfont
@@ -254,7 +268,10 @@ Selon les résultats obtenus dans le Tableau 6 du test de Spearman, il y aurait 
 	\caption{\textbf{Test de corrélation.}}
 \end{table}
 
-La Figure 7, représente le scatter plot des valeurs observées et le modèle de régression linéaire par la droite tracée en rouge entre le nombre de quiz effectués et le nombre de vidéos visionnées. Cependant, le modèle linéaire théorique extrapolerait un nombre de quiz bien supérieur à 10 au delà de 60 vidéos visionnées alors que la tendance des valeurs observées suggère un plafonnement du nombre de quiz à 10. La fonction linéaire ne serait pas le modèle le plus adapté en comparaison aux données réelles.
+La Figure 6, représente le scatter plot des valeurs observées et le modèle de régression linéaire par la droite tracée en rouge entre le nombre de quiz
+effectués et le nombre de vidéos visionnées. Cependant, le modèle linéaire théorique extrapolerait un nombre de quiz bien supérieur à 10 au delà de 60 vidéos 
+visionnées alors que la tendance des valeurs observées suggère un plafonnement du nombre de quiz à 10. 
+La fonction linéaire ne serait pas le modèle le plus adapté comparé aux données réelles.
 
 \begin{figure}[H]
 	\centering
@@ -262,8 +279,10 @@ La Figure 7, représente le scatter plot des valeurs observées et le modèle de
 	\caption{\textbf{valeurs observées (bleu) et modèle de régression linéaire (rouge).}}
 \end{figure}
 
-Le Tableau 7 indique les résultats du modèle de régression à la variable dépendante quiz et à la variable explicative quiz. Le $R^2$ à 0.64, indiquerait que les valeurs prédites représenteraient 64\% des valeurs observées. 
-Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiquement un lien sur le nombre de vidéos vues et le nombre de quiz effectués. Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués que de nombre de vidéos visionnées.
+Le Tableau 7 indique les résultats du modèle de régression linéaire de la variable dépendante quiz et de la variable explicative video. Le $R^2$ à 0.64, 
+indiquerait que les valeurs prédites représenteraient 64\% des valeurs observées. 
+Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiquement un lien sur le nombre de vidéos vues et le nombre de quiz effectués. 
+Selon le modèle théorique, il y aurait presque 5 fois moins de quiz effectués que de nombre de vidéos visionnées.
 
 \begin{table}[H]
 	\centering
@@ -277,7 +296,7 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			Df Residuals:&	14555&	BIC:&	4.998e+04\\
 		\hline
 	\end{tabular}
-\caption{\textbf{Résultats de modèle de régression linéaire (video vs squiz).}}
+\caption{\textbf{Résultats du modèle de régression linéaire (video vs squiz).}}
 \end{table}
 	
 	
@@ -292,19 +311,22 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 		\hline
-		\textbf{Intercept}&	0.5652&	0.014&	39.183&	0\\
-		\textbf{video}&	0.1575&	0.001&	162.896&	0\\
+		\textbf{Réf: Quiz}&	0.5652&	0.014&	39.183&	0***\\
+		\textbf{video}&	0.1575&	0.001&	162.896&	0***\\
 		\hline
 \end{tabular}
 \caption{\textbf{Modèle de régression-vidéo vs quiz.}}
 \end{table}
 
-	\subsection{ANOVA sans intéraction sur le nombre de vidéos selon le genre et l'HDI}
+	\subsection{ANOVA sans intéraction sur le nombre de vidéos vues selon le genre et l'HDI}
 	
-	Dans le Tableau 9, le degrés de liberté (df) pour le genre est de 1 car la variable contient 2 modalités (homme et femme).
+	D'après le Tableau 9, le degrés de liberté (df) pour le genre est de 1 car la variable contient 2 modalités (homme et femme).
+	En effet, une modalité de la variable est utilisée comme référence dans le modèle.
 	\[ df = n[mod] - 1 \]
 	Avec n représentant le nombre de modalités (mod) des variables, Genre et New\_HDI.
-	La variable Genre comporte 2 modalités (homme et femme) donc le df est de 1. La variable New\_HDI comporte 3 modalités (TH, I, B), donc le df est de 2.
+	La variable Genre comporte 2 modalités (homme et femme) donc le df est de 1. La variable HDI comporte 3 modalités (TH, I, B), 
+	donc le df est de 2. Selon le test F de l'ANOVA (F=260), l'indice de développement du pays (HDI) dans lequel les individus vivent aurait
+	davantage de lien sur le nombre moyen de vidéos vues que le fait d'être un homme ou une femme (F=11.43).
 	  
 	\begin{table}[H]
 		\centering
@@ -318,28 +340,30 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 					\multicolumn{1}{c|}{\textbf{F}}&
 					\multicolumn{1}{c|}{\textbf{PR(>F)}}\\
 			\hline
-				\textbf{C(Genre)}&	1&	1554.89&	1554.9&	11.43&	0\\
-				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.08&	0\\
+				\textbf{Genre}&	1&	1554.89&	1554.9&	11.43&	0***\\
+				\textbf{HDI}&	2&	70714.83&	35357.41&	260.08&	0***\\
 				\textbf{Residual}&	8861.0&	1204643&	135.95&		&		\\
 			\hline
 		\end{tabular}
 		\caption{\textbf{Table d'ANOVA sans interaction - vidéo vs genre et HDI.}}
 	\end{table}
 
-	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et New\_HDI avec la variable de réponse video. L'équation linéaire résultante du modèle de régression est de la forme : 
+	La sortie du modèle de régression du Tableau 10, décrit la relation statistique entre les variables explicatives, Genre et HDI 
+	avec la variable de réponse vidéo. L'équation linéaire résultante du modèle de régression est de la forme : 
 	\[ Y=\beta0 + \beta1X1 + \beta2X2 + \beta3X3 \]
 	
 	Avec :\\
 	$Y =$ nombre de vidéos visionnées\\
 	$\beta0 = 7.0011$\\
-	$\beta1 = 0.0959 : X1 = Genre(homme)$\\
-	$\beta2 = 4.6774 : X2 = New\_HDI(I)$\\
-	$\beta3 = 8.6728 : X3 = New\_HDI(TH)$\\
+	$\beta1 = 0.0959, X1 = Genre(homme)$\\
+	$\beta2 = 4.6774, X2 = HDI(I)$\\
+	$\beta3 = 8.6728, X3 = HDI(TH)$\\
 	
-	Le groupe des femmes et l'index B de l'HDI sont utilisés comme référence (intercept) dans le modèle.
-	En effet, le coefficient $\beta0$ correspond au nombre moyen de vidéos visionnées par les femmes dans la catégorie B. Les catégories TH ($X3$) et I ($X2$), sont comparées à l'index B.
-	Ainsi, le nombre de vidéos visionnées est significativement indépendant des hommes ($X1$) par rapport aux femmes (p-value de 72 \%), contrairement aux HDI I et TH par rapport à l'index B
-	
+	Le groupe des femmes et l'index B de l'HDI sont utilisés comme référence dans le modèle.
+	En effet, le coefficient $\beta0$ correspond au nombre moyen de vidéos visionnées par les femmes dans la catégorie B. 
+	Les catégories TH ($X3$) et I ($X2$), sont comparées à l'index B.
+	Ainsi, la différence sur le nombre moyen de vidéos vues est indépendant (p-value de 72 \%) des hommes ($X1$) par rapport aux femmes, contrairement aux apprenants des pays moyennement ou très développés (HDI I et TH) par rapport aux pays pauvres.
+	En comparaison des apprenants des pays pauvres (t=8\%), ce serait les apprenants des pays très développés (TH) qui aurait significativement le plus d'influence (t=22\%) sur le nombre moyen de vidéos vues. 
 	\begin{table}[H]
 		\centering
 		\fontsize{12}{20}\selectfont
@@ -351,17 +375,37 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 			\hline
-			\textbf{Intercept}&			7.0011&		0.432&	16.211&	0\\	
-			\textbf{C(Genre)[T.Homme]}&	-0.0959&	0.267&	-0.360&	0.719\\
-			\textbf{C(New\_HDI)[T.I]}&	4.6774&		0.586&	7.979&	0\\
-			\textbf{C(New\_HDI)[T.TH]}&	8.6728&		0.395&	21.937&	0\\
+			\textbf{Réf: Genre Femme/HDI B}&			7.0011&		0.432&	16.211&	0***\\	
+			\textbf{Genre Homme}&	-0.0959&	0.267&	-0.360&	0.719\\
+			\textbf{HDI I}&	4.6774&		0.586&	7.979&	0***\\
+			\textbf{HDI TH}&	8.6728&		0.395&	21.937&	0***\\
 			\hline
 		\end{tabular}
-		\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
+		\caption{{Modèle de régression-vidéo vs genre et HDI (sans interaction).}}
 	\end{table}	
 
+	Cependant, le tableau 11 indique un $R^2$ très faible de 5,7\%. Cela indique clairement que le modèle de régression linéaire utilisé n'est pas
+	du fidèle aux valeurs observées. 
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{@{}ll@{}}
+		\toprule
+		Dep. Variable & video \\
+		\midrule
+		Model         & OLS   \\
+		Method        & Least Squares \\
+		R-squared     & 0.057 \\
+		Adj. R-squared& 0.056 \\
+		F-statistic   & 177.2 \\
+		\bottomrule
+		\end{tabular}
+		\caption{Résultats de la régression OLS}
+	\end{table}
+
 	\subsection{ANOVA avec interactions sur le nombre de vidéos selon le genre et l'HDI}	
-	Dans le Tableau 11, l'interaction entre le genre et les catégories de l'HDI ont été ajoutées. La différence sur le nombre de vidéos visionnée par les hommes  par rapport aux femmes est toujours significativement négligeable (p-value de 65\%). Les femmes au contraire ont un effet significatif (p-value nulle) ainsi que l'HDI I et TH (p-value = 2.5\%) par rapport à l'index de référence B. Le nombre de videos visionnées dépend significativement des hommes de l'index I par rapport aux femmes de l'index B, contrairement aux hommes de l'HDI TH (p-value de 86 \%)  
+	Dans le Tableau 12, nous testons comment les pays développés (I) ou très développeé (TH ) ont un effet sur le nombre de vidéos visionnées par les hommes par rapport aux femmes et aux pays pauvres (HDI B).   
+	Le nombre de vidéos visionnées dépend davantage (t=8.5) et très significativement (p=0\%) des apprenants des pays très développés par rapport aux apprenants des pays pauvres.  
+	Cependant, le niveau de développement des pays très développés à significativement un effet (p=4.8\%) sur le nombre de vidéos vues par les hommes par rapport aux femmes.  
 	
 	\begin{table}[H]
 		\centering
@@ -374,18 +418,20 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{t}}&
 			\multicolumn{1}{c|}{\textbf{p-value}}\\	
 			\hline
-				\textbf{Intercept}&			7.3310&			0.968&	7.573&	0\\
-				\textbf{C(Genre)[T.Homme]}&	-0.4810&		1.046&	-0.460&	0.646\\	
-				\textbf{C(New\_HDI)[T.I]}&	2.7733&			1.236&	2.244&	0.025\\	
-				\textbf{C(New\_HDI)[T.TH]}&	8.4673&			0.995&	8.506&	0\\	
-				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.I]}&	2.8032&	1.415&	1.982&	0.048\\
-				\textbf{C(Genre)[T.Homme]:C(New\_HDI)[T.TH]}&	0.1933&	1.085&	0.178&	0.859\\
+				\textbf{Réf: Genre Femme/HDI B}&			7.3310&			0.968&	7.573&	0***\\
+				\textbf{Genre Homme}&	-0.4810&		1.046&	-0.460&	0.646\\	
+				\textbf{HDI I}&	2.7733&			1.236&	2.244&	0.025*\\	
+				\textbf{HDI TH}&	8.4673&			0.995&	8.506&	0***\\	
+				\textbf{Genre Homme:HDI I}&	2.8032&	1.415&	1.982&	0.048*\\
+				\textbf{Genre Homme:HDI TH}&	0.1933&	1.085&	0.178&	0.859\\
 			\hline
 		\end{tabular}
 	\caption{\textbf{Modèle de régression-vidéo vs genre et HDI (avec interaction).}}
 \end{table}
 	
-	D'après le Tableau 12, le nombre de videos visionnés dépend significativement du genre (p-value = 0) et de l'HDI (p-value = 0), ainsi que du genre par rapport à l'HDI (p-value = 3\%).
+	D'après le Tableau 13, nous observons que le niveau de développement d'un pays (HDI) a significativement (p-value=0\%) bien davantage d'influence (F=260) sur le nombre moyen de vidéos 
+	visionnées quelque soit le sexe. Nous remarquons également, que le nombre de vidéos vues varie statistiquement (p=3\%) faiblement (t=3.5) en fonction  
+	du niveau de développement du pays dans lequel les hommes et les femmes vivent. Mais le genre n'a significativement (p = 0) que très faiblement (F=11,44) un impact sur le nombre de vidéos visionnées.
 	
 	\begin{table}[H]
 		\centering
@@ -399,9 +445,9 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 			\multicolumn{1}{c|}{\textbf{F}}&
 			\multicolumn{1}{c|}{\textbf{PR(>F)}}\\
 			\hline
-				\textbf{C(Genre)}&	1&	1554.89&	1554.89&	11.44&	0\\
-				\textbf{C(New\_HDI)}&	2&	70714.83&	35357.41&	260.22&	0\\
-				\textbf{C(Genre):C(New\_HDI)}&2&	954.15&	477.076535&	3.511225&0.03\\
+				\textbf{Genre}&	1&	1554.89&	1554.89&	11.44&	0***\\
+				\textbf{HDI}&	2&	70714.83&	35357.41&	260.22&	0***\\
+				\textbf{Genre:HDI}&2&	954.15&	477.076535&	3.511225&0.03*\\
 				\textbf{Residual}&	8859&	1203688&	135.87&	&	\\
 			\hline
 		\end{tabular}
@@ -409,7 +455,74 @@ Selon les résultats du tableau 8, la p-value étant de 0, il y aurait statistiq
 \end{table}
 
 
-\section{Régression logistic}
-Nous allons maintenant utiliser une régression logistic.
+\section{Régression logistique}
+\subsection{Régression binomiale}
+Nous allons maintenant utiliser une régression binomiale afin de déterminer qui, entre les hommes et les femmes ainsi que des
+différents niveaux d'HDI, a davantage de chance de réussite à l'examen ou à la certification dans la version 2 du MOOC.
+Le Tableau 14 retranscrit les résultats de cette régression.
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{@{}lllll@{}}
+		\toprule
+		Description & OR & CI [2.5\% & 97.5\%] & p-value \\
+		\midrule
+		Réf Gender homme & & & & \\
+		Gender femme & 1.021 & 0.851 & 1.224 & 0.826 \\
+		Réf HDI B & & & & \\
+		HDI TH & 1.558 & 1.149 & 2.113 & 0.004** \\
+		HDI I & 1.046 & 0.660 & 1.658 & 0.849 \\
+		\bottomrule
+		\end{tabular}
+		\caption{OR - CI MOOC V2}
+		\end{table}
+
+
+La Figure 7 nous indique que se sont les apprenants des pays très développés qui regardent significativement (p=0.4\%) davantage de vidéos (OR=1.6) que les apprenants des pays pauvres.  Et nous sommes confiants à 95\% que l'OR (odd-ratio) se situe dans l'intervalle [0.851, 1.224].   
+Il y aurait pratiquement aucune différence entre les hommes et les femmes sur le nombre de vidéos visionnées mais ce résultat n'est pas significatif (p > 82.6\%).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_binomiale.png}
+	\captionof{figure}{\textbf{Odds-Ratios -  examen $~\sim$ genre et HDI - MOOC V2.}}
+\end{figure}
+
+Le risk ratio (RR) représente le risque relatif d'avoir un effet plus ou moins important d'un groupe par rapport à un autre sur un événement. Alors que l'odd-ratio (OR) mesure le rapport de chance d'avoir un effet sur un groupe par rapport à un autre sur un événement. Ces ratios convergent lorsque l'événement se produit rarement.
+
+
+\subsection{Régression de Poisson}
+La Figure 10, donne la forme de la distribution du nombre de vidéos visionnées pour l'ensemble des 3 versions du MOOC.
+La figure 11 confirmerait que la distribution n'est pas normale. En effet, en observant l'homoscédasticité des erreurs par 
+rapport au modèle théorique, nous nous apercevons que la dispersion (variance) des valeurs observées (en bleu)
+n'est pas uniforme autour des valeurs prédites (en rouge). 
+Il serait donc inapproprié d'appliquer un modèle de régression linéaire comme la binomiale qui nécessite une distribution normale.
+Appliquons maintenant la régression de poisson permettant de comptabiliser statistiquement le nombre de vidéos vues par
+genre et par HDI pour ce MOOC. La loi de poisson s'applique sur une distribution non gaussienne mais qui tendrait à l'être, comme celle que l'on observe sur la Figure 8. Nous observons sur cette figure la distribution du nombre de vidéos visionnées pour la version 2 du MOOC.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/distribution_poisson.png}
+	\caption{\textbf{Distribution du nombre de videos - MOOC V2.}}
+\end{figure}
+
+En observant la Figure 9,  nous sommes confiants à 95\% (CI=[1.945, 2.154]) que les apprenants des pays très développés ont significativement (p=0) visionnés bien davantage de vidéos (OR > 2) que les pays pauvres. Elle confirmerait également qu'il n'y a pratiquement aucune différence (OR $\sim 1$) entre les hommes et les femmes sur le nombre de vidéos visionnées.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{../../graph/forestplot_V2_poisson.png}
+	\caption{\textbf{odds-ratios du nombre de videos selon le genre et HDI - MOOC V2.}}
+\end{figure}
+
+La Figure 10, représente 4 graphiques qui montrent la fiabilité du modèle (graphe 1), la normalité de la distribution du nombre de vidéos (graphe 2), la qualité d'ajustement du modèle (homoscédasticité, graphe 3),    
+ainsi que les observations qui auraient un impact sur les prédictions du modèle (graphe 4).
+Nous remarquons que la distribution ne tendrait pas vers une distribution normale du nombre de vidéos puisque les valeurs des quantiles observés sont éloignées des valeurs des quantiles du modèle théorique. Le graphe 1 confirmerait que le modèle ne serait pas fiable puisque les résidus des valeurs observées (en bleu) ne sont pas homogènes le long de l'axe horizontale des ordonnées nulles avec des écarts importants par rapport aux valeurs prédites. Le graphe 3, confirmerait la non homoscédasticité, par les grandes variations des résidus, observée sur le graphe 1 avec une mauvaise qualité d'ajustement du modèle. Il est donc impossible de faire des analyses fiables par rapport aux résultats données par la régression de Poisson.
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.2\textwidth]{../../graph/graphs_poisson.png}
+	\caption{\textbf{Homoscédasticité - normalité MOOC V2.}}
+\end{figure}
 
 \end{document}
