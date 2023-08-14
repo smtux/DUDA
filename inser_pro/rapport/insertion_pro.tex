@@ -45,7 +45,14 @@
 	
 	Les données collectées regroupent, par niveau de diplôme, les disciplines, le taux d'insertion, le salaire brut et net estimé, le pourcentage des types de contrat professionnel (CDI, CDD, intérimaire etc...) ainsi que les secteurs d'activité, les professions et le type d'entreprises.
 	
-	Les tableaux 1 à 5 décrivent les différentes variables utilisées pour cette étude.
+	Les tableaux 1 à 5 décrivent les différentes variables utilisées pour cette étude et le taux en pourcentage de valeurs manquantes.
+	
+	Le Tableaux 1, présente la liste des diplômes universitaires pour les DUT, Licence Professionnelle et MASTERS.
+	Les MASTERS sont distingués par le MASTER LMD et le MASTER ENS. 
+	
+	Les disciplines sont indiquées aussi bien individuellement (Informatique, histoire, droit, psychologie etc..), que par des ensembles de disciplines (Formations juridiques, économiques et de gestion, Sciences humaines et sociales etc...). L'ensemble de toutes les disciplines par niveau de diplôme est aussi indiqué (Ensemble MASTERS LMD, Ensemble des départements d'IUT etc...).   
+	
+	
 	
 \newpage
 
@@ -72,229 +79,236 @@
 
 \begin{table}[H]
 	\centering
-	\begin{tabularx}{\textwidth}{|C|}
+	\begin{adjustbox}{max width=\textwidth}
+	\begin{tabularx}{\linewidth}{|l|C|}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Disciplines}} \\
+		\multicolumn{1}{|c|}{\textbf{Discipline}} & \multicolumn{1}{c|}{\textbf{Ensemble}} \\
 		\hline
-		Ensemble Licence professionnelle \\
+		Autres sciences humaines et sociales & Ensemble Licence professionnelle \\
 		\hline
-		Autres sciences humaines et sociales \\
+		Autres formations juridiques, économiques et de gestion & Ensemble formations juridiques, économiques et de gestion \\
 		\hline
-		Autres formations juridiques, économiques et de gestion \\
+		Sciences de la vie et de la terre & Ensemble des départements d'IUT \\
 		\hline
-		Sciences de la vie et de la terre \\
+		Psychologie & Ensemble sciences humaines et sociales \\
 		\hline
-		Ensemble formations juridiques, économiques et de gestion \\
+		Information communication & Ensemble sciences, technologies et santé \\
 		\hline
-		Psychologie \\
+		Lettres, langues, arts & Autres sciences, technologies et santé \\
 		\hline
-		Information communication \\
+		Sciences de l'ingénieur & Ensemble Masters LMD (hors Masters enseignement et hors Dauphine et Antilles-Guyane) \\
 		\hline
-		Ensemble des départements d'IUT \\
+		Histoire-géographie & Ensemble Masters LMD (hors Masters enseignement) \\
 		\hline
-		Lettres, langues, arts \\
+		Droit & \\
 		\hline
-		Sciences de l'ingénieur \\
+		Informatique & \\
 		\hline
-		Histoire-géographie \\
+		Gestion & \\
 		\hline
-		Droit \\
+		Sciences fondamentales & \\
 		\hline
-		Informatique \\
+		Économie & \\
 		\hline
-		Gestion \\
-		\hline
-		Sciences fondamentales \\
-		\hline
-		Ensemble sciences humaines et sociales \\
-		\hline
-		Ensemble sciences, technologies et santé \\
-		\hline
-		Autres sciences, technologies et santé \\
-		\hline
-		Économie \\
-		\hline
-		Ensemble Masters LMD (hors Masters enseignement et hors Dauphine et Antilles-Guyane) \\
-		\hline
-		Sciences de l'ingénieur \\
-		\hline
-		Masters enseignement \\
-		\hline
-		Ensemble Masters LMD (hors Masters enseignement) \\
+		Masters enseignement & \\
 		\hline
 	\end{tabularx}
-	\caption{Variable catégorielle concernant les disciplines pour les 3 niveaux de diplôme et leurs modalités}
+	\end{adjustbox}
+	\caption{Liste des disciplines et ensembles}
 	\label{tab:disciplines}
 \end{table}
 
+
 \begin{table}[H]
 	\centering
-	\begin{tabularx}{\textwidth}{|X|}
+	\begin{tabularx}{\textwidth}{|X|c|}
 		\hline
-		\textbf{Type de contrat} \\
+		\textbf{Contrat} & \textbf{\%} \\
 		\hline
-		Prof. libérale, indépendant, chef d’entreprise \\
+		Prof. libérale, indépendant, chef d’entreprise & 8.1 \\
 		\hline
-		Fonctionnaire \\
+		Fonctionnaire & 8.1 \\
 		\hline
-		CDI \\
+		CDI & 8.1 \\
 		\hline
-		CDI de chantier ou CDI de mission \\
+		CDI de chantier ou CDI de mission & 8.8 \\
 		\hline
-		Contrat spécifique au doctorat \\
+		Contrat spécifique au doctorat & 10.5 \\
 		\hline
-		CDD \\
+		CDD & 8.1 \\
 		\hline
-		Vacataire \\
+		Vacataire & 8.1 \\
 		\hline
-		Intérimaire \\
+		Intérimaire & 8.1 \\
 		\hline
-		Intermittent du spectacle \\
+		Intermittent du spectacle & 8.1 \\
 		\hline
-		Contrat de professionnalisation \\
+		Contrat de professionnalisation & 8.1 \\
 		\hline
-		Emplois aidés (Contrat Initiative Emploi…) \\
+		Emplois aidés (Contrat Initiative Emploi…) & 8.1 \\
 		\hline
-		Volontariat international \\
+		Volontariat international & 8.1 \\
 		\hline
 	\end{tabularx}
-	\caption{Variables quantitatives (\%) concernant le type de contrat}
-	\label{tab:variables_sans_numeros}
+	\caption{Pourcentage de valeurs manquantes des différents types de contrat}
+	\label{tab:contrats_pourcentage}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\begin{tabularx}{\textwidth}{|X|}
+	\begin{tabularx}{\textwidth}{|X|c|}
 		\hline
-		\textbf{Type d'entreprise} \\
+		\textbf{Entreprise} & \textbf{\%} \\
 		\hline
-		Vous-même \\
+		Vous-même & 11.0 \\
 		\hline
-		La fonction publique (d'etat, territoriale ou hospitalière) \\
+		La fonction publique (d'etat, territoriale ou hospitalière) & 11.0 \\
 		\hline
-		Une entreprise privée \\
+		Une entreprise privée & 11.0 \\
 		\hline
-		Une entreprise publique \\
+		Une entreprise publique & 11.0 \\
 		\hline
-		Une association \\
+		Une association & 11.0 \\
 		\hline
-		Une personne exerçant une profession libérale ou un indépendant \\
+		Une personne exerçant une profession libérale ou un indépendant & 11.0 \\
 		\hline
-		Organisation internationale ou une institution de l'Union européenne \\
+		Organisation internationale ou une institution de l'Union européenne & 11.5 \\
 		\hline
-		Société d'économie mixte \\
+		Société d'économie mixte & 11.4 \\
 		\hline
-		Un particulier \\
+		Un particulier & 11.0 \\
 		\hline
 	\end{tabularx}
-	\caption{Variables quantitatives (\%) concernant les différents types d'entreprise}
-	\label{tab:variables_liste2}
+	\caption{Pourcentage de valeurs manquantes par type d'entreprise}
+	\label{tab:entreprise_pourcentage}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|}
+		\hline
+		\textbf{Secteur} & \textbf{\%} \\
+		\hline
+		Agriculture, sylviculture et pêche & 7.1 \\
+		\hline
+		Industries (manufacturières, extractives et autres) & 7.1 \\
+		\hline
+		Construction & 7.1 \\
+		\hline
+		Activités immobilières & 7.4 \\
+		\hline
+		Commerce, transports, hébergement et restauration & 7.1 \\
+		\hline
+		Information et communication & 7.1 \\
+		\hline
+		Activités financières et d’assurance & 7.1 \\
+		\hline
+		Activités spécialisées, scientifiques et techniques & 7.1 \\
+		\hline
+		Activités de services administratifs et de soutien & 7.1 \\
+		\hline
+		Enseignement & 7.1 \\
+		\hline
+		Administration publique (hors enseignement) & 7.1 \\
+		\hline
+		Santé humaine et action sociale & 7.1 \\
+		\hline
+		Arts, spectacles et activités récréatives & 7.1 \\
+		\hline
+		Autres activités de service & 7.1 \\
+		\hline
+	\end{tabularx}
+	\caption{Pourcentage de valeurs manquantes par secteur}
+	\label{tab:secteurs_pourcentage}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\begin{tabularx}{\textwidth}{|X|}
+	\begin{tabularx}{\textwidth}{|X|c|}
 		\hline
-		\textbf{Secteur d'activité} \\
+		\textbf{Profession} & \textbf{\%} \\
 		\hline
-		Agriculture, sylviculture et pêche \\
+		Agriculteur & 11.2 \\
 		\hline
-		Industries (manufacturières,  extractives et autres) \\
+		Artisan, commerçant, chef d'entreprise & 11.1 \\
 		\hline
-		Construction \\
+		Profession libérale & 11.1 \\
 		\hline
-		Activités immobilières \\
+		Personnel de catégorie A de la fonction publique & 10.2 \\
 		\hline
-		Commerce, transports, héberg-ement et restauration \\
+		Ingénieur, cadre, professions libérales, professions intellectuelles supérieures & 10.2 \\
 		\hline
-		Information et communication \\
+		Personnel de catégorie B de la fonction publique & 10.2 \\
 		\hline
-		Activités financières et d’assurance \\
+		Emploi de niveau intermédiaire : technicien, agent de maîtrise, etc. & 10.2 \\
 		\hline
-		Activités spécialisées, scientifiques et techniques \\
+		Personnel de catégorie C de la fonction publique & 10.2 \\
 		\hline
-		Activités de services administratifs et de soutien \\
+		Manœuvre, ouvrier & 10.2 \\
 		\hline
-		Enseignement \\
-		\hline
-		Administration publique (hors ens.) \\
-		\hline
-		Santé humaine et action sociale \\
-		\hline
-		Arts, spectacles et activités récréatives \\
-		\hline
-		Autres activités de service \\
+		Employé de bureau, de commerce, personnel de service & 5.3 \\
 		\hline
 	\end{tabularx}
-	\caption{Variables quantitatives (\%) concernant les secteurs d'activité}
-	\label{tab:variables_liste3}
+	\caption{Pourcentage de valeurs manquantes par profession}
+	\label{tab:professions_pourcentage}
 \end{table}
 
-\begin{table}[H]
-	\centering
-	\begin{tabularx}{\textwidth}{|X|}
-		\hline
-		\textbf{Profession} \\
-		\hline
-		Agriculteur \\
-		\hline
-		Artisan, commerçant, chef d'entreprise \\
-		\hline
-		Profession libérale \\
-		\hline
-		Personnel de catégorie A de la fonction publique \\
-		\hline
-		Ingénieur, cadre, prof. libérales, prof. intellectuelles sup \\
-		\hline
-		Personnel de catégorie B de la fonction publique \\
-		\hline
-		Emploi de niveau intermédiaire : technicien, agent de maîtrise… \\
-		\hline
-		Personnel de catégorie C de la fonction publique \\
-		\hline
-		Manœuvre, ouvrier \\
-		\hline
-		Employé de bureau, de commerce, personnel de service \\
-		\hline
-	\end{tabularx}
-	\caption{Variables quantitatives (\%) concernant les différentes professions}
-	\label{tab:variables_liste4}
-\end{table}
 
 \section{Proportion des contrats après l'obtention du diplôme}
+	\subsection{Répartition globale}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_global.png}
-	\captionof{figure}{\textbf{Répartition globale des contrats après l'obtention du diplôme}}
-\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_global.png}
+			\captionof{figure}{\textbf{Répartition globale des contrats après l'obtention du diplôme}}
+		\end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_situation.png}
-	\captionof{figure}{\textbf{Répartition des contrats à 18 et 30 mois après l'obtention du diplôme}}
-\end{figure}
+	\subsection{Répartion à 18 et 30 mois après l'obtention du diplôme}
 
-\section{Proportion des professions}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{../graphs/repartition_professions_global.png}
-	\captionof{figure}{\textbf{Répartition des professions globale après l'obtention du diplôme}}
-\end{figure}
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_situation.png}
+		\captionof{figure}{\textbf{Répartition des contrats à 18 et 30 mois après l'obtention du diplôme}}
+	\end{figure}
 
+\section{Proportion des professions après l'obtention du diplôme}
+	\subsection{Répartition globale}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{../graphs/repartition_professions_global.png}
+			\captionof{figure}{\textbf{Répartition des professions globale après l'obtention du diplôme}}
+		\end{figure}
+
+	\subsection{Répartition à 18 et 30 mois après l'obtention du diplôme}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{../graphs/repartition_professions_situation.png}
 	\captionof{figure}{\textbf{Répartition des professions à 18 et 30 mois après l'obtention du diplôme}}
 \end{figure}
 
-\section{Proportion des secteurs d'activité}
+\section{Proportion des secteurs d'activité après l'obtention du diplôme}
+	Les données 18 mois après l'obtention du diplôme étant manquantes, nous indiquons dans la Figure 5, le pourcentage des secteurs d'activité dans lesquels les diplômés se sont insérés 30 mois après son obtention. 
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{../graphs/repartition_secteurs_situation.png}
+		\captionof{figure}{\textbf{Répartition des secteurs à 18 et 30 mois après l'obtention du diplôme}}
+	\end{figure}
+
+\section{Taux d'insertion et d'emplois stables}
+
+Le taux d’insertion est défini comme étant le pourcentage de diplômés occupant un emploi, quel qu’il soit, sur l’ensemble des diplômés présents sur le marché du travail. Il est calculé sur les diplômés de nationalité française, issus de la formation initiale, entrés immédiatement et durablement sur le marché du travail après l’obtention de leur diplôme en 2013, 2014, 2015, 2016, 2017, 2018 ou 2019.
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{../graphs/repartition_secteurs_situation.png}
-	\captionof{figure}{\textbf{Répartition des secteurs à 18 et 30 mois après l'obtention du diplôme}}
+	\includegraphics[width=1\textwidth]{../graphs/insertion_emploi_stable.png}
+	\captionof{figure}{\textbf{Taux d'insertion sur le marché du travail et d'emplois stables}}
 \end{figure}
 
+\section{Salaires}
+L’information collectée sur le salaire porte sur le salaire net, primes comprises. Les salaires affichés correspondent aux valeurs médianes sur les emplois à temps plein. A partir de ces valeurs, on estime un salaire brut annuel, sur la base d’un taux forfaitaire de passage du net au brut de 1,3 (donnée moyenne constatée sur les salaires du secteur privé).
+L’enquête a été menée par les universités dans le cadre d’une charte dont les dispositions visent à garantir la comparabilité des résultats entre les établissements. La coordination d’ensemble et l’exploitation de l’enquête sont prises en charge par le ministère en charge de l'Enseignement supérieur et de la Recherche.
 
 \end{document}
