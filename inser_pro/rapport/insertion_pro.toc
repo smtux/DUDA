@@ -1,12 +1,10 @@
 \babel@toc {french}{}\relax 
 \contentsline {section}{\numberline {1.}Introduction}{2}{}%
 \contentsline {section}{\numberline {2.}Présentation des données}{2}{}%
-\contentsline {section}{\numberline {3.}Proportion des contrats après l'obtention du diplôme}{5}{}%
-\contentsline {subsection}{\numberline {3.1}Répartition globale}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Répartion à 18 et 30 mois après l'obtention du diplôme}{6}{}%
-\contentsline {section}{\numberline {4.}Proportion des professions après l'obtention du diplôme}{7}{}%
-\contentsline {subsection}{\numberline {4.1}Répartition globale}{7}{}%
-\contentsline {subsection}{\numberline {4.2}Répartition à 18 et 30 mois après l'obtention du diplôme}{8}{}%
-\contentsline {section}{\numberline {5.}Proportion des secteurs d'activité après l'obtention du diplôme}{9}{}%
-\contentsline {section}{\numberline {6.}Taux d'insertion et d'emplois stables}{9}{}%
+\contentsline {section}{\numberline {3.}Les types de contrats après l'obtention du diplôme}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Répartion des contrats à 18 et 30 mois après l'obtention du diplôme}{5}{}%
+\contentsline {section}{\numberline {4.}Les professions après l'obtention du diplôme}{7}{}%
+\contentsline {subsection}{\numberline {4.1}Répartition des professions à 18 et 30 mois après l'obtention du diplôme}{7}{}%
+\contentsline {section}{\numberline {5.}Secteurs d'activité après l'obtention du diplôme}{8}{}%
+\contentsline {section}{\numberline {6.}Taux d'insertion dans les emplois stables}{9}{}%
 \contentsline {section}{\numberline {7.}Salaires}{10}{}%

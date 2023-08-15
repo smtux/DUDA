@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  13 AUG 2023 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  16 AUG 2023 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,71 +530,67 @@ Package caption Info: End \AtBeginDocument code.
 
 
 [1] [2] [3] [4]
-<../graphs/repartition_contrats_global.png, id=20, 880.28876pt x 388.45125pt>
-File: ../graphs/repartition_contrats_global.png Graphic file (type png)
-<use ../graphs/repartition_contrats_global.png>
-Package pdftex.def Info: ../graphs/repartition_contrats_global.png  used on inp
-ut line 263.
-(pdftex.def)             Requested size: 483.69687pt x 213.44138pt.
-<../graphs/repartition_contrats_situation.png, id=22, 880.28876pt x 1343.0175pt
+<../graphs/repartition_contrats_situation_1.png, id=20, 880.28876pt x 662.475pt
 >
-File: ../graphs/repartition_contrats_situation.png Graphic file (type png)
-<use ../graphs/repartition_contrats_situation.png>
-Package pdftex.def Info: ../graphs/repartition_contrats_situation.png  used on 
-input line 271.
-(pdftex.def)             Requested size: 483.69687pt x 737.94467pt.
- [5 <../graphs/repartition_contrats_global.png>]
-Overfull \vbox (67.05693pt too high) has occurred while \output is active []
-
-
-[6 <../graphs/repartition_contrats_situation.png>]
-<../graphs/repartition_professions_global.png, id=32, 979.66pt x 388.45125pt>
-File: ../graphs/repartition_professions_global.png Graphic file (type png)
-<use ../graphs/repartition_professions_global.png>
-Package pdftex.def Info: ../graphs/repartition_professions_global.png  used on 
-input line 279.
-(pdftex.def)             Requested size: 483.69687pt x 191.78902pt.
-<../graphs/repartition_professions_situation.png, id=33, 980.66376pt x 1343.017
+File: ../graphs/repartition_contrats_situation_1.png Graphic file (type png)
+<use ../graphs/repartition_contrats_situation_1.png>
+Package pdftex.def Info: ../graphs/repartition_contrats_situation_1.png  used o
+n input line 263.
+(pdftex.def)             Requested size: 483.69687pt x 364.00858pt.
+<../graphs/repartition_contrats_situation_2.png, id=22, 880.28876pt x 662.475pt
+>
+File: ../graphs/repartition_contrats_situation_2.png Graphic file (type png)
+<use ../graphs/repartition_contrats_situation_2.png>
+Package pdftex.def Info: ../graphs/repartition_contrats_situation_2.png  used o
+n input line 269.
+(pdftex.def)             Requested size: 483.69687pt x 364.00858pt.
+ [5 <../graphs/repartition_contrats_situation_1.png>]
+<../graphs/repartition_professions_situation_1.png, id=27, 980.66376pt x 662.47
 5pt>
-File: ../graphs/repartition_professions_situation.png Graphic file (type png)
-<use ../graphs/repartition_professions_situation.png>
-Package pdftex.def Info: ../graphs/repartition_professions_situation.png  used 
-on input line 286.
-(pdftex.def)             Requested size: 483.69687pt x 662.40833pt.
- [7 <../graphs/repartition_professions_global.png>]
-Overfull \hbox (2.93732pt too wide) in paragraph at lines 290--290
-|[]\T1/ptm/b/n/17.28 Proportion des sec-teurs d'ac-ti-vité après l'ob-ten-tion 
-du di-plôme| 
- []
+File: ../graphs/repartition_professions_situation_1.png Graphic file (type png)
 
-[8 <../graphs/repartition_professions_situation.png>]
-<../graphs/repartition_secteurs_situation.png, id=42, 922.44624pt x 971.63pt>
+<use ../graphs/repartition_professions_situation_1.png>
+Package pdftex.def Info: ../graphs/repartition_professions_situation_1.png  use
+d on input line 278.
+(pdftex.def)             Requested size: 483.69687pt x 326.74849pt.
+ [6 <../graphs/repartition_contrats_situation_2.png>]
+<../graphs/repartition_professions_situation_2.png, id=33, 980.66376pt x 662.47
+5pt>
+File: ../graphs/repartition_professions_situation_2.png Graphic file (type png)
+
+<use ../graphs/repartition_professions_situation_2.png>
+Package pdftex.def Info: ../graphs/repartition_professions_situation_2.png  use
+d on input line 284.
+(pdftex.def)             Requested size: 483.69687pt x 326.74849pt.
+ [7 <../graphs/repartition_professions_situation_1.png>]
+<../graphs/repartition_secteurs_situation.png, id=38, 922.44624pt x 662.475pt>
 File: ../graphs/repartition_secteurs_situation.png Graphic file (type png)
 <use ../graphs/repartition_secteurs_situation.png>
 Package pdftex.def Info: ../graphs/repartition_secteurs_situation.png  used on 
-input line 295.
-(pdftex.def)             Requested size: 483.69687pt x 509.47589pt.
+input line 294.
+(pdftex.def)             Requested size: 483.69687pt x 347.36992pt.
+ [8 <../graphs/repartition_professions_situation_2.png>]
 <../graphs/insertion_emploi_stable.png, id=43, 888.31876pt x 575.14874pt>
 File: ../graphs/insertion_emploi_stable.png Graphic file (type png)
 <use ../graphs/insertion_emploi_stable.png>
 Package pdftex.def Info: ../graphs/insertion_emploi_stable.png  used on input l
-ine 306.
+ine 305.
 (pdftex.def)             Requested size: 483.69687pt x 313.1734pt.
- [9 <../graphs/repartition_secteurs_situation.png>] [10 <../graphs/insertion_em
-ploi_stable.png>]
-(./insertion_pro.aux) ) 
+
+[9 <../graphs/repartition_secteurs_situation.png>] [10 <../graphs/insertion_emp
+loi_stable.png>] (./insertion_pro.aux) ) 
 Here is how much of TeX's memory you used:
  9373 strings out of 477981
- 157616 string characters out of 5838659
+ 157714 string characters out of 5838659
  1870330 words of memory out of 5000000
  29357 multiletter control sequences out of 15000+600000
  550995 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  87i,13n,90p,466b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on insertion_pro.pdf (11 pages, 329782 bytes).
+{/usr/share/texlive/texmf-dist/fonts/en
+c/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on insertion_pro.pdf (11 pages, 297410 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
