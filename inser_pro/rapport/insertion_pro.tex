@@ -262,12 +262,14 @@
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_situation_1.png}
 			\captionof{figure}{Répartition des contrats à 18 et 30 mois après l'obtention du diplôme}
+			\label{fig:contrat_pourcentage_1}
 		\end{figure}
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_situation_2.png}
 			\captionof{figure}{Répartition des contrats à 18 et 30 mois après l'obtention du diplôme}
+			\label{fig:contrat_pourcentage_2}
 		\end{figure}
 
 \section{Les professions après l'obtention du diplôme}
@@ -277,12 +279,14 @@
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_professions_situation_1.png}
 			\captionof{figure}{Répartition des professions à 18 et 30 mois après l'obtention du diplôme (DUT-Licence pro)}
+			\label{fig:profession_pourcentage_1}
 		\end{figure}
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_professions_situation_2.png}
 			\captionof{figure}{Répartition des professions à 18 et 30 mois après l'obtention du diplôme (Masters)}
+			\label{fig:profession_pourcentage_2}
 		\end{figure}
 
 
@@ -406,14 +410,51 @@
 	En effet, les domaines de l'enseignement ou encore littéraires sont des domaines dont les années d'études sont les plus longues pour aboutir à une insertion professionnelle plus prometteuse.
 	Alors que les hommes préféraient davantage une insertion plus rapide sur le marché du travail en choisissant l'ingénierie (12,2 \% contre 2.5 \%), davantage corrélée à l'industrie ou encore en filières plus courtes, les licences professionnelles (16,8 \% contre 12,5 \%). 
 
-\section{Taux d'insertion dans les emplois stables}
+\section{Taux d'insertion des diplômés dans les emplois stables}
 
 Le taux d’insertion est défini comme étant le pourcentage de diplômés occupant un emploi, quel qu’il soit, sur l’ensemble des diplômés présents sur le marché du travail. Il est calculé sur les diplômés de nationalité française, issus de la formation initiale, entrés immédiatement et durablement sur le marché du travail après l’obtention de leur diplôme en 2013, 2014, 2015, 2016, 2017, 2018 ou 2019.
 
 
-
-\section{Salaires}
+\section{La question épineuse des salaires}
 L’information collectée sur le salaire porte sur le salaire net, primes comprises. Les salaires affichés correspondent aux valeurs médianes sur les emplois à temps plein. A partir de ces valeurs, on estime un salaire brut annuel, sur la base d’un taux forfaitaire de passage du net au brut de 1,3 (donnée moyenne constatée sur les salaires du secteur privé).
-L’enquête a été menée par les universités dans le cadre d’une charte dont les dispositions visent à garantir la comparabilité des résultats entre les établissements. La coordination d’ensemble et l’exploitation de l’enquête sont prises en charge par le ministère en charge de l'Enseignement supérieur et de la Recherche.
+
+Le Tableau \ref{tab:salaire_median_genre} et la Figure \ref{fig:salaire_median_genre} montrent le salaire net mensuel médian des emplois stables entre les hommes et les femmes. 
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{llr}
+			\toprule
+			\textbf{Genre} & \textbf{Diplôme} & \textbf{{Salaire net mensuel médian (€)}} \\
+			\midrule
+			Femmes & Master LMD & 1760 \\
+			& Master ENS & 1750 \\
+			& Licence PRO & 1520 \\
+			& DUT & 1410 \\
+			\midrule
+			Hommes & Master LMD & 2000 \\
+			& Master ENS & 1800 \\
+			& Licence PRO & 1670 \\
+			& DUT & 1600 \\
+			\bottomrule
+		\end{tabular}
+		\caption{Salaire net mensuel médian des emplois à temps plein par genre et diplôme}
+		\label{tab:salaire_median_genre}
+	\end{table}
+	
+	Nous observons que les hommes ont un salaire médian plus élevé d'environ quelques soit leur niveau de diplôme.
+	Sans surprise, plus le niveau d'étude des diplômés est élevé et plus les salaires sont élevés.
+	Les hommes diplômés au niveau Master aurait un salaire médian de 200 € plus élevé que celui des femmes avec le même niveau d'études.
+	Nous remarquons que pour le Master enseignement (ENS) le salaire médian est pratiquement équivalent.  
+	La Figure \ref{fig:contrat_pourcentage_2} nous apprend qu'au niveau des Masters ENS l'essentiel des diplômés sont dans la fonction publique contraire au Masters LMD qui sont essentiellement dans le secteur privé.
+	Cela supposerait que les hommes choisissant majoritairement des filière 
+	
+		
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{../graphs/salaires_medians_genre.png}
+		\captionof{figure}{Salaire net mensuel médian par genre des emplois stables(€) (2013 à 2019)}
+		\label{fig:salaire_median_genre}
+	\end{figure}
+	Cela supposerait que les hommes choisissant majoritairement les filières dans l’ingénierie ou encore l'informatique auraient par la discipline et le secteur privé des salaires plus élevés que les femmes au même niveau d'études mais choisissant des disciplines moins rémunératrices (Gestion, littéraires, enseignement, etc..)
 
 \end{document}
