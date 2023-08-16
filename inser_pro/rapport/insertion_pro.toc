@@ -12,3 +12,4 @@
 \contentsline {section}{\numberline {7.}Proportion des disciplines des diplômés}{12}{}%
 \contentsline {section}{\numberline {8.}Taux d'insertion des diplômés dans les emplois stables}{13}{}%
 \contentsline {section}{\numberline {9.}La question épineuse des salaires}{13}{}%
+\contentsline {subsection}{\numberline {9.1}Salaires médians}{13}{}%
