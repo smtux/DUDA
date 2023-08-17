@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  16 AUG 2023 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  18 AUG 2023 00:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,98 +530,105 @@ Package caption Info: End \AtBeginDocument code.
 
 
 [1] [2] [3] [4]
-<../graphs/repartition_contrats_situation_1.png, id=20, 880.28876pt x 662.475pt
+<../graphs/repartition_contrats_situation_1.png, id=20, 782.925pt x 779.91376pt
 >
 File: ../graphs/repartition_contrats_situation_1.png Graphic file (type png)
 <use ../graphs/repartition_contrats_situation_1.png>
 Package pdftex.def Info: ../graphs/repartition_contrats_situation_1.png  used o
 n input line 263.
-(pdftex.def)             Requested size: 483.69687pt x 364.00858pt.
-<../graphs/repartition_contrats_situation_2.png, id=22, 880.28876pt x 662.475pt
+(pdftex.def)             Requested size: 483.69687pt x 481.83977pt.
+ [5]
+<../graphs/repartition_contrats_situation_2.png, id=25, 782.925pt x 779.91376pt
 >
 File: ../graphs/repartition_contrats_situation_2.png Graphic file (type png)
 <use ../graphs/repartition_contrats_situation_2.png>
 Package pdftex.def Info: ../graphs/repartition_contrats_situation_2.png  used o
 n input line 270.
-(pdftex.def)             Requested size: 483.69687pt x 364.00858pt.
- [5 <../graphs/repartition_contrats_situation_1.png>]
-<../graphs/repartition_professions_situation_1.png, id=27, 980.66376pt x 662.47
-5pt>
+(pdftex.def)             Requested size: 483.69687pt x 481.83977pt.
+ [6 <../graphs/repartition_contrats_situation_1.png>]
+<../graphs/repartition_professions_situation_1.png, id=31, 782.925pt x 779.9137
+6pt>
 File: ../graphs/repartition_professions_situation_1.png Graphic file (type png)
 
 <use ../graphs/repartition_professions_situation_1.png>
 Package pdftex.def Info: ../graphs/repartition_professions_situation_1.png  use
 d on input line 280.
-(pdftex.def)             Requested size: 483.69687pt x 326.74849pt.
- [6 <../graphs/repartition_contrats_situation_2.png>]
-<../graphs/repartition_professions_situation_2.png, id=33, 980.66376pt x 662.47
-5pt>
+(pdftex.def)             Requested size: 483.69687pt x 481.83977pt.
+
+[7 <../graphs/repartition_contrats_situation_2.png>]
+<../graphs/repartition_professions_situation_2.png, id=36, 782.925pt x 779.9137
+6pt>
 File: ../graphs/repartition_professions_situation_2.png Graphic file (type png)
 
 <use ../graphs/repartition_professions_situation_2.png>
 Package pdftex.def Info: ../graphs/repartition_professions_situation_2.png  use
 d on input line 287.
-(pdftex.def)             Requested size: 483.69687pt x 326.74849pt.
- [7 <../graphs/repartition_professions_situation_1.png>]
-<../graphs/repartition_secteurs_situation.png, id=38, 922.44624pt x 662.475pt>
+(pdftex.def)             Requested size: 483.69687pt x 481.83977pt.
+ [8 <../graphs/repartition_professions_situation_1.png>]
+<../graphs/repartition_secteurs_situation.png, id=41, 782.925pt x 805.0075pt>
 File: ../graphs/repartition_secteurs_situation.png Graphic file (type png)
 <use ../graphs/repartition_secteurs_situation.png>
 Package pdftex.def Info: ../graphs/repartition_secteurs_situation.png  used on 
 input line 298.
-(pdftex.def)             Requested size: 483.69687pt x 347.36992pt.
- [8 <../graphs/repartition_professions_situation_2.png>]
-<../graphs/proportion_genre.png, id=43, 384.43625pt x 372.39125pt>
+(pdftex.def)             Requested size: 483.69687pt x 497.34297pt.
+ [9 <../graphs/repartition_professions_situation_2.png>] [10 <../graphs/reparti
+tion_secteurs_situation.png>]
+<../graphs/proportion_genre.png, id=50, 384.43625pt x 372.39125pt>
 File: ../graphs/proportion_genre.png Graphic file (type png)
 <use ../graphs/proportion_genre.png>
 Package pdftex.def Info: ../graphs/proportion_genre.png  used on input line 322
 .
 (pdftex.def)             Requested size: 290.22107pt x 281.14514pt.
-
-[9 <../graphs/repartition_secteurs_situation.png>]
-<../graphs/nombre_diplome_genre.png, id=48, 521.95pt x 373.395pt>
+<../graphs/nombre_diplome_genre.png, id=51, 521.95pt x 413.545pt>
 File: ../graphs/nombre_diplome_genre.png Graphic file (type png)
 <use ../graphs/nombre_diplome_genre.png>
 Package pdftex.def Info: ../graphs/nombre_diplome_genre.png  used on input line
  353.
-(pdftex.def)             Requested size: 386.95897pt x 276.82645pt.
- [10 <../graphs/proportion_genre.png>] [11 <../graphs/nombre_diplome_genre.png>
+(pdftex.def)             Requested size: 386.95897pt x 306.59273pt.
+ [11 <../graphs/proportion_genre.png>] [12 <../graphs/nombre_diplome_genre.png>
 ]
-<../graphs/proportion_disciplines.png, id=57, 753.81625pt x 373.395pt>
+<../graphs/proportion_disciplines.png, id=61, 753.81625pt x 416.55624pt>
 File: ../graphs/proportion_disciplines.png Graphic file (type png)
 <use ../graphs/proportion_disciplines.png>
 Package pdftex.def Info: ../graphs/proportion_disciplines.png  used on input li
 ne 404.
-(pdftex.def)             Requested size: 483.69687pt x 239.59302pt.
- [12]
+(pdftex.def)             Requested size: 483.69687pt x 267.2879pt.
+ [13] [14 <../graphs/proportion_disciplines.png>]
+<../graphs/boxplot_salaire_genre.png, id=69, 508.90125pt x 591.20876pt>
+File: ../graphs/boxplot_salaire_genre.png Graphic file (type png)
+<use ../graphs/boxplot_salaire_genre.png>
+Package pdftex.def Info: ../graphs/boxplot_salaire_genre.png  used on input lin
+e 444.
+(pdftex.def)             Requested size: 338.58632pt x 393.36539pt.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-29.
+56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [13 <../graphs/proportion_disciplines.png>]
-<../graphs/salaires_medians_genre.png, id=66, 508.90125pt x 373.395pt>
+) [15 <../graphs/boxplot_salaire_genre.png>]
+<../graphs/salaires_medians_genre.png, id=74, 508.90125pt x 416.55624pt>
 File: ../graphs/salaires_medians_genre.png Graphic file (type png)
 <use ../graphs/salaires_medians_genre.png>
 Package pdftex.def Info: ../graphs/salaires_medians_genre.png  used on input li
-ne 456.
-(pdftex.def)             Requested size: 338.58632pt x 248.4413pt.
- [14 <../graphs/salaires_medians_genre.png>]
+ne 481.
+(pdftex.def)             Requested size: 338.58632pt x 277.15897pt.
+ [16 <../graphs/salaires_medians_genre.png>]
 (./insertion_pro.aux) ) 
 Here is how much of TeX's memory you used:
- 9436 strings out of 477981
- 159184 string characters out of 5838659
+ 9444 strings out of 477981
+ 159485 string characters out of 5838659
  1870330 words of memory out of 5000000
- 29412 multiletter control sequences out of 15000+600000
- 551934 words of font info for 73 fonts, out of 8000000 for 9000
+ 29419 multiletter control sequences out of 15000+600000
+ 551620 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  87i,13n,90p,466b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
 nc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on insertion_pro.pdf (15 pages, 317299 bytes).
+Output written on insertion_pro.pdf (17 pages, 318658 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -362,35 +362,35 @@
 \section{Proportion des disciplines des diplômés}
 	\begin{table}[H]
 		\centering
-		\begin{tabular}{lllc}
+		\begin{tabular}{llrc}
 			\toprule
 			\textbf{Genre} & \textbf{Discipline} & \textbf{Diplômé} & \textbf{\%} \\
 			\midrule
-			Hommes & Sciences de l'ingénieur & 80980.0 & 12.2 \\
-			& Gestion & 59674.0 & 9.0 \\
-			& Informatique & 33584.0 & 5.1 \\
-			& Sciences de la vie et de la terre & 25126.0 & 3.8 \\
-			& Lettres, langues, arts & 16652.0 & 2.5 \\
-			& Masters enseignement & 16400.0 & 2.5 \\
-			& Sciences fondamentales & 16338.0 & 2.5 \\
-			& Droit & 13818.0 & 2.1 \\
-			& Économie & 11840.0 & 1.8 \\
-			& Information communication & 9758.0 & 1.5 \\
-			& Histoire-géographie & 7180.0 & 1.1 \\
-			& Psychologie & 2236.0 & 0.3 \\
+			Hommes & Sciences de l'ingénieur & 80980 & 12.2 \\
+			& Gestion & 59674 & 9 \\
+			& Informatique & 33584 & 5.1 \\
+			& Sciences de la vie et de la terre & 25126 & 3.8 \\
+			& Lettres, langues, arts & 16652 & 2.5 \\
+			& Masters enseignement & 16400 & 2.5 \\
+			& Sciences fondamentales & 16338 & 2.5 \\
+			& Droit & 13818 & 2.1 \\
+			& Économie & 11840 & 1.8 \\
+			& Information communication & 9758 & 1.5 \\
+			& Histoire-géographie & 7180 & 1.1 \\
+			& Psychologie & 2236 & 0.3 \\
 			\midrule
-			Femmes & Gestion & 83264.0 & 12.5 \\
-			& Lettres, langues, arts & 58158.0 & 8.7 \\
-			& Masters enseignement & 56912.0 & 8.6 \\
-			& Sciences de la vie et de la terre & 40958.0 & 6.2 \\
-			& Droit & 31676.0 & 4.8 \\
-			& Information communication & 20006.0 & 3.0 \\
-			& Sciences de l'ingénieur & 16914.0 & 2.5 \\
-			& Sciences fondamentales & 16264.0 & 2.4 \\
-			& Psychologie & 15898.0 & 2.4 \\
-			& Économie & 15334.0 & 2.3 \\
-			& Histoire-géographie & 11228.0 & 1.7 \\
-			& Informatique & 4738.0 & 0.7 \\
+			Femmes & Gestion & 83264 & 12.5 \\
+			& Lettres, langues, arts & 58158 & 8.7 \\
+			& Masters enseignement & 56912 & 8.6 \\
+			& Sciences de la vie et de la terre & 40958 & 6.2 \\
+			& Droit & 31676 & 4.8 \\
+			& Information communication & 20006 & 3 \\
+			& Sciences de l'ingénieur & 16914 & 2.5 \\
+			& Sciences fondamentales & 16264 & 2.4 \\
+			& Psychologie & 15898 & 2.4 \\
+			& Économie & 15334 & 2.3 \\
+			& Histoire-géographie & 11228 & 1.7 \\
+			& Informatique & 4738 & 0.7 \\
 			\bottomrule
 		\end{tabular}
 		\caption{Nombre et proportion (\%) des disciplines des diplômés selon le genre (2013 à 2019)}
@@ -418,7 +418,34 @@ Le taux d’insertion est défini comme étant le pourcentage de diplômés occu
 \section{La question épineuse des salaires}
 L’information collectée sur le salaire porte sur le salaire net, primes comprises. Les salaires affichés correspondent aux valeurs médianes sur les emplois à temps plein. A partir de ces valeurs, on estime un salaire brut annuel, sur la base d’un taux forfaitaire de passage du net au brut de 1,3 (donnée moyenne constatée sur les salaires du secteur privé).
 
-	\subsection{Salaires médians}
+	\subsection{Les quantiles de salaires}	
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{lcr}
+				\toprule
+				\textbf{Genre} & \textbf{Quartile} & \textbf{Valeur} \\
+				\midrule
+				Femmes & 0.25 & 1480 \\
+				& 0.50 & 1670 \\
+				& 0.75 & 1900 \\
+				\midrule
+				Hommes & 0.25 & 1600 \\
+				& 0.50 & 1810 \\
+				& 0.75 & 2060 \\
+				\bottomrule
+			\end{tabular}
+			\caption{Valeurs par quartile et genre}
+			\label{tab:quartile_values_new}
+		\end{table}
+		
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{../graphs/boxplot_salaire_genre.png}
+		\captionof{figure}{Quartiles des salaires par genre des emplois stables (2013 à 2019)}
+		\label{fig:boxplot_salaire_genre}
+	\end{figure}
+	
 
 	Le Tableau \ref{tab:salaire_median_genre} et la Figure \ref{fig:salaire_median_genre} montrent le salaire net mensuel médian des emplois stables entre les hommes et les femmes. 
 
@@ -443,18 +470,16 @@ L’information collectée sur le salaire porte sur le salaire net, primes compr
 		\label{tab:salaire_median_genre}
 	\end{table}
 	
-	Nous observons que les hommes ont un salaire médian plus élevé d'environ quelques soit leur niveau de diplôme.
+	Nous observons que les hommes ont un salaire médian plus élevé quelques soit leur niveau de diplôme.
 	Sans surprise, plus le niveau d'étude des diplômés est élevé et plus les salaires sont élevés.
-	Les hommes diplômés au niveau Master aurait un salaire médian de 200 € plus élevé que celui des femmes avec le même niveau d'études.
+	Les hommes diplômés au niveau Master auraient un salaire médian de 200 € plus élevé que celui des femmes avec le même niveau d'études.
 	Nous remarquons que pour le Master enseignement (ENS) le salaire médian est pratiquement équivalent.  
-	La Figure \ref{fig:contrat_pourcentage_2} nous apprend qu'au niveau des Masters ENS l'essentiel des diplômés sont dans la fonction publique contraire au Masters LMD qui sont essentiellement dans le secteur privé.
-	Cela supposerait que les hommes choisissant majoritairement des filière 
-	
+	La Figure \ref{fig:contrat_pourcentage_2} nous apprend qu'au niveau des Masters ENS l'essentiel des diplômés sont dans la fonction publique contrairement au Masters LMD qui sont essentiellement dans le secteur privé.
 		
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{../graphs/salaires_medians_genre.png}
-		\captionof{figure}{Salaire net mensuel médian par genre des emplois stables(€) (2013 à 2019)}
+		\captionof{figure}{Salaire net mensuel médian par genre des emplois stable (2013 à 2019)}
 		\label{fig:salaire_median_genre}
 	\end{figure}
 	Cela supposerait que les hommes choisissant majoritairement les filières dans l’ingénierie ou encore l'informatique auraient par la discipline et le secteur privé des salaires plus élevés que les femmes au même niveau d'études mais choisissant des disciplines moins rémunératrices (Gestion, littéraires, enseignement, etc..). 
