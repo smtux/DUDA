@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  18 AUG 2023 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.14)  18 AUG 2023 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -594,41 +594,63 @@ Package pdftex.def Info: ../graphs/proportion_disciplines.png  used on input li
 ne 404.
 (pdftex.def)             Requested size: 483.69687pt x 267.2879pt.
  [13] [14 <../graphs/proportion_disciplines.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+44.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 <../graphs/boxplot_salaire_genre.png, id=69, 508.90125pt x 591.20876pt>
 File: ../graphs/boxplot_salaire_genre.png Graphic file (type png)
 <use ../graphs/boxplot_salaire_genre.png>
 Package pdftex.def Info: ../graphs/boxplot_salaire_genre.png  used on input lin
-e 444.
+e 449.
 (pdftex.def)             Requested size: 338.58632pt x 393.36539pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-56.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [15 <../graphs/boxplot_salaire_genre.png>]
+ [15 <../graphs/boxplot_salaire_genre.png>]
 <../graphs/salaires_medians_genre.png, id=74, 508.90125pt x 416.55624pt>
 File: ../graphs/salaires_medians_genre.png Graphic file (type png)
 <use ../graphs/salaires_medians_genre.png>
 Package pdftex.def Info: ../graphs/salaires_medians_genre.png  used on input li
-ne 481.
+ne 486.
 (pdftex.def)             Requested size: 338.58632pt x 277.15897pt.
  [16 <../graphs/salaires_medians_genre.png>]
-(./insertion_pro.aux) ) 
+<../graphs/boxplot_diplomes_genre.png, id=79, 885.3075pt x 519.9425pt>
+File: ../graphs/boxplot_diplomes_genre.png Graphic file (type png)
+<use ../graphs/boxplot_diplomes_genre.png>
+Package pdftex.def Info: ../graphs/boxplot_diplomes_genre.png  used on input li
+ne 549.
+(pdftex.def)             Requested size: 483.69687pt x 284.08104pt.
+ [17]
+
+LaTeX Warning: Reference `label' on page 18 undefined on input line 554.
+
+<../graphs/boxplot_salaire_discipline.png, id=83, 977.6525pt x 640.3925pt>
+File: ../graphs/boxplot_salaire_discipline.png Graphic file (type png)
+<use ../graphs/boxplot_salaire_discipline.png>
+Package pdftex.def Info: ../graphs/boxplot_salaire_discipline.png  used on inpu
+t line 559.
+(pdftex.def)             Requested size: 483.69687pt x 316.8438pt.
+[18 <../graphs/boxplot_diplomes_genre.png>] [19 <../graphs/boxplot_salaire_disc
+ipline.png>] (./insertion_pro.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9444 strings out of 477981
- 159485 string characters out of 5838659
+ 9462 strings out of 477981
+ 160157 string characters out of 5838659
  1870330 words of memory out of 5000000
- 29419 multiletter control sequences out of 15000+600000
+ 29435 multiletter control sequences out of 15000+600000
  551620 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 87i,13n,90p,466b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on insertion_pro.pdf (17 pages, 318658 bytes).
+ 87i,13n,90p,615b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb>
+Output written on insertion_pro.pdf (20 pages, 360902 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
