@@ -18,6 +18,7 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{adjustbox}
+\usepackage{url}
 
 \begin{document}
 	\label{document}
@@ -37,24 +38,29 @@
 	\newpage
 	
 \section{Introduction}
+	Nous avons 3 jeux de données représentant respectivement les informations concernant l'évaluation de l'insertion professionnelle sur le marché du travail des diplômés universitaires en DUT, Licence Professionnelle, Master LMD et Master ENS (Tableau \ref{tab:diplomes}) dans toutes les disciplines (Tableau \ref{tab:disciplines}) sur environ 600000 hommes et femmes interrogés auprès des universités de France.
 	
-\section{Présentation des données}
-	Nous avons 3 jeux de données représentant respectivement les informations concernant l'évaluation de l'insertion professionnelle sur le marché du travail des diplômés universitaires en DUT, Licence Professionnelle, Master LMD (Licence-Master-Doctorat) et Master ENS (Enseignement) de toutes les disciplines. 
+	Ces données ont été collectée en opendata depuis le site du ministère de l'enseignement supérieur et de la recherche (\url{ https://data.enseignementsup-recherche.gouv.fr}).
 	
-	Ces données ont été collectées 18 mois et 30 mois après l'obtention du diplôme des sessions  2013 à 2019. Ainsi l'enquête a commencé en décembre 2015, pour s'achever en décembre 2021.
+	L'enquête a été réalisée à 18 et 30 mois après l'obtention du diplôme des sessions  2013 à 2019. Ainsi, elle a commencé en décembre 2015, pour s'achever en décembre 2021.
 	
-	Les données collectées regroupent, par niveau de diplôme, les disciplines, le taux d'insertion, le salaire brut et net estimé, le pourcentage des types de contrat professionnel (CDI, CDD, intérimaire etc...) ainsi que les secteurs d'activité, les professions et le type d'entreprises.
+	Après une rapide description des données manipulées nous étudierons, la stabilité de l'emploi en détaillant le type de contrat obtenu par les diplômés sur le marché du travail, la répartition des diplômés selon les professions et les secteurs d'activité.
 	
-	Les tableaux 1 à 5 décrivent les différentes variables utilisées pour cette étude et le taux en pourcentage de valeurs manquantes de chaque modalité pour les les différentes catégories.
+	Nous ferons également une analyse statistique descriptive pour tenter d'évaluer, avec les données récoltées sur toutes les sessions, l'impacte du niveau d'étude et la discipline choisie,  sur la stabilité du travail, le salaire médian  et le taux d'insertion des diplômés avec et sans distinction de genre à 18 et 30 mois après l'obtention de leur diplôme.
+
+	Cette analyse est inspirée de l'étude de la session 2016 par le ministère de l'enseignement et de la recherche ( \url{https://publication.enseignementsup-recherche.gouv.fr/}).
 	
-	Le Tableaux 1, présente la liste des diplômes universitaires pour les DUT, Licence Professionnelle et MASTERS.
-	Les MASTERS sont distingués par le MASTER LMD et le MASTER ENS. 
+\section{Méthode}
 	
-	Les disciplines sont indiquées aussi bien individuellement (Informatique, histoire, droit, psychologie etc..), que par des ensembles de disciplines (Formations juridiques, économiques et de gestion, Sciences humaines et sociales etc...). L'ensemble de toutes les disciplines par niveau de diplôme est aussi indiqué (Ensemble MASTERS LMD, Ensemble des départements d'IUT etc...).   
+	La concaténation des 3 jeux de données comportait quelques différences de noms de variables pour décrire les mêmes modalités.
+	Après corrections, le tableau concaténé comportait le même nombre de variables que chacun des jeux de données.
 	
+	Des changements de type on également été apportés aux variables indiquant des données numériques.
+	La difficulté a été de comprendre le sens des variables pour reconnaître des pourcentages et non un nombre de diplômés, mais aussi de regrouper certaines variables par catégories comme les types de contrat (Tableau \ref{tab:contrats}), les types d'entreprises (Tableau \ref{tab:entreprise}, les différents secteurs d'activités (Tableau \ref{tab:secteurs}) et les professions(Tableau \ref{tab:professions}).
 	
+ 	Les valeurs en pourcentage, pour étudier chaque catégorie, ont été obtenues par ces ensembles (Tableau \ref{tab:disciplines}) afin d'éviter le mieux possible les valeurs manquantes ou non significatives.
+
 	
-\newpage
 
 \begin{table}[H]
 	\centering
@@ -150,8 +156,8 @@
 		Volontariat international & 8.1 \\
 		\hline
 	\end{tabularx}
-	\caption{Pourcentage de valeurs manquantes des différents types de contrat}
-	\label{tab:contrats_pourcentage}
+	\caption{Variables indiquant les différents types de contrat, \% de valeurs manquantes}
+	\label{tab:contrats}
 \end{table}
 
 \begin{table}[H]
@@ -179,8 +185,8 @@
 		Un particulier & 11.0 \\
 		\hline
 	\end{tabularx}
-	\caption{Pourcentage de valeurs manquantes par type d'entreprise}
-	\label{tab:entreprise_pourcentage}
+	\caption{Variables indiquant les différents types d'entreprise, \% de valeurs manquantes}
+	\label{tab:entreprise}
 \end{table}
 
 
@@ -219,8 +225,8 @@
 		Autres activités de service & 7.1 \\
 		\hline
 	\end{tabularx}
-	\caption{Pourcentage de valeurs manquantes par secteur}
-	\label{tab:secteurs_pourcentage}
+	\caption{Variables indiquant les différents types de secteur, \% de valeurs manquantes}
+	\label{tab:secteurs}
 \end{table}
 
 \begin{table}[H]
@@ -250,14 +256,15 @@
 		Employé de bureau, de commerce, personnel de service & 5.3 \\
 		\hline
 	\end{tabularx}
-	\caption{Pourcentage de valeurs manquantes par profession}
-	\label{tab:professions_pourcentage}
+	\caption{Variables indiquant les différents types de profession, \% de valeurs manquantes}
+	\label{tab:professions}
 \end{table}
 
-
-\section{Les types de contrats après l'obtention du diplôme}
+\newpage
 
 	\subsection{Répartion des contrats à 18 et 30 mois après l'obtention du diplôme}
+	La Figure \ref{fig:contrat_pourcentage_1} montre que les diplômés de DUT et de licences professionnelles ont à plus de 60 \%  d'entre eux, un contrat de type CDI, 18 mois après l'obtention du diplôme et à plus de 80 \%, 30 mois après l'obtention du diplôme.   
+	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_situation_1.png}
@@ -265,6 +272,9 @@
 			\label{fig:contrat_pourcentage_1}
 		\end{figure}
 	
+	La Figure \ref{fig:contrat_pourcentage_2} montre que les Diplômés d'un Master LMD ont un contrat de type CDI pour environ 60 \% d'entre eux, à 18 et 30 mois après l'obtention du diplôme.
+	Par contre les diplômés des Master ENS sont à 80 \% fonctionnaires à 18 et 30 mois après l'obtention du diplôme. 
+
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_contrats_situation_2.png}
@@ -272,25 +282,27 @@
 			\label{fig:contrat_pourcentage_2}
 		\end{figure}
 
-\section{Les professions après l'obtention du diplôme}
-
 	\subsection{Répartition des professions à 18 et 30 mois après l'obtention du diplôme}
+	La Figure \ref{fig:profession_pourcentage_1} montre que les diplômés de DUT ont pour environ 40 \% d'entre eux un emploi de niveau intermédiaire (technicien et agent de maîtrise) à 18 et 30 mois après l'obtention du diplôme. Et pour 40 \% d'entre eux, ont un emploi de bureau et dans les services.
+	Les diplômés de licences professionnelles ont pour environ 60 \% d'entre eux un emploi de niveau intermédiaire et un emploi de bureau et de service pour environ 20 \% d'entre eux.
+	On constate que les diplômés de licence professionnelle ont un emploi de cadre pour 10 \% d'entre eux, légèrement plus élevé que les diplômés de DUT.
+	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_professions_situation_1.png}
-			\captionof{figure}{Répartition des professions à 18 et 30 mois après l'obtention du diplôme (DUT-Licence pro)}
+			\captionof{figure}{Répartition des professions à 18 et 30 mois après l'obtention du diplôme (DUT-Licence pro) par année de session de 2013 à 2019)}
 			\label{fig:profession_pourcentage_1}
 		\end{figure}
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/repartition_professions_situation_2.png}
-			\captionof{figure}{Répartition des professions à 18 et 30 mois après l'obtention du diplôme (Masters)}
+			\captionof{figure}{Répartition des professions à 18 et 30 mois après l'obtention du diplôme (Masters) par année de session de 2013 à 2019}
 			\label{fig:profession_pourcentage_2}
 		\end{figure}
 
 
-\section{Secteurs d'activité après l'obtention du diplôme}
+	\subsection{Secteurs d'activité après l'obtention du diplôme}
 	Les données 18 mois après l'obtention du diplôme étant manquantes, nous indiquons dans la Figure 5, le pourcentage des secteurs d'activité dans lesquels les diplômés se sont insérés 30 mois après son obtention. 
 
 	\begin{figure}[H]
@@ -299,10 +311,8 @@
 		\captionof{figure}{Répartition des secteurs à 18 et 30 mois après l'obtention du diplôme}
 	\end{figure}
 
-\section{Proportion des diplômés et des diplômes universitaires}
-
 	\subsection{Proportion des diplômés}
-	Le Tableau \ref{tab:genre_responses} et la Figure \ref{fig:genre_reponses} fournissent la proportion des hommes et des femmes de l'ensemble des diplômés de 2013 à 2019 ayant répondu à l'enquête. Ainsi nous avons environ 22 \% de réponses à l'enquête en plus de la part des femmes par rapport au hommes, pourtant à un total d'environ 592740 de diplômés interrogés
+	Le Tableau \ref{tab:genre_responses} et la Figure \ref{fig:genre_reponses} donnent la proportion des hommes et des femmes pour l'ensemble des diplômés ayant répondu à l'enquête, des sessions 2013 à 2019. Ainsi nous avons environ 22 \% de réponses à l'enquête en plus de la part des femmes par rapport au hommes, portant à un total d'environ 592740 de diplômés interrogés
 	
 		\begin{table}[H]
 			\centering
@@ -314,19 +324,19 @@
 				Hommes & 232376 & 39.2 \\
 				\bottomrule
 			\end{tabular}
-			\caption{Nombre et proportion de diplômés par genre (2013 à 2019)}
+			\caption{Nombre et proportion de diplômés par genre (sessions 2013 à 2019)}
 			\label{tab:genre_responses}
 		\end{table}
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.6\textwidth]{../graphs/proportion_genre.png}
-			\captionof{figure}{Proportion des diplômés selon le genre (2013 à 2019)}
+			\captionof{figure}{Proportion des diplômés selon le genre (sessions 2013 à 2019)}
 			\label{fig:genre_reponses}
 		\end{figure}
 	
 	\subsection{Proportion des diplômes universitaire}
-	Le Tableau \ref{tab:diplome_genre} et la Figure \ref{fig:diplome_genre} présentent le nombre et la proportion de diplômés par niveau de diplôme universitaire selon le genre. 
+	Le Tableau \ref{tab:diplome_genre} et la Figure \ref{fig:diplome_genre} présentent le nombre et la proportion de diplômés de l'ensemble des répondants à l'enquête par niveau de diplôme universitaire selon le genre. 
 	
 		\begin{table}[H]
 			\centering
@@ -347,25 +357,20 @@
 				& Hommes & 150174 & 25.3 \\
 				\bottomrule
 			\end{tabular}
-			\caption{Nombre et proportion (\%) de diplômés par diplôme selon le genre (2013 à 2019)}
+			\caption{Nombre et proportion (\%) de diplômés par diplôme selon le genre (sessions 2013 à 2019)}
 			\label{tab:diplome_genre}
 		\end{table}
 		
-	Nous constatons que les diplômés de la filière des DUT sont beaucoup moins représentés (3 \%) que ceux des licences professionnelles (22 \%) et des masters LMD (75 \%). Il y a également moins de diplômés dans l'enquête pour le Master ENS avec une proportion plus forte de 6.1 \% de femmes par rapport aux hommes.
-	Les Licences professionnelles et les Masters LMD rassemblent la majorité des diplômés de l'enquête avec 22 \% pour les licences pro et 63 \% pour les Masters LMD.
-	Nous constatons que les femmes représentent la majorité des diplômés en Masters. Les hommes représentent environ 11 \% des diplômés en DUT et Licences professionnelles contre 14 \% pour les femmes. Mais les femmes représentent 47 \% des diplômés en Masters ayant répondu à l'enquête contre 28 \% pour les hommes.
+	Nous constatons que les diplômés de la filière DUT sont beaucoup moins représentés (3 \%) que ceux possédant une licence professionnelle (22 \%), un master LMD (63 \%) ou  un Master ENS (12,4 \%). Les femmes diplômées d'un Master représentent 47 \% de l'ensemble des personnes interrogées et 13.7 \% des diplômés d'un DUT ou d'une licence professionnelle contre respectivement, 28 \% et 11 \% pour les hommes.
+	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\textwidth]{../graphs/nombre_diplome_genre.png}
 			\captionof{figure}{Nombre de diplômés par diplôme selon le genre (2013 à 2019)}
 			\label{fig:diplome_genre}
-		\end{figure}
-	
-	La plus forte proportion de femmes dans les filières plus longues (Masters) par rapport aux hommes est-elle liée au nombre insuffisant de réponses à l'enquête s'agissant des hommes ( -22 \% / femmes) ou bien les femmes sont-elles plus en capacité de choisir des études plus longues et moins techniques que leurs homologues masculins ?
-	
-	Il semblerait, dans l'hypothèse d'un effectif constant pour les femmes, que même avec 12 \% de diplômés masculins en plus, il serait difficile de rattraper les effectifs des femmes en Masters puisque le différentiel de diplômés est déjà d'environ 11 \% en faveur des femmes.      
+		\end{figure}      
 
-\section{Proportion des disciplines des diplômés}
+\subsection{Proportion des disciplines des diplômés}
 
 	\begin{table}[H]
 		\centering
@@ -400,31 +405,30 @@
 			& Informatique & 2378 & 0.8 \\
 			\bottomrule
 		\end{tabular}
-		\caption{Nombre et proportion (\%) des diplômés par discipline selon le genre (2013 à 2019)}
+		\caption{Nombre et proportion (\%) des diplômés par discipline selon le genre (sessions 2013 à 2019)}
 		\label{tab:genre_discipline}
 	\end{table}
 
 	
-	Le Tableau \ref{tab:genre_discipline} et la Figure \ref{fig:genre_discipline} présentent le nombre de diplômés par discipline ainsi que leur proportion (\%) par rapport à l'ensemble des diplômés ayant répondu à l'enquête.
-	Nous constatons, entre les hommes et les femmes,  une nette inversion de la proportion des disciplines  littéraires (2.8 \% contre 9.8 \%) ou dans l'enseignement (2.7 \% contre 9.6 \%) par rapport aux domaines plus techniques et scientifiques comme les sciences de l'ingénieur (3.3 \% contre 1 \%) ou encore l'informatique (5.70 \% contre 0,8 \%)
+	Le Tableau \ref{tab:genre_discipline} et la Figure \ref{fig:genre_discipline} présentent le nombre de diplômés par discipline ainsi que leur proportion par rapport à l'ensemble des diplômés ayant répondu à l'enquête.
+	Nous constatons une plus forte proportion des femmes interrogés dans les disciplines à caractères non scientifiques (49 \%) par rapport aux hommes (23 \%).
+	Nous considérons comme non scientifiques les  disciplines, Gestion, Lettres, Langues,Arts, Masters enseignement, Droit, Économie, Information communication, Histoire-géographie et Psychologie.
+	
+	
+	
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{../graphs/proportion_disciplines.png}
-		\captionof{figure}{Proportion (\%) des diplômés par discipline selon le genre (2013 à 2019)}
+		\captionof{figure}{Proportion des diplômés par discipline selon le genre (sessions 2013 à 2019)}
 		\label{fig:genre_discipline}
 	\end{figure}
 
-	La remarque précédente conduisant à soumettre l'hypothèse que les femmes choisiraient majoritairement les filières universitaires les plus longues (Masters) serait confirmée par les disciplines choisies.
-	En effet, les domaines de l'enseignement ou encore littéraires sont des domaines dont les années d'études sont les plus longues pour aboutir à une insertion professionnelle plus prometteuse.
-	Alors que les hommes à 79 \%, contre  53 \% pour les femmes,  préféraient davantage une insertion plus rapide sur le marché du travail en choisissant les sciences, davantage corrélées l'industrie ou encore en filières plus courtes, les licences professionnelles (16,8 \% contre 12,5 \%). Pourtant, la gestion reste la discipline privilégiée pour les hommes (10 \%) et les femmes (14 \%) 
-
-
-\section{La question épineuse des salaires}
+\subsection{La question épineuse des salaires}
 L’information collectée sur le salaire porte sur le salaire net, primes comprises. Dans toute la suite de l'analyse, tous les calculs statistiques sont faits à partir des salaires médians de chaque catégorie de diplôme (DUT, Licence Pro, Master LMD et ENS) et de discipline (Figure \ref{fig:genre_discipline}) et selon le genre. Il ainsi important de comprendre que les valeurs produites ici,  ne donnent qu'une indication ou une tendance et non des valeurs médianes qui aurait été plus précises avec les salaires obtenu pour chaque homme et femme interrogés.
  
 
-	\subsection{Les quantiles des salaires}	
+	\subsubsection{Dispersion des salaires entre hommes et femmes}	
 	Le Tableau \ref{tab:quartile_salaire_genre} et la Figure \ref{fig:boxplot_salaire_genre} montrent les différents quartiles des salaires entre les hommes et les femmes, de 18 à 30 mois après l'obtention du diplôme sur toute la période de 2013 à 2019.
 	
 	\begin{table}[H]
@@ -442,23 +446,23 @@ L’information collectée sur le salaire porte sur le salaire net, primes compr
 			& 0.75 & 1910 \\
 			\bottomrule
 		\end{tabular}
-		\caption{Dispersion des salaires selon le genre (2013 à 2019)}
+		\caption{Proportion des salaires selon le genre (sessions 2013 à 2019)}
 		\label{tab:quartile_salaire_genre}
 	\end{table}
 	
 	
-	Nous constatons, dans une première lecture, que, quelque soit la tranche des salaires, des plus faibles (1er quartile 0,25) aux plus élevés (3ème quartile), les hommes auraient tendance à percevoir des salaires supérieurs aux femmes. Nous remarquons également que l'écart, à niveau d'étude égale, reste relativement constant (environ 110 €).
+	Nous constatons, dans une première lecture, que, quelque soit la tranche des salaires, de la plus faible(1er quartile 0,25) à la plus élevée (3ème quartile), les hommes auraient tendance à percevoir des salaires supérieurs aux femmes. Nous remarquons que l'écart du salaire médian, entre les hommes et les femmes, dans toutes les sessions, à diplôme équivalent, reste relativement constant (environ 110 €).
 		
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{../graphs/boxplot_salaire_genre.png}
-		\captionof{figure}{Quartiles des salaires par genre des emplois stables (2013 à 2019)}
+		\captionof{figure}{Proportion des salaires par genre des emplois stables (sessions 2013 à 2019)}
 		\label{fig:boxplot_salaire_genre}
 	\end{figure}
 	
-
-	Le Tableau \ref{tab:salaire_median_genre} et la Figure \ref{fig:salaire_median_genre} montrent le salaire net mensuel médian des emplois stables des hommes et les femmes. 
+	\subsubsection{Répartition des salaires entre hommes et femmes selon le diplôme}
+	Le Tableau \ref{tab:salaire_median_genre} et la Figure \ref{fig:salaire_median_genre} montrent le salaire net mensuel médian des emplois stables des hommes et des femmes selon le diplôme sur toutes les sessions. 
 	
 	\begin{table}[H]
 		\centering
@@ -477,13 +481,13 @@ L’information collectée sur le salaire porte sur le salaire net, primes compr
 			& MASTER LMD & 2075 \\
 			\bottomrule
 		\end{tabular}
-		\caption{Salaire net mensuel médian des emplois à temps plein par genre et diplôme (2013 à 2019)}
+		\caption{Salaire net mensuel médian des emplois à temps plein par diplôme selon le genre (sessions 2013 à 2019)}
 		\label{tab:salaire_median_genre}
 	\end{table}
 	
 	
 	
-	Nous observons que les hommes ont un salaire médian plus élevé quelques soit leur niveau de diplôme.
+	Nous observons que les hommes ont un salaire net médian plus élevé quelque soit leur niveau de diplôme.
 	Sans surprise, plus le niveau d'étude des diplômés est élevé et plus les salaires sont élevés.
 	Les hommes diplômés au niveau DUT et Master auraient un salaire médian d'environ 255 € plus élevé que celui des femmes avec le même niveau d'étude.
 	Nous remarquons que pour le Master enseignement (ENS) le salaire médian est pratiquement équivalent.  
@@ -492,10 +496,10 @@ L’information collectée sur le salaire porte sur le salaire net, primes compr
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{../graphs/salaires_medians_genre.png}
-		\captionof{figure}{Salaire net mensuel médian par genre selon le diplôme des emplois stable (2013 à 2019)}
+		\captionof{figure}{Salaire net mensuel médian par diplôme selon le genre des emplois stables (sessions 2013 à 2019)}
 		\label{fig:salaire_median_genre}
 	\end{figure}
-	Cela supposerait que les hommes choisissant majoritairement les filières scientifiques (sciences de l'ingénieur, informatique...) auraient des salaires plus élevés que les femmes avec le même niveau d'étude mais choisissant des disciplines moins rémunératrices (Gestion, lettres, enseignement, etc..).
+	Cela supposerait que les hommes en choisissant majoritairement les filières scientifiques (Figure \ref{fig:genre_discipline}) avec un salaire plus élevé que celui des femmes avec le même niveau d'étude mais choisissant des disciplines non scientifiques.
 	
 	\begin{table}[H]
 		\centering
@@ -536,35 +540,37 @@ L’information collectée sur le salaire porte sur le salaire net, primes compr
 			&            & 75 \% & 2345 \\
 			\bottomrule
 		\end{tabular}
-		\caption{Dispersion des salaires par diplôme selon le genre (2013 à 2019)}
+		\caption{Répartition des salaires par diplôme selon le genre (sessions 2013 à 2019)}
 		\label{tab:quartile_values_diplome}
 	\end{table}
 	
 	
-	Dans le Tableau \ref{tab:quartile_values_diplome} et la Figure \ref{fig:boxplot_diplome_genre} nous observons plus en détail la répartition des quartiles selon le diplôme entre les hommes et les femmes permettant d'avoir une tendance plus précise des salaires par niveau d'étude des personnes interrogées. 
+	Dans le Tableau \ref{tab:quartile_values_diplome} et la Figure \ref{fig:boxplot_diplome_genre} nous observons plus en détail la répartition des salaires net médians selon le diplôme entre les hommes et les femmes.
 	
-	Nous avons observé que les salaires augmentent selon le niveau d'étude pour les hommes et les femmes. Cependant, quelque soit le diplôme obtenu, les tranches de salaires seraient toujours plus élevés pour les hommes comparativement aux femmes à niveau d'étude équivalent.
-	
-	On remarque également une différence des salaires médians entre les hommes et les femmes. 
+	Nous avons observé que les salaires médians augmentent selon le niveau d'étude pour les hommes et les femmes. Cependant, quelque soit le diplôme obtenu, les salaires médians seraient toujours plus élevés pour les hommes comparativement aux femmes à niveau d'étude équivalent. 
 	
 	Nous avons observé sur la Figure \ref{fig:contrat_pourcentage_2} et la Figure \ref{fig:profession_pourcentage_2} que les emplois des diplômés du Master ENS sont pour l'essentiel dans la fonction publique (> à 80 \%) contrairement aux autres diplômés dont les emplois sont très majoritairement dans le secteur privé ( >  à 80 \%).
 	
-	On pourrait donc en conclure que les écarts des salaires dans la fonction public sont moins importants que dans la fonction publique.
+	On pourrait donc en conclure que les écarts des salaires dans la fonction public sont moins importants que dans le secteur privé.
 	
-	Selon le Tableau \ref{tab:quartile_values_diplome}, il y aurait moins de 25 \% des femmes interrogées diplômées d'un Master LMD qui auraient un salaire inférieur à 1610 € et 75 \% inférieur à 2090 € avec un salaire médian de 1820 €.
-	Les hommes, à niveau d'étude équivalent, auraient un salaire inférieur à 1817 € pour 25 \% d'entre eux et inférieur à 2345 € pour 75 \% d'entre eux.
+	Selon le Tableau \ref{tab:quartile_values_diplome}, il y aurait 25 \% des femmes interrogées diplômées d'un Master LMD qui auraient un salaire médian inférieur à 1610 € et 75 \% inférieur à 2090 € avec un salaire médian de 1820 € pour 50 \% d'entre eux.
+	Les hommes, à niveau d'étude équivalent, auraient un salaire médian inférieur à 1817 € pour 25 \% d'entre eux et inférieur à 2345 € pour 75 \% d'entre eux et de 2075 € pour 50 \% d'entre eux.
 	
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{../graphs/boxplot_diplomes_genre.png}
-		\captionof{figure}{Quartiles des salaires nets mensuels des emplois stables par genre selon le diplôme (2013 à 2019)}
+		\captionof{figure}{Répartition des salaires nets mensuels médians des emplois stables par diplôme selon le genre (2013 à 2019)}
 		\label{fig:boxplot_diplome_genre}
 	\end{figure}
 
-	Le Figure \ref{fig:boxplot_salaire_discipline} montrerait que les diplômés des disciplines en sciences de l'ingénieur, en économie, ou encore, en sciences fondamentales auraient des salaires médians supérieurs aux diplômés des autres disciplines. Le Tableau \ref{tab:diff_salaire_genre}, indique ces différences. De plus, la répartition des salaires supérieurs aux salaires médians et à peu près équivalente aux salaires qui en sont inférieurs. Cependant nous observons des écarts entre les salaires médians en faveur des hommes par rapport aux femmes.
+	Nous remarquons que pour l'ensemble des diplômés interrogés, les hommes ont un salaire net médian toujours supérieur à celui des femmes quelque soit leur niveau de diplôme.
+
+	\subsubsection{Répartition des salaires entre hommes et femmes selon la disciplines chosisie}
+
+	Le Figure \ref{fig:boxplot_salaire_discipline} montrerait que les diplômés des disciplines en sciences de l'ingénieur, en économie, ou encore, en sciences fondamentales auraient des salaires médians supérieurs aux diplômés des autres disciplines. Le Tableau \ref{tab:diff_salaire_genre}, indique les différences des salaires médians entre les hommes et les femmes selon la discipline.
 	
-	En prenant l'exemple de la gestion, la discipline où les femmes sont les plus diplômées (Figure \ref{fig:genre_discipline}, auraient environ un salaire de moins de 1300 € pour 25 \% d'entre elles et inférieur à 1750 € pour 75 \% d'entre elles.
+	En prenant l'exemple de la gestion, la discipline où les femmes sont les plus diplômées (Figure \ref{fig:genre_discipline}, auraient un salaire de moins de 1300 € pour 25 \% d'entre elles et moins de 1750 € pour 75 \% d'entre elles.
 	Alors que les hommes, dans la même discipline, auraient un salaire inférieur à 1470 € pour  25 \% d'entre eux et inférieur à 1950 € pour 75 \% d'entre eux. 
 	
 	Au regard de ces résultats, nous pourrions penser que les hommes sont mieux rémunérés que les femmes quelque que soit le niveau de formation et la spécialité choisie. A noter que seules les femmes diplômées en informatique auraient un salaire médian supérieur aux hommes mais cela reste modeste (< 50€). Mais c'est aussi dans ce secteur que les femmes sont les moins présentes.
@@ -596,35 +602,61 @@ L’information collectée sur le salaire porte sur le salaire net, primes compr
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{../graphs/boxplot_salaire_discipline.png}
-		\captionof{figure}{Quartiles des salaires nets mensuels des emplois stables par genre selon le diplôme (2013 à 2019)}
+		\captionof{figure}{Répartition des salaires nets mensuels médians des emplois stables par discipline selon le genre (sessions 2013 à 2019)}
 		\label{fig:boxplot_salaire_discipline}
 	\end{figure}
 
-\section{Taux d'insertion des diplômés dans les emplois stables}
+	\subsubsection{Taux d'insertion des diplômés dans les emplois stables}
 
 Le taux d’insertion est défini comme étant le pourcentage de diplômés occupant un emploi, quel qu’il soit, sur l’ensemble des diplômés présents sur le marché du travail. Il est calculé sur les diplômés de nationalité française, issus de la formation initiale, entrés immédiatement et durablement sur le marché du travail après l’obtention de leur diplôme en 2013, 2014, 2015, 2016, 2017, 2018 ou 2019.
+
+	\subsubsection{Taux d'insertion selon le diplôme}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/boxplot_insertion_diplome.png}
-			\captionof{figure}{Taux d'insertion des diplômés selon leur diplôme universitaire (2013 à 2019)}
+			\captionof{figure}{Taux d'insertion des diplômés selon le diplôme et la situation (sessions 2013 à 2019)}
 			\label{fig:boxplot_insertion_diplome}
 		\end{figure}
 	
 	
-	La Figure \ref{fig:boxplot_insertion_diplome} représente le taux d'insertion à 18 et 30 mois après l'obtention du diplôme par les interrogés de 2013 à 2019. Nous observons que les taux d'insertion sont meilleurs pour les plus diplômés.
-	Les diplômés de licence professionnelle ont un taux médian d'insertion professionnelle (89 \%) supérieur aux diplômés de DUT (84 \%) ou Master LMD (88 \%). D'après la figure \ref{fig:insertion_ens} seuls les diplômés en Master ENS ont un taux d'insertion supérieur à 95 \%, proche des 98 \%.
+	La Figure \ref{fig:boxplot_insertion_diplome} montre le taux d'insertion à 18 et 30 mois après l'obtention du diplôme par les interrogés des sessions 2013 à 2019. Nous observons que les taux d'insertion sont meilleurs pour les plus diplômés.
+	Les diplômés de licence professionnelle ont un taux médian d'insertion professionnelle (89 \%) supérieur aux diplômés de DUT (84 \%) ou Master LMD (88 \%). D'après la figure \ref{fig:boxplot_insertion_discipline} seuls les diplômés en Master ENS ont un taux d'insertion supérieur à 95 \%, proche des 98 \%.
 	
 	Nous remarquons que les licences professionnelles ont un taux d'insertion inférieur à 93 \% pour 75 \% d'entre eux contre 94 \% pour 75 \% des diplômés en DUT, 30 mois après l'obtention de leur diplôme.
 	
-	Dans l'ensemble ce sont les diplômés de licence professionnelle qui ont un meilleur taux d'insertion professionnelle à part les diplômés de Master ENS.
+	Dans l'ensemble, ce sont les diplômés de licence professionnelle qui ont un meilleur taux d'insertion à part les diplômés de Master ENS.
+	
+	\subsubsection{Taux d'insertion selon la discipline}
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{../graphs/boxplot_insertion_discipline.png}
-			\captionof{figure}{Taux d'insertion des diplômés selon la discipline du diplôme (2013 à 2019)}
-			\label{fig:boxplot_insertion_diplome}
+			\captionof{figure}{Taux d'insertion des diplômés selon la discipline et la situation (sessions 2013 à 2019)}
+			\label{fig:boxplot_insertion_discipline}
 		\end{figure}
 		
+	La Figure 14 montre que les diplômés dans les disciplines de l'informatique, du droit, en gestion et dans les sciences de l'ingénieur ont un taux médian d'insertion pour les sessions 2013 à 2019 supérieur à 90 \%, 30 mois après l'obtention du diplôme. 
+	
+\section{Résultats}
+L'enquête totalise environ 593000 diplômés dans l'enseignement supérieur universitaire avec plus de 60 \% de femmes.
+63 \% des diplômés ont un Master LMD, 22 \% une licence professionnelle et 3 \% un DUT.
+La majorité des diplômés de DUT et de licence professionnelle sont dans des emplois de niveaux intermédiaires (technicien et agent de maîtrise) pour près de 40 \% d'entre eux. Les emplois sont essentiellement dans le secteur privé et en CDI.
+
+A 30 mois après l'obtention du diplôme le taux médian d'insertion est pour 50 \% des diplômés en DUT inférieur à 50 \% des diplômés en licence professionnelle et en Master.  
+
+Le salaire net médian des hommes est supérieur, à niveau de diplôme équivalent à celui des femmes quelque soit la discipline du diplôme obtenu.
+
+Nous nous sommes interrogé sur cet écart de salaire pour savoir si il était dû à la proportion moins élevée des hommes interrogés par rapport aux femmes dans l'enquête ou à la discipline choisie pendant leurs études.
+
+En effet, le pourcentage du nombre d'hommes ou de femmes répondant à l'enquête peut avoir une influence sur le salaire médian si davantage d'hommes les mieux diplômés, donc les mieux rémunérés (Tableau \ref{tab:quartile_values_diplome}), avaient répondu à l'enquête. Mais nous nous apercevons sur la Figure \ref{fig:diplome_genre} que la proportion des femmes est plus élevé dans les plus diplômés. Donc la figure montrerait que le salaire médian ne serait pas influencé par une concentration plus élevés d'hommes les mieux diplômés. 
+
+Cependant, nous constatons que les femmes sont destinées à des secteurs professionnels considérés comme moins rémunérateurs au regard de leurs proportions dans les disciplines littéraires, de gestion et de l'enseignement. En effet, ces disciplines destineraient les femmes en majorité dans la fonction publique, considérée comme moins rémunératrice que le secteur privé.
+Pourtant la Figure \ref{fig:boxplot_salaire_discipline} montre que la plupart des hommes ont un salaire net médian plus élevé que les femmes même dans les disciplines les plus rémunératrices.
+
+Il semblerait donc que les hommes ont, à niveau d'étude équivalent, un salaire net plus élevé quelque soit la spécialité choisie.
+Il aurait été intéressant d'étudier la dépendance du salaire selon le genre et le diplôme afin de faire une projection sur un plus grand nombre d'interrogés de l'enquête. 
+
+
 
 \end{document}
