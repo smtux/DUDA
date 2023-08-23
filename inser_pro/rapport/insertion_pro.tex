@@ -35,12 +35,13 @@
 	\captionsetup{labelfont=bf, font=small}
 	\tableofcontents
 	\newcolumntype{C}{>{\RaggedRight\arraybackslash}X}
-	\newpage
+
+\newpage
 	
 \section{Introduction}
 	Nous avons 3 jeux de données représentant respectivement les informations concernant l'évaluation de l'insertion professionnelle sur le marché du travail des diplômés universitaires en DUT, Licence Professionnelle, Master LMD et Master ENS (Tableau \ref{tab:diplomes}) dans toutes les disciplines (Tableau \ref{tab:disciplines}) sur environ 600000 hommes et femmes interrogés auprès des universités de France.
 	
-	Ces données ont été collectée en opendata depuis le site du ministère de l'enseignement supérieur et de la recherche (\url{ https://data.enseignementsup-recherche.gouv.fr}).
+	Ces données ont été collectée en opendata depuis le site du ministère de l'enseignement supérieur et de la recherche \cite{opendata}.
 	
 	L'enquête a été réalisée à 18 et 30 mois après l'obtention du diplôme des sessions  2013 à 2019. Ainsi, elle a commencé en décembre 2015, pour s'achever en décembre 2021.
 	
@@ -48,7 +49,7 @@
 	
 	Nous ferons également une analyse statistique descriptive pour tenter d'évaluer, avec les données récoltées sur toutes les sessions, l'impacte du niveau d'étude et la discipline choisie,  sur la stabilité du travail, le salaire médian  et le taux d'insertion des diplômés avec et sans distinction de genre à 18 et 30 mois après l'obtention de leur diplôme.
 
-	Cette analyse est inspirée de l'étude de la session 2016 par le ministère de l'enseignement et de la recherche ( \url{https://publication.enseignementsup-recherche.gouv.fr/}).
+	Cette analyse est inspirée de l'étude de la session 2016 par le ministère de l'enseignement et de la recherche \cite{etude 2016}.
 	
 \section{Méthode}
 	
@@ -314,7 +315,7 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{../graphs/repartition_secteurs_situation.png}
-		\captionof{figure}{Répartition des secteurs à 18 et 30 mois après l'obtention du diplôme}
+		\captionof{figure}{Répartition des secteurs à 18 et 30 mois après l'obtention du diplôme par année de session de 2013 à 2019}
 	\end{figure}
 
 	\subsection{Proportion des diplômés}
@@ -664,5 +665,16 @@ Il semblerait donc que les hommes, à niveau d'étude équivalent, ont un salair
 Il aurait été intéressant d'étudier la dépendance du salaire selon le genre et le diplôme afin de faire une projection sur un plus grand nombre de personnes. 
 
 
+\newpage
 
+\begin{thebibliography}{9}
+	\bibitem{opendata}
+	\textit{Ministère de la recherche. OPENDATA}\\
+	\textit{\url{https://data.enseignementsup-recherche.gouv.fr/pages/explorer/?sort=modified&q=insertion/professionnelle}}
+	
+	\bibitem{etude 2016}
+	\textit{Ministère de l'enseignement supérieur et de la recherche. L'insertion professionnelle des diplômés de l'université (DUT, Licence professionnelle, Master) (2016)} \\
+	\textit{\url{https://publication.enseignementsup-recherche.gouv.fr/eesr/FR/EESR13_ES_23/l_insertion_professionnelle_des_diplomes_de_l_universite_dut_licence_professionnelle_master/}}
+	
+\end{thebibliography}
 \end{document}
