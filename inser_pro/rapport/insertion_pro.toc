@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.7}La question épineuse des salaires}{13}{}%
 \contentsline {subsubsection}{\numberline {2.7.1}Dispersion des salaires entre hommes et femmes}{13}{}%
 \contentsline {subsubsection}{\numberline {2.7.2}Répartition des salaires entre hommes et femmes selon le diplôme}{14}{}%
-\contentsline {subsubsection}{\numberline {2.7.3}Répartition des salaires entre hommes et femmes selon la disciplines chosisie}{17}{}%
+\contentsline {subsubsection}{\numberline {2.7.3}Répartition des salaires entre hommes et femmes selon la discipline chosisie}{17}{}%
 \contentsline {subsubsection}{\numberline {2.7.4}Taux d'insertion des diplômés dans les emplois stables}{18}{}%
 \contentsline {subsubsection}{\numberline {2.7.5}Taux d'insertion selon le diplôme}{19}{}%
 \contentsline {subsubsection}{\numberline {2.7.6}Taux d'insertion selon la discipline}{20}{}%
